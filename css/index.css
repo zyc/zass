@@ -15,8 +15,8 @@ body {
 
 .fixed {
     bottom: 24px !important;
-    left: 16px !important;
-    right: 16px !important;
+    left: 15px !important;
+    right: 15px !important;
     position: fixed;
 }
 
@@ -42,11 +42,12 @@ body {
 }
 
 .group > .title > span {
-    background-image: url("../images/title-background-mana.png");
+    background-image: url("../images/title-mana.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
+    color: white;
 }
 
 .options {
