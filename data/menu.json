@@ -1,0 +1,209 @@
+[
+  {
+    "title": "Açaís Tradicionais",
+    "description": "O melhor açaí da vida em sua versão tradicional. Orgânico sem xarope.",
+    "options": [
+      {
+        "title": "Do Porto",
+        "hint": "Banana"
+      }
+    ],
+    "items": [
+      {
+        "title": "300ml",
+        "price": 12.00
+      },
+      {
+        "title": "500ml",
+        "price": 18.00
+      },
+      {
+        "title": "700ml",
+        "price": 24.00
+      }
+    ]
+  },
+  {
+    "title": "Açaís Especiais",
+    "description": "Nosso açaí orgânico batido com as mais variadas frutas, sem conservantes, corantes ou aditivos.",
+    "options": [
+      {
+        "title": "Boipeba",
+        "hint": "Mangaba"
+      },
+      {
+        "title": "Itacaré",
+        "hint": "Cacau"
+      },
+      {
+        "title": "Itapuã",
+        "hint": "Amora"
+      },
+      {
+        "title": "Preguiça",
+        "hint": "Graviola"
+      },
+      {
+        "title": "Humaitá",
+        "hint": "Morango"
+      },
+      {
+        "title": "Barra Grande",
+        "hint": "Cupuaçu"
+      }
+    ],
+    "items": [
+      {
+        "title": "300ml",
+        "price": 16.00
+      },
+      {
+        "title": "500ml",
+        "price": 22.00
+      },
+      {
+        "title": "700ml",
+        "price": 28.00
+      }
+    ],
+    "extras": [
+      {
+        "title": "Granola Extra",
+        "price": 3.00
+      },
+      {
+        "title": "Porção de Whey",
+        "price": 5.00
+      },
+      {
+        "title": "Leite em pó",
+        "price": 3.00
+      },
+      {
+        "title": "Paçoca",
+        "price": 3.00
+      }
+    ]
+  },
+  {
+    "title": "Smoothies",
+    "description": "O pós treino preferido de nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim, com nibs de cacau.",
+    "items": [
+      {
+        "title": "300ml",
+        "price": 18.00
+      },
+      {
+        "title": "500ml",
+        "price": 24.00
+      },
+      {
+        "title": "700ml",
+        "price": 30.00
+      }
+    ]
+  },
+  {
+    "title": "Cuscuz Recheado",
+    "description": "Tradicional cuscuz nordestino recheado, feito com milho não trangênico.",
+    "items": [
+      {
+        "title": "Queijo",
+        "price": 12.00
+      },
+      {
+        "title": "Frango com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Calabresa com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Carne Seca com queijo",
+        "price": 16.00
+      },
+      {
+        "title": "Margherita da Mana",
+        "hint": "Tomate, queijo e manjericão",
+        "price": 16.00
+      }
+    ],
+    "extras": [
+      {
+        "title": "Banana da Terra",
+        "price": 3.00
+      }
+    ]
+  },
+  {
+    "title": "Suco de Acaí",
+    "description": "Puro ou com limão",
+    "items": [
+      {
+        "title": "300ml",
+        "price": 11.00
+      },
+      {
+        "title": "500ml",
+        "price": 15.00
+      }
+    ]
+  },
+  {
+    "title": "Sucos Especiais",
+    "options": [
+      {
+        "title": "Frutas Vermelhas"
+      },
+      {
+        "title": "Limão"
+      },
+      {
+        "title": "Morango"
+      },
+      {
+        "title": "Cupuaçu"
+      },
+      {
+        "title": "Mangaba"
+      },
+      {
+        "title": "Graviola"
+      },
+      {
+        "title": "Cacau"
+      },
+      {
+        "title": "Amora com Uva"
+      },
+      {
+        "title": "Abacaxi com Hortelã"
+      }
+    ],
+    "items": [
+      {
+        "title": "300ml",
+        "price": 7.00
+      },
+      {
+        "title": "500ml",
+        "price": 11.00
+      }
+    ]
+  },
+  {
+    "title": "Suco Detox",
+    "description": "Mix de frutas, gengibre, couve e hortelã.",
+    "items": [
+      {
+        "title": "300ml",
+        "price": 9.00
+      },
+      {
+        "title": "500ml",
+        "price": 13.00
+      }
+    ]
+  }
+]

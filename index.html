@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cleverson Sacramento"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/material-icons/css/material-icons.min.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/pagamentos.css">
+    -->
+
+    <title>Cardápio</title>
+</head>
+<body>
+
+<div class="container">
+    <div id="menu"></div>
+
+    <!--
+    <div class="group">
+        <div class="title">AÇAÍS ESPECIAIS</div>
+        <div class="description">Nosso açaí orgânico batido com as mais variadas frutas, sem conservantes, corantes ou aditivos.</div>
+        <div class="items">
+            <div class="item">
+                <div class="name">Boipeba (Mangaba)</div>
+            </div>
+            <div class="item">
+                <div class="name">Itacaré (Cacau)</div>
+            </div>
+            <div class="item">
+                <div class="name">Itapuã (Amora)</div>
+            </div>
+            <div class="item">
+                <div class="name">Preguiça (Graviola)</div>
+            </div>
+            <div class="item">
+                <div class="name">Humaitá (Morango)</div>
+            </div>
+            <div class="item">
+                <div class="name">Barra Grande (Cupuaçu)</div>
+                <div class="options">
+                    <div class="option">
+                        <div class="size">300ml</div>
+                        <div class="price">R$ 16,00</div>
+                    </div>
+                    <div class="option">
+                        <div class="size">500ml</div>
+                        <div class="price">R$ 22,00</div>
+                    </div>
+                    <div class="option">
+                        <div class="size">700ml</div>
+                        <div class="price">R$ 28,00</div>
+                    </div>
+                    <div class="option">
+                    </div>
+                    <div class="option">
+                        <div class="size">+Granola Extra</div>
+                        <div class="price">R$ 3,00</div>
+                    </div>
+                    <div class="option">
+                        <div class="size">+Porção de Whey</div>
+                        <div class="price">R$ 5,00</div>
+                    </div>
+                    <div class="option">
+                        <div class="size">+Leite em pó</div>
+                        <div class="price">R$ 3,00</div>
+                    </div>
+                    <div class="option">
+                        <div class="size">+Paçoca</div>
+                        <div class="price">R$ 3,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+</div>
+
+<script id="menu-template-1" type="text/template">
+    {{#.}}
+    <div class="group">
+        <div class="title">{{title}}</div>
+        <div class="description top-spacing">{{description}}</div>
+        <div class="options top-spacing">
+            {{#options}}
+            <div class="option row">
+                <div class="title offset-1">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+            </div>
+            {{/options}}
+        </div>
+        <div class="items top-spacing">
+            {{#items}}
+            <div class="item row">
+                <div class="title offset-2 col-7">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                <div class="price col-3"><span class="hint">R$</span> {{price}}</div>
+            </div>
+            {{/items}}
+        </div>
+        <div class="extras top-spacing">
+            {{#extras}}
+            <div class="extra row">
+                <div class="title offset-2 col-7">+ {{title}}</div>
+                <div class="price col-3"><span class="hint">R$</span> {{price}}</div>
+            </div>
+            {{/extras}}
+        </div>
+    </div>
+    {{/.}}
+</script>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/mustache/mustache.min.js"></script>
+<script src="node_modules/moment/dist/moment.js"></script>
+<script src="node_modules/numeral/min/numeral.min.js"></script>
+
+<script src="js/global.js"></script>
+<script src="js/index.js"></script>
+
+<!--
+<script src="js/lib/app.js"></script>
+<script src="js/proxy/tipo.js"></script>
+<script src="js/proxy/pagamento.js"></script>
+<script src="js/controller/grupos.js"></script>
+<script src="js/controller/pagamentos.js"></script>
+-->
+
+</body>
+</html>

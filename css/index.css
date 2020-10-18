@@ -1,0 +1,51 @@
+.container {
+    /* border: .5px solid gray; */
+    /* color: red; */
+    font-size: 1.1em;
+    line-height: 100%;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.group > .title {
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description {
+    /* text-align: justify; */
+    font-size: 80%;
+}
+
+.hint {
+    font-size: .7em;
+    /* //color: red; */
+}
+
+.title {
+    font-size-adjust: unset;
+}
+
+.top-spacing {
+    margin-top: 15px;
+}
+
+.extra > .title {
+    font-size: .8em;
+}
+
+.extra > .price {
+    font-size: 98%;
+}
+
+.price {
+    text-align: right;
+}
