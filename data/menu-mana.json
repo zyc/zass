@@ -10,15 +10,15 @@
     ],
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 12.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 18.00
       },
       {
-        "title": "700ml",
+        "title": "700 ml",
         "price": 24.00
       }
     ]
@@ -54,15 +54,15 @@
     ],
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 16.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 22.00
       },
       {
-        "title": "700ml",
+        "title": "700 ml",
         "price": 28.00
       }
     ],
@@ -87,18 +87,18 @@
   },
   {
     "title": "Smoothie",
-    "description": "O pós-treino preferido de nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
+    "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 18.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 24.00
       },
       {
-        "title": "700ml",
+        "title": "700 ml",
         "price": 30.00
       }
     ]
@@ -131,15 +131,15 @@
     ],
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 12.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 18.00
       },
       {
-        "title": "700ml",
+        "title": "700 ml",
         "price": 24.00
       }
     ]
@@ -156,11 +156,11 @@
     ],
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 11.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 15.00
       }
     ]
@@ -198,11 +198,11 @@
     ],
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 7.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 11.00
       }
     ]
@@ -212,11 +212,11 @@
     "description": "Mix de frutas, gengibre, couve e hortelã.",
     "items": [
       {
-        "title": "300ml",
+        "title": "300 ml",
         "price": 9.00
       },
       {
-        "title": "500ml",
+        "title": "500 ml",
         "price": 13.00
       }
     ]
