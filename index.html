@@ -36,14 +36,19 @@
             <div class="options top-spacing">
                 {{#options}}
                 <div class="option row">
-                    <div class="title offset-1">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                    <div class="title col">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
                 </div>
                 {{/options}}
             </div>
             <div class="items top-spacing">
                 {{#items}}
                 <div class="item row">
-                    <div class="title offset-2 col-7">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                    <div class="offset-2 col-7">
+                        <div class="title">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                        {{#detail}}
+                        <div class="hint">{{detail}}</div>
+                        {{/detail}}
+                    </div>
                     <div class="price col-3"><span class="hint">R$</span> {{price}}</div>
                 </div>
                 {{/items}}

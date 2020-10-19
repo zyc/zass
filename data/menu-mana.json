@@ -1,6 +1,6 @@
 [
   {
-    "title": "Açaís Tradicionais",
+    "title": "Açaí Tradicional",
     "description": "O melhor açaí da vida em sua versão tradicional. Orgânico sem xarope.",
     "options": [
       {
@@ -25,7 +25,7 @@
   },
   {
     "title": "Açaís Especiais",
-    "description": "Nosso açaí orgânico batido com as mais variadas frutas, sem conservantes, corantes ou aditivos.",
+    "description": "Nosso açaí orgânico batido com as mais variadas frutas. Sem conservantes, corantes ou aditivos.",
     "options": [
       {
         "title": "Boipeba",
@@ -68,11 +68,11 @@
     ],
     "extras": [
       {
-        "title": "Granola Extra",
+        "title": "Granola extra",
         "price": 3.00
       },
       {
-        "title": "Porção de Whey",
+        "title": "Porção de whey",
         "price": 5.00
       },
       {
@@ -86,8 +86,8 @@
     ]
   },
   {
-    "title": "Smoothies",
-    "description": "O pós treino preferido de nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim, com nibs de cacau.",
+    "title": "Smoothie",
+    "description": "O pós-treino preferido de nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
         "title": "300ml",
@@ -104,41 +104,56 @@
     ]
   },
   {
-    "title": "Cuscuz Recheado",
-    "description": "Tradicional cuscuz nordestino recheado, feito com milho não trangênico.",
+    "title": "Frozen Yogurt",
+    "description": "Sua fruta favorita batida com iogurte natural.",
+    "options": [
+      {
+        "title": "Mangaba"
+      },
+      {
+        "title": "Cacau"
+      },
+      {
+        "title": "Cupuaçu"
+      },
+      {
+        "title": "Graviola"
+      },
+      {
+        "title": "Frutas vermelhas"
+      },
+      {
+        "title": "Uva"
+      },
+      {
+        "title": "Morango"
+      }
+    ],
     "items": [
       {
-        "title": "Queijo",
+        "title": "300ml",
         "price": 12.00
       },
       {
-        "title": "Frango com queijo",
-        "price": 14.00
+        "title": "500ml",
+        "price": 18.00
       },
       {
-        "title": "Calabresa com queijo",
-        "price": 14.00
-      },
-      {
-        "title": "Carne Seca com queijo",
-        "price": 16.00
-      },
-      {
-        "title": "Margherita da Mana",
-        "hint": "Tomate, queijo e manjericão",
-        "price": 16.00
-      }
-    ],
-    "extras": [
-      {
-        "title": "Banana da Terra",
-        "price": 3.00
+        "title": "700ml",
+        "price": 24.00
       }
     ]
-  },
+  }, 
   {
     "title": "Suco de Acaí",
-    "description": "Puro ou com limão.",
+    "options": [
+      {
+        "title": "Açaí puro"
+      },
+      {
+        "title": "Açaí com limão"
+      }
+    ],
     "items": [
       {
         "title": "300ml",
@@ -154,7 +169,7 @@
     "title": "Sucos Especiais",
     "options": [
       {
-        "title": "Frutas Vermelhas"
+        "title": "Frutas vermelhas"
       },
       {
         "title": "Limão"
@@ -203,6 +218,151 @@
       {
         "title": "500ml",
         "price": 13.00
+      }
+    ]
+  },
+  {
+    "title": "Café da Manhã",
+    "items": [
+      {
+        "title": "Combo OC1",
+        "detail": "Cuscuz recheado com queijo e café pequeno.",
+        "price": 15.00
+      },
+      {
+        "title": "Combo OC2",
+        "detail": "Cuscuz recheado com queijo, ovos mexidos e café médio.",
+        "price": 20.00
+      },
+      {
+        "title": "Combo OC6",
+        "detail": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio.",
+        "price": 24.00
+      },
+      {
+        "title": "Combo SUP",
+        "detail": "Misto quente (ou fatia de bolo) e café médio.",
+        "price": 10.00
+      },
+      {
+        "title": "Combo Surfski",
+        "detail": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia.",
+        "price": 25.00
+      }
+    ]
+  },
+  {
+    "title": "Cuscuz Recheado",
+    "description": "Tradicional cuscuz nordestino recheado feito com milho não trangênico.",
+    "items": [
+      {
+        "title": "Queijo",
+        "price": 12.00
+      },
+      {
+        "title": "Frango com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Calabresa com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Carne Seca com queijo",
+        "price": 16.00
+      },
+      {
+        "title": "Margherita da Mana",
+        "detail": "Tomate, queijo e manjericão.",
+        "price": 16.00
+      }
+    ],
+    "extras": [
+      {
+        "title": "Banana da Terra",
+        "price": 3.00
+      }
+    ]
+  },
+  {
+    "title": "Sanduba",
+    "description": "Sanduíche com deliciosos recheios. Massa fininha e crocante, sem ovos e sem leite, com fermentação natural.",
+    "items": [
+      {
+        "title": "Queijo",
+        "price": 12.00
+      },
+      {
+        "title": "Frango com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Calabresa com queijo",
+        "price": 14.00
+      },
+      {
+        "title": "Carne Seca com queijo",
+        "price": 16.00
+      },
+      {
+        "title": "Margherita da Mana",
+        "detail": "Tomate, queijo e manjericão.",
+        "price": 16.00
+      }
+    ],
+    "extras": [
+      {
+        "title": "Banana da Terra",
+        "price": 3.00
+      }
+    ]
+  },
+  {
+    "title": "Outras Delícias",
+    "items": [
+      {
+        "title": "Queijo quente",
+        "price": 6.00
+      },
+      {
+        "title": "Misto quente",
+        "price": 6.00
+      },
+      {
+        "title": "Bolo",
+        "hint": "fatia",
+        "price": 6.00
+      },
+      {
+        "title": "Bolo com cobertura",
+        "hint": "fatia",
+        "price": 8.00
+      }
+    ]
+  },
+  {
+    "title": "Cafés",
+    "items": [
+      {
+        "title": "Café Expresso curto",
+        "price": 5.00
+      },
+      {
+        "title": "Café Expresso longo",
+        "price": 6.00
+      },
+      {
+        "title": "Café da Mana pequeno",
+        "price": 3.00
+      },
+      {
+        "title": "Café da Mana médio",
+        "detail": "Preparado na cafeteira italiana.",
+        "price": 5.00
+      },
+      {
+        "title": "Café com leite",
+        "price": 5.00
       }
     ]
   }

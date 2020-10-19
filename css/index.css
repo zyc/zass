@@ -55,6 +55,14 @@ body {
     margin-bottom: 20px;
 }
 
+.item > div, .extra > div {
+    padding-left: 0px;
+}
+
+.item > div:first-child, .extra > div:first-child {
+    padding-right: 0px;
+}
+
 .description {
     font-size: 80%;
 }
