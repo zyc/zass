@@ -4,6 +4,6 @@ $(function () {
     });
 
     $('#order').on('click', function() {
-    alert('Clicou no botao de fazer o pedido');
+        location.href = 'order';
     });
 });

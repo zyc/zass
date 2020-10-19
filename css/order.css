@@ -1,0 +1,16 @@
+.info > p:nth-child(2) {
+    /* font-weight: 200; */
+    font-size: 140%;
+}
+
+.info  {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.lead {
+    font-weight: 200;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}

@@ -1,0 +1,59 @@
+body {
+    touch-action: pan-x pan-y;
+    /* background: -webkit-linear-gradient(aqua, white) */
+    background-color: #414d30;
+    /* background: -moz-linear-gradient(top,   #414d30, #414d30, #538bae, #538bae); */
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,#414d30), color-stop(100%,#414d30), color-stop(100%,#538bae), color-stop(100%,#538bae)); */
+    /* background: -webkit-linear-gradient(top,  #414d30, #414d30, #538bae, #538bae); */
+    /* background: -o-linear-gradient(top,   #414d30, #414d30, #538bae, #538bae);
+    background: -ms-linear-gradient(top,   #414d30, #414d30, #538bae, #538bae);
+    background: linear-gradient(to bottom,   #414d30, #414d30, #538bae, #538bae); */
+    /* background-image: linear-gradient( #414d30, #414d30, #538bae, #538bae); */
+}
+
+.container, .container-fluid {
+    font-size: 1.1em;
+    /* line-height: 100%; */
+    padding-top: 5px;
+    padding-bottom: 16px;
+    /* margin-bottom: 100px; */
+    background-color: #538bae;
+    color: white;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #f0bf5f !important;
+    border-color: transparent;
+    color: #414d30;
+    font-weight: 400;
+    font-size: 20px;
+    height: 60px;
+}
+
+button > b {
+    font-weight: 500;
+}
+
+.group > .title {
+    font-size: large;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.group > .title > span {
+    background-image: url("../images/title-mana.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+}
+
+.fixed {
+    bottom: 24px !important;
+    left: 15px !important;
+    right: 15px !important;
+    position: fixed;
+}
