@@ -4,6 +4,6 @@ $(function () {
     });
 
     $('#lead').on('click', function() {
-        window.open('lead', '_blank');
+        window.open('lead?e=' + Global.getEventAlias(), '_blank');
     });
 });
