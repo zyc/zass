@@ -22,10 +22,19 @@ body {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #f0bf5f !important;
+    background-color: #f0bf5f;
     border-color: transparent;
     color: #414d30;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 20px;
+    height: 60px;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #edd5a7;
+    border-color: transparent;
+    color: #414d30;
+    font-weight: 300;
     font-size: 20px;
     height: 60px;
 }
@@ -49,11 +58,4 @@ button > b {
     background-size: cover;
     padding: 10px;
     color: white;
-}
-
-.fixed {
-    bottom: 24px !important;
-    left: 15px !important;
-    right: 15px !important;
-    position: fixed;
 }

@@ -3,8 +3,15 @@
 }
 
 .container, .container-fluid {
-    padding-bottom: 100px;
+    padding-bottom: 92px;
     /* margin-bottom: 100px; */
+}
+
+.fixed {
+    bottom: 24px !important;
+    left: 15px !important;
+    right: 15px !important;
+    position: fixed;
 }
 
 .options {

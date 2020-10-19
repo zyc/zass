@@ -6,4 +6,8 @@ $(function () {
     $('#order').on('click', function() {
         location.href = 'order';
     });
+
+    $('#contact').on('click', function() {
+        window.open('contact', '_blank');
+    });
 });
