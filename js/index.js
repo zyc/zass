@@ -4,10 +4,10 @@ $(function () {
     });
 
     $('#order').on('click', function() {
-        location.href = 'order';
+        location.href = 'order?e=' + Global.getEventAlias();
     });
 
     $('#contact').on('click', function() {
-        window.open('contact', '_blank');
+        window.open('contact?e=' + Global.getEventAlias(), '_blank');
     });
 });
