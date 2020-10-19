@@ -63,8 +63,14 @@ body {
     padding-right: 0px;
 }
 
+.item.row > div  {
+    padding-bottom: 6px;
+    border-bottom: 0.5px dashed white;
+}
+
 .description {
-    font-size: 80%;
+    font-size: 85%;
+    font-weight: 200;
 }
 
 .hint {
