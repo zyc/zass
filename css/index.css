@@ -7,6 +7,10 @@
     /* margin-bottom: 100px; */
 }
 
+#menu {
+    padding-bottom: 20px;
+}
+
 .fixed {
     bottom: 24px !important;
     left: 15px !important;
