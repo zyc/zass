@@ -5,11 +5,11 @@
     "items": [
       {
         "title": "Atum",
-        "prices": [ { "value": 25.80 } ]
+        "prices": [ { "value": "25,80" } ]
       },
       {
         "title": "Salmão",
-        "prices": [ { "value": 28.00 } ]
+        "prices": [ { "value": "28,00" } ]
       }
     ]
   },
@@ -19,27 +19,27 @@
       {
         "title": "Vegetariano",
         "detail": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy, sonumono, shimeji.",
-        "prices": [ { "value": 31.00 } ]
+        "prices": [ { "value": "31,00" } ]
       },
       {
         "title": "Pescada",
         "detail": "Base de arroz, 100g de pescada, laranja, ponzu, sunomono, crispy de couve, cream cheese, molho cítrico de laranja, doritos.",
-        "prices": [ { "value": 31.00 } ]
+        "prices": [ { "value": "31,00" } ]
       },
       {
         "title": "Atum",
         "detail": "Base de arroz, 100g de atum, vinagrete de melão, crispy de couve, cream cheese, chips de banana, ponzu, pimenta biquinho, salada de quinoa.",
-        "prices": [ { "value": 36.90 } ]
+        "prices": [ { "value": "36,90" } ]
       },
       {
         "title": "Salmão",
         "detail": "Base de arroz, 100g de salmão, vinagrete de manga, crispy de couve, cream cheese, tomate cereja, sunomono, chips de batata doce.",
-        "prices": [ { "value": 37.90 } ]
+        "prices": [ { "value": "37,90" } ]
       },
       {
         "title": "Camarão",
         "detail": "Base de arroz, 100g de camarão, laranja, cream cheese, abacate, nori, shimeji.",
-        "prices": [ { "value": 49.00 } ]
+        "prices": [ { "value": "49,00" } ]
       }
     ]
   },
@@ -49,32 +49,32 @@
       {
         "title": "Tilápia",
         "detail": "Peixe marinado em limão, com coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa Rocoto, (pimenta peruana levemente picante).",
-        "prices": [ { "value": 31.90, "label": "250g" }, { "value": 55.00, "label": "500g" } ]
+        "prices": [ { "value": "31,90", "label": "250g" }, { "value": "55,00", "label": "500g" } ]
       },
       {
         "title": "Vegetariano",
         "detail": "Vinagrete de melão, shimeji grelhado na manteiga com tofu, quinoa mista, pepino, batata doce, tomate marinado, folhas verdes, grão de bico, cebola roxa, coentro, purê de batata, sumo de limão.",
-        "prices": [ { "value": 32.00 } ]
+        "prices": [ { "value": "32,00" } ]
       },
       {
         "title": "Atum",
         "detail": "Peixe marinado com leche de tigre, com abacaxi, castanha de caju e coentro, finalizado com um toque de salsa levemente picante.",
-        "prices": [ { "value": 36.90, "label": "250g" }, { "value": 67.00, "label": "500g" } ]
+        "prices": [ { "value": "36,90", "label": "250g" }, { "value": "67,00", "label": "500g" } ]
       },
       {
         "title": "Salmão",
         "detail": "???????? ???????? ???????? ???????? ???????? ???????? ???????? ???????? ???????? ????????? ??????? ???????? ???????? ???????? ????????? ??????? ???????? ???????? ???????? ????????",
-        "prices": [ { "value": 39.00, "label": "250g" }, { "value": 49.00, "label": "500g" } ]
+        "prices": [ { "value": "39,00", "label": "250g" }, { "value": "49,00", "label": "500g" } ]
       },
       {
         "title": "Camarão",
         "detail": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta, algas em pó, crocante de milho, maionese de alga, com um toque de molho Sriracha.",
-        "prices": [ { "value": 39.00, "label": "250g" }, { "value": 49.00, "label": "500g" } ]
+        "prices": [ { "value": "39,00", "label": "250g" }, { "value": "49,00", "label": "500g" } ]
       },
       {
         "title": "Capulana",
         "detail": "Salmão, camarão, polvo, pescada e kani-kama marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta, coentro, finalizado com maionese de alga.",
-        "prices": [ { "value": 43.00, "label": "250g" }, { "value": 78.00, "label": "500g" } ]
+        "prices": [ { "value": "43,00", "label": "250g" }, { "value": "78,00", "label": "500g" } ]
       }
     ]
   }
