@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Tataki",
+    "description": "Peixe levemente selado com gergelim tostado, acompanhado de purê de batata doce, crispy de couve, molho ponzu e cebolinha picada, finalizado com delicioso teriyaki.",
+    "items": [
+      {
+        "title": "Atum",
+        "price": 25.80
+      },
+      {
+        "title": "Salmão",
+        "price": 28.00
+      }
+    ]
+  },
+  {
+    "title": "Poke",
+    "items": [
+      {
+        "title": "Vegetariano",
+        "detail": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy, sonumono, shimeji.",
+        "price": 31.00
+      },
+      {
+        "title": "Pescada",
+        "detail": "Base de arroz, 100g de pescada, laranja, ponzu, sunomono, crispy de couve, cream cheese, molho cítrico de laranja, doritos.",
+        "price": 31.00
+      },
+      {
+        "title": "Atum",
+        "detail": "Base de arroz, 100g de atum, vinagrete de melão, crispy de couve, cream cheese, chips de banana, ponzu, pimenta biquinho, salada de quinoa.",
+        "price": 36.90
+      },
+      {
+        "title": "Salmão",
+        "detail": "Base de arroz, 100g de salmão, vinagrete de manga, crispy de couve, cream cheese, tomate cereja, sunomono, chips de batata doce.",
+        "price": 37.90
+      },
+      {
+        "title": "Camarão",
+        "detail": "Base de arroz, 100g de camarão, laranja, cream cheese, abacate, nori, shimeji.",
+        "price": 49.00
+      }
+    ]
+  }
+]

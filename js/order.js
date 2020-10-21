@@ -6,4 +6,6 @@ $(function () {
     $('#lead').on('click', function() {
         window.open(Global.buildUrl('lead'), '_blank');
     });
+
+    Global.applyStyle();
 });

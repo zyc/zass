@@ -34,7 +34,7 @@
 
 .item.row > div  {
     padding-bottom: 6px;
-    border-bottom: 0.5px dashed white;
+    /* border-bottom: 0.5px dashed white; */
 }
 
 .description {
