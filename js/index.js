@@ -16,9 +16,4 @@ $(function () {
     $('#contact').on('click', function() {
         window.open(Global.buildUrl('contact'), '_blank');
     });
-
-    // $('.logo').attr('src', 'images/logo-' + e + '.png');
-    // $('.group .title span').css('background-image', 'url("images/title-' + e + '.png"');
-    // $('.group .title span').css('width', '40px');
-    // $('.group > .title > span').css.
 });

@@ -11,15 +11,15 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 12.00
+        "prices": [ { "value": 12.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 18.00
+        "prices": [ { "value": 18.00 } ]
       },
       {
         "title": "700 ml",
-        "price": 24.00
+        "prices": [ { "value": 24.00 } ]
       }
     ]
   },
@@ -55,33 +55,33 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 16.00
+        "prices": [ { "value": 16.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 22.00
+        "prices": [ { "value": 22.00 } ]
       },
       {
         "title": "700 ml",
-        "price": 28.00
+        "prices": [ { "value": 28.00 } ]
       }
     ],
     "extras": [
       {
         "title": "Granola extra",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       },
       {
         "title": "Porção de whey",
-        "price": 5.00
+        "prices": [ { "value": 5.00 } ]
       },
       {
         "title": "Leite em pó",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       },
       {
         "title": "Paçoca",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       }
     ]
   },
@@ -91,15 +91,15 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 18.00
+        "prices": [ { "value": 18.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 24.00
+        "prices": [ { "value": 24.00 } ]
       },
       {
         "title": "700 ml",
-        "price": 30.00
+        "prices": [ { "value": 30.00 } ]
       }
     ]
   },
@@ -132,15 +132,15 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 12.00
+        "prices": [ { "value": 12.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 18.00
+        "prices": [ { "value": 18.00 } ]
       },
       {
         "title": "700 ml",
-        "price": 24.00
+        "prices": [ { "value": 24.00 } ]
       }
     ]
   }, 
@@ -157,11 +157,11 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 11.00
+        "prices": [ { "value": 11.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 15.00
+        "prices": [ { "value": 15.00 } ]
       }
     ]
   },
@@ -199,11 +199,11 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 7.00
+        "prices": [ { "value": 7.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 11.00
+        "prices": [ { "value": 11.00 } ]
       }
     ]
   },
@@ -213,11 +213,11 @@
     "items": [
       {
         "title": "300 ml",
-        "price": 9.00
+        "prices": [ { "value": 9.00 } ]
       },
       {
         "title": "500 ml",
-        "price": 13.00
+        "prices": [ { "value": 13.00 } ]
       }
     ]
   },
@@ -227,27 +227,27 @@
       {
         "title": "Combo OC1",
         "detail": "Cuscuz recheado com queijo e café pequeno.",
-        "price": 15.00
+        "prices": [ { "value": 15.00 } ]
       },
       {
         "title": "Combo OC2",
         "detail": "Cuscuz recheado com queijo, ovos mexidos e café médio.",
-        "price": 20.00
+        "prices": [ { "value": 20.00 } ]
       },
       {
         "title": "Combo OC6",
         "detail": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio.",
-        "price": 24.00
+        "prices": [ { "value": 24.00 } ]
       },
       {
         "title": "Combo SUP",
         "detail": "Misto quente (ou fatia de bolo) e café médio.",
-        "price": 10.00
+        "prices": [ { "value": 10.00 } ]
       },
       {
         "title": "Combo Surfski",
         "detail": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia.",
-        "price": 25.00
+        "prices": [ { "value": 25.00 } ]
       }
     ]
   },
@@ -257,30 +257,30 @@
     "items": [
       {
         "title": "Queijo",
-        "price": 12.00
+        "prices": [ { "value": 12.00 } ]
       },
       {
         "title": "Frango com queijo",
-        "price": 14.00
+        "prices": [ { "value": 14.00 } ]
       },
       {
         "title": "Calabresa com queijo",
-        "price": 14.00
+        "prices": [ { "value": 14.00 } ]
       },
       {
         "title": "Carne Seca com queijo",
-        "price": 16.00
+        "prices": [ { "value": 16.00 } ]
       },
       {
         "title": "Margherita da Mana",
         "detail": "Tomate, queijo e manjericão.",
-        "price": 16.00
+        "prices": [ { "value": 16.00 } ]
       }
     ],
     "extras": [
       {
         "title": "Banana da Terra",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       }
     ]
   },
@@ -290,30 +290,30 @@
     "items": [
       {
         "title": "Queijo",
-        "price": 12.00
+        "prices": [ { "value": 12.00 } ]
       },
       {
         "title": "Frango com queijo",
-        "price": 14.00
+        "prices": [ { "value": 14.00 } ]
       },
       {
         "title": "Calabresa com queijo",
-        "price": 14.00
+        "prices": [ { "value": 14.00 } ]
       },
       {
         "title": "Carne Seca com queijo",
-        "price": 16.00
+        "prices": [ { "value": 16.00 } ]
       },
       {
         "title": "Margherita da Mana",
         "detail": "Tomate, queijo e manjericão.",
-        "price": 16.00
+        "prices": [ { "value": 16.00 } ]
       }
     ],
     "extras": [
       {
         "title": "Banana da Terra",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       }
     ]
   },
@@ -322,21 +322,21 @@
     "items": [
       {
         "title": "Queijo quente",
-        "price": 6.00
+        "prices": [ { "value": 6.00 } ]
       },
       {
         "title": "Misto quente",
-        "price": 6.00
+        "prices": [ { "value": 6.00 } ]
       },
       {
         "title": "Bolo",
         "hint": "fatia",
-        "price": 6.00
+        "prices": [ { "value": 6.00 } ]
       },
       {
         "title": "Bolo com cobertura",
         "hint": "fatia",
-        "price": 8.00
+        "prices": [ { "value": 8.00 } ]
       }
     ]
   },
@@ -345,24 +345,24 @@
     "items": [
       {
         "title": "Café Expresso curto",
-        "price": 5.00
+        "prices": [ { "value": 5.00 } ]
       },
       {
         "title": "Café Expresso longo",
-        "price": 6.00
+        "prices": [ { "value": 6.00 } ]
       },
       {
         "title": "Café da Mana pequeno",
-        "price": 3.00
+        "prices": [ { "value": 3.00 } ]
       },
       {
         "title": "Café da Mana médio",
         "detail": "Preparado na cafeteira italiana.",
-        "price": 5.00
+        "prices": [ { "value": 5.00 } ]
       },
       {
         "title": "Café com leite",
-        "price": 5.00
+        "prices": [ { "value": 5.00 } ]
       }
     ]
   }

@@ -54,14 +54,25 @@
             </div>
             <div class="items top-spacing">
                 {{#items}}
-                <div class="item row">
-                    <div class="offset-2 col-7">
-                        <div class="title">◦ {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
-                        {{#detail}}
-                        <div class="hint">{{detail}}</div>
-                        {{/detail}}
-                    </div>
-                    <div class="price col-3"><span class="hint">R$</span> {{price}}</div>
+                <div class="row item">
+                    <!-- <div class="item"> -->
+                        <div class="offset-2 col-7">
+                            <div class="title">◦ {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                            {{#detail}}
+                            <div class="hint">{{detail}}</div>
+                            {{/detail}}
+                        </div>
+                        <div class="col-3">
+                            {{#prices}}
+                            <div class="price">
+                                <span class="hint">R$</span> {{value}}
+                                {{#label}}
+                                <div class="hint">({{label}})</div>
+                                {{/label}}
+                            </div>
+                            {{/prices}}
+                        </div>
+                    <!-- </div> -->
                 </div>
                 {{/items}}
             </div>
@@ -69,7 +80,16 @@
                 {{#extras}}
                 <div class="extra row">
                     <div class="title offset-2 col-7">+ {{title}}</div>
-                    <div class="price col-3"><span class="hint">R$</span> {{price}}</div>
+                    <div class="col-3">
+                        {{#prices}}
+                        <div class="price">
+                            <span class="hint">R$</span> {{value}}
+                            {{#label}}
+                            <div class="hint label">({{label}})</div>
+                            {{/label}}
+                        </div>
+                        {{/prices}}
+                    </div>
                 </div>
                 {{/extras}}
             </div>

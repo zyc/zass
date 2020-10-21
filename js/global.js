@@ -31,7 +31,7 @@ var Global = {
         const e = this.getEventAlias();
 
         $('.logo').attr('src', 'images/logo-' + e + '.png');
-        $('.group .title span').css('background-image', 'url("images/title-' + e + '.png"');
+        $('.group > .title > span').css('background-image', 'url("images/title-' + e + '.png"');
 
         if (e === 'mana') {
             $('body').css('background-color', '#414d30');
@@ -39,7 +39,7 @@ var Global = {
                 'background-color': '#538bae',
                 'color': 'white'
             });
-            $('.group .title span').css('color', 'white');
+            $('.group > .title > span').css('color', 'white');
             $('.item.row > div').css('border-bottom', '0.5px dashed white');
 
 
@@ -49,7 +49,7 @@ var Global = {
                 'background-color': 'white',
                 'color': 'black'
             });
-            $('.group .title span').css('color', 'black');
+            $('.group > .title > span').css('color', 'black');
             $('.item.row > div').css('border-bottom', '0.5px dashed black');
         }
     },

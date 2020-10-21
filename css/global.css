@@ -51,7 +51,7 @@ button > b {
     margin-bottom: 35px;
 }
 
-.group .title span {
+.group > .title > span {
     /* background-image: url("../images/title-mana.png"); */
     background-position: center;
     background-repeat: no-repeat;

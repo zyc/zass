@@ -65,3 +65,7 @@
 .price {
     text-align: right;
 }
+
+.price > div {
+    padding-bottom: 10px;
+}
