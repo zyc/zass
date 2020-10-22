@@ -18,7 +18,7 @@
     "items": [
       {
         "title": "Vegetariano",
-        "detail": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy, sonumono, shimeji.",
+        "detail": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy de couve, sonumono, shimeji.",
         "prices": [ { "value": "33,90" } ]
       },
       {
@@ -48,7 +48,7 @@
     "items": [
       {
         "title": "Pescada Branca",
-        "detail": "Peixe marinado em limão, com coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa Rocoto, (pimenta peruana levemente picante).",
+        "detail": "Peixe marinado em limão, coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa rocoto, (pimenta peruana levemente picante).",
         "prices": [ { "value": "37,90", "label": "250g" }, { "value": "61,90", "label": "500g" } ]
       },
       {
@@ -68,12 +68,12 @@
       },
       {
         "title": "Camarão",
-        "detail": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta, algas em pó, crocante de milho, maionese de alga, com um toque de molho Sriracha.",
+        "detail": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta dedo de moça e nori.",
         "prices": [ { "value": "42,90", "label": "250g" }, { "value": "68,50", "label": "500g" } ]
       },
       {
         "title": "Capulana",
-        "detail": "Salmão, camarão, polvo, pescada e kani-kama marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta, coentro, finalizado com maionese de alga.",
+        "detail": "Salmão, camarão, polvo, pescada e kani-kama, marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta e coentro, finalizado com maionese de alga.",
         "prices": [ { "value": "45,90", "label": "250g" }, { "value": "72,50", "label": "500g" } ]
       }
     ]
