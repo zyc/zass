@@ -63,7 +63,7 @@
       },
       {
         "title": "Salmão",
-        "detail": "???????? ???????? ???????? ???????? ???????? ???????? ???????? ???????? ???????? ????????? ??????? ???????? ???????? ???????? ????????? ??????? ???????? ???????? ???????? ????????",
+        "detail": "100g de salmão marinado em molho cítrico, pepino japonês, cebola roxa, vinagrete de manga, salsa rocoto, gengibre e gergelim torrado.",
         "prices": [ { "value": "39,00", "label": "250g" }, { "value": "49,00", "label": "500g" } ]
       },
       {
@@ -75,6 +75,83 @@
         "title": "Capulana",
         "detail": "Salmão, camarão, polvo, pescada e kani-kama marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta, coentro, finalizado com maionese de alga.",
         "prices": [ { "value": "43,00", "label": "250g" }, { "value": "78,00", "label": "500g" } ]
+      }
+    ]
+  },
+  {
+    "title": "Açaí",
+    "items": [
+      {
+        "title": "Tradicional",
+        "prices": [ { "value": "8,00"  } ]
+      }
+    ]
+  },
+  {
+    "title": "Água",
+    "items": [
+      {
+        "title": "Sem gás",
+        "prices": [ { "value": "3,50"  } ]
+      },
+      {
+        "title": "Com gás",
+        "prices": [ { "value": "3,80"  } ]
+      },
+      {
+        "title": "Tônica",
+        "prices": [ { "value": "4,80"  } ]
+      }
+    ]
+  },
+  {
+    "title": "Suco",
+    "items": [
+      {
+        "title": "Laranja",
+        "prices": [ { "value": "5,90"  } ]
+      },
+      {
+        "title": "Pêssego",
+        "prices": [ { "value": "4,95"  } ]
+      },
+      {
+        "title": "Uva",
+        "prices": [ { "value": "4,95"  } ]
+      }
+    ]
+  },
+  {
+    "title": "Refrigerante",
+    "items": [
+      {
+        "title": "Schweppes 350ml",
+        "prices": [ { "value": "4,80"  } ]
+      },
+      {
+        "title": "Guaraná Antarctica 350ml",
+        "prices": [ { "value": "4,50"  } ]
+      },
+      {
+        "title": "Coca-cola 350ml",
+        "prices": [ { "value": "4,50"  } ]
+      },
+      {
+        "title": "Coca-cola Zero 350ml",
+        "prices": [ { "value": "4,20"  } ]
+      }
+    ]
+  },
+  {
+    "title": "Cerveja Long Neck",
+    "items": [
+      {
+        "title": "Corona",
+        "prices": [ { "value": "8,00"  } ]
+      },
+      {
+        "title": "Heineken",
+        "prices": [ { "value": "8,50"  } ]
       }
     ]
   }
