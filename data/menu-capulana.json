@@ -83,7 +83,7 @@
     "items": [
       {
         "title": "Tradicional",
-        "prices": [ { "value": "8,00"  } ]
+        "prices": [ { "value": "12,90", "label": "300g"  } ]
       }
     ]
   },
@@ -146,12 +146,16 @@
     "title": "Cerveja Long Neck",
     "items": [
       {
-        "title": "Corona",
-        "prices": [ { "value": "8,00"  } ]
+        "title": "Império",
+        "prices": [ { "value": "8,00", "label": "210ml"  } ]
+      },
+      {
+        "title": "Stella Artois",
+        "prices": [ { "value": "9,00", "label": "275ml" } ]
       },
       {
         "title": "Heineken",
-        "prices": [ { "value": "8,50"  } ]
+        "prices": [ { "value": "9,50", "label": "330ml" } ]
       }
     ]
   }
