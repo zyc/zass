@@ -82,7 +82,7 @@
     "title": "Açaí",
     "items": [
       {
-        "title": "Tradicional",
+        "title": "Tradicional com granola",
         "prices": [ { "value": "12,90", "label": "300g"  } ]
       }
     ]
@@ -125,20 +125,20 @@
     "title": "Refrigerante",
     "items": [
       {
-        "title": "Schweppes 350ml",
-        "prices": [ { "value": "4,80"  } ]
+        "title": "Schweppes",
+        "prices": [ { "value": "4,80", "label": "350ml"  } ]
       },
       {
-        "title": "Guaraná Antarctica 350ml",
-        "prices": [ { "value": "4,50"  } ]
+        "title": "Guaraná Antarctica",
+        "prices": [ { "value": "4,50", "label": "350ml"  } ]
       },
       {
-        "title": "Coca-Cola 350ml",
-        "prices": [ { "value": "4,50"  } ]
+        "title": "Coca-Cola",
+        "prices": [ { "value": "4,50", "label": "350ml"  } ]
       },
       {
-        "title": "Coca-Cola Zero 350ml",
-        "prices": [ { "value": "4,20"  } ]
+        "title": "Coca-Cola Zero",
+        "prices": [ { "value": "4,20", "label": "350ml"  } ]
       }
     ]
   },
