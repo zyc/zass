@@ -131,7 +131,8 @@
     "title": "Bebidas sem álcool",
     "items": [
       {
-        "title": "Refrigerante em lata 350ml",
+        "title": "Refrigerante em lata",
+        "hint": "350ml",
         "prices": [ { "value": "5,50" } ]
       },
       {
@@ -139,18 +140,23 @@
         "prices": [ { "value": "6,00" } ]
       },
       {
-        "title": "Água mineral com gás 350ml",
+        "title": "Água mineral com gás",
+        "hint": "350ml",
         "prices": [ { "value": "3,50" } ]
-      },      {
-        "title": "Água mineral com gás 500ml",
-        "prices": [ { "value": "5,00" } ]
       },
       {
-        "title": "Água mineral sem gás 350ml",
+        "title": "Água mineral sem gás",
+        "hint": "350ml",
         "prices": [ { "value": "2,90" } ]
       },
       {
-        "title": "Água mineral sem gás 500ml",
+        "title": "Água mineral com gás",
+        "hint": "500ml",
+        "prices": [ { "value": "5,00" } ]
+      },
+      {
+        "title": "Água mineral sem gás",
+        "hint": "500ml",
         "prices": [ { "value": "4,00" } ]
       },
       {
@@ -158,21 +164,26 @@
         "prices": [ { "value": "6,00" } ]
       },
       {
-        "title": "Suco de polpa (copo)",
+        "title": "Suco de polpa",
+        "hint": "copo",
         "prices": [ { "value": "5,00" } ]
       },      {
-        "title": "Suco de polpa (jarra)",
+        "title": "Suco de polpa",
+        "hint": "jarra",
         "prices": [ { "value": "9,00" } ]
       },
       {
-        "title": "Suco da fruta (copo)",
+        "title": "Suco da fruta",
+        "hint": "copo",
         "prices": [ { "value": "7,00" } ]
       },      {
-        "title": "Suco da fruta (jarra)",
+        "title": "Suco da fruta",
+        "hint": "jarra",
         "prices": [ { "value": "12,00" } ]
       },
       {
-        "title": "Café expresso (capsula)",
+        "title": "Café expresso",
+        "hint": "capsula",
         "prices": [ { "value": "5,00" } ]
       },
       {
@@ -184,15 +195,18 @@
         "prices": [ { "value": "7,90" } ]
       },
       {
-        "title": "Suco Del Valle 1L",
+        "title": "Suco Del Valle",
+        "hint": "1 litro",
         "prices": [ { "value": "12,00" } ]
       },
       {
-        "title": "Refrigerante 2L",
+        "title": "Refrigerante",
+        "hint": "2 litros",
         "prices": [ { "value": "12,00" } ]
       },
       {
-        "title": "Refrigerante 1L",
+        "title": "Refrigerante",
+        "hint": "1 litro",
         "prices": [ { "value": "8,00" } ]
       }
     ]

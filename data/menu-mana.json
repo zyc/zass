@@ -10,15 +10,15 @@
     ],
     "items": [
       {
-        "title": "300 ml",
+        "title": "Tijela 300 ml",
         "prices": [ { "value": "12,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Tijela 500 ml",
         "prices": [ { "value": "18,00" } ]
       },
       {
-        "title": "700 ml",
+        "title": "Tijela 700 ml",
         "prices": [ { "value": "24,00" } ]
       }
     ]
@@ -54,15 +54,15 @@
     ],
     "items": [
       {
-        "title": "300 ml",
+        "title": "Tijela 300 ml",
         "prices": [ { "value": "16,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Tijela 500 ml",
         "prices": [ { "value": "22,00" } ]
       },
       {
-        "title": "700 ml",
+        "title": "Tijela 700 ml",
         "prices": [ { "value": "28,00" } ]
       }
     ],
@@ -90,15 +90,15 @@
     "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
-        "title": "300 ml",
+        "title": "Tijela 300 ml",
         "prices": [ { "value": "18,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Tijela 500 ml",
         "prices": [ { "value": "24,00" } ]
       },
       {
-        "title": "700 ml",
+        "title": "Tijela 700 ml",
         "prices": [ { "value": "30,00" } ]
       }
     ]
@@ -131,11 +131,11 @@
     ],
     "items": [
       {
-        "title": "300 ml",
+        "title": "Copo 300 ml",
         "prices": [ { "value": "12,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Copo 500 ml",
         "prices": [ { "value": "18,00" } ]
       }
     ]
@@ -152,11 +152,11 @@
     ],
     "items": [
       {
-        "title": "300 ml",
+        "title": "Copo 300 ml",
         "prices": [ { "value": "11,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Copo 500 ml",
         "prices": [ { "value": "15,00" } ]
       }
     ]
@@ -194,11 +194,11 @@
     ],
     "items": [
       {
-        "title": "300 ml",
+        "title": "Copo 300 ml",
         "prices": [ { "value": "7,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Copo 500 ml",
         "prices": [ { "value": "11,00" } ]
       }
     ]
@@ -208,11 +208,11 @@
     "description": "Mix de frutas, gengibre, couve e hortelã.",
     "items": [
       {
-        "title": "300 ml",
+        "title": "Copo 300 ml",
         "prices": [ { "value": "9,00" } ]
       },
       {
-        "title": "500 ml",
+        "title": "Copo 500 ml",
         "prices": [ { "value": "13,00" } ]
       }
     ]
