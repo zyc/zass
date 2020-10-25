@@ -222,27 +222,27 @@
     "items": [
       {
         "title": "Combo OC1",
-        "detail": "Cuscuz recheado com queijo e café pequeno.",
+        "description": "Cuscuz recheado com queijo e café pequeno.",
         "prices": [ { "value": "15,00" } ]
       },
       {
         "title": "Combo OC2",
-        "detail": "Cuscuz recheado com queijo, ovos mexidos e café médio.",
+        "description": "Cuscuz recheado com queijo, ovos mexidos e café médio.",
         "prices": [ { "value": "20,00" } ]
       },
       {
         "title": "Combo OC6",
-        "detail": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio.",
+        "description": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio.",
         "prices": [ { "value": "24,00" } ]
       },
       {
         "title": "Combo SUP",
-        "detail": "Misto quente (ou fatia de bolo) e café médio.",
+        "description": "Misto quente (ou fatia de bolo) e café médio.",
         "prices": [ { "value": "10,00" } ]
       },
       {
         "title": "Combo Surfski",
-        "detail": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia.",
+        "description": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia.",
         "prices": [ { "value": "25,00" } ]
       }
     ]
@@ -269,7 +269,7 @@
       },
       {
         "title": "Margherita da Mana",
-        "detail": "Tomate, queijo e manjericão.",
+        "description": "Tomate, queijo e manjericão.",
         "prices": [ { "value": "16,00" } ]
       }
     ],
@@ -302,7 +302,7 @@
       },
       {
         "title": "Margherita da Mana",
-        "detail": "Tomate, queijo e manjericão.",
+        "description": "Tomate, queijo e manjericão.",
         "prices": [ { "value":"16,00"} ]
       }
     ],
@@ -353,7 +353,7 @@
       },
       {
         "title": "Café da Mana médio",
-        "detail": "Preparado na cafeteira italiana.",
+        "description": "Preparado na cafeteira italiana.",
         "prices": [ { "value":"5,00"} ]
       },
       {

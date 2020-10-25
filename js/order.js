@@ -3,7 +3,8 @@ $(function () {
 
     $.getJSON('data/menu-' + e + '.json')
     .done(data => {
-        $('#menu').html(Mustache.render($('#menu-template-1').html(), data));
+        const template = Handlebars.compile($('#menu-template').html());
+        $('#menu').html(template(data));
         
         Global.applyStyle();
     })

@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="node_modules/material-icons/css/material-icons.min.css"> -->
+    <link rel="stylesheet" href="node_modules/material-icons/css/material-icons.min.css">
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
@@ -40,48 +40,48 @@
         </div>
     </div>
 
-    <script id="menu-template-1" type="text/template">
-        {{#.}}
+    <script id="menu-template" type="text/template">
+        {{#each .}}
         <div class="group">
             <div class="header">
                 <div class="title"><span>{{title}}</span></div>
-                {{#description}}
-                <div class="description"><span>{{description}}</span></div>
-                {{/description}}
+                {{#if description}}
+                <div class="description alpha"><span>{{description}}</span></div>
+                {{/if}}
             </div>
-            {{#options.length}}
+            {{#if options.length}}
             <div class="options">
-                {{#options}}
-                <div class="option">◦ {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div> 
-                {{/options}}
+                {{#each options}}
+                <div class="option">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
+                {{/each}}
             </div>
-            {{/options.length}}
+            {{/if}}
             <div class="items">
-                {{#items.length}}
+                {{#if items.length}}
                 <table class="table">
                     <tbody>
-                        {{#items}}
+                        {{#each items}}
                         <tr>
                           <td>
                             <div class="info">
-                                <div class="title">{{title}}{{#hint}} <span class="hint alpha">({{hint}})</span>{{/hint}}</div>
-                                {{#detail}}
-                                <div class="detail alpha">{{detail}}</div>
-                                {{/detail}}
+                                <div class="title">{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}</div>
+                                {{#if description}}
+                                <div class="description alpha">{{description}}</div>
+                                {{/if}}
                             </div>
                           </td>
                           <td>
                             <div class="prices">
-                                {{#prices}}
+                                {{#each prices}}
                                 <div class="price">
                                     <div class="">
                                         <span class="hint alpha">R$</span> {{value}}
                                     </div>
-                                    {{#label}}
-                                    <div class="hint alpha">{{label}}</div>
-                                    {{/label}}
+                                    {{#if hint}}
+                                    <div class="hint alpha">{{hint}}</div>
+                                    {{/if}}
                                 </div>
-                                {{/prices}}
+                                {{/each}}
                             </div>
                           </td>
                         </tr>
@@ -90,12 +90,12 @@
                                 <div></div>
                             </td>
                         </tr>
-                        {{/items}}
+                        {{/each}}
                     </tbody>
                 </table>
-                {{/items.length}}
+                {{/if}}
             </div>
-            {{#extras.length}}
+            {{#if extras.length}}
             <div class="extras">
                 <table class="table">
                     <thead>
@@ -106,7 +106,7 @@
                         </tr>
                     </thead>
                     <tbody class="alpha">
-                        {{#extras}}
+                        {{#each extras}}
                         <tr>
                             <td>
                                 <div class="info">
@@ -115,31 +115,31 @@
                             </td>
                             <td>
                                 <div class="prices">
-                                    {{#prices}}
+                                    {{#each prices}}
                                     <div class="price">
                                         <div>
                                             <span class="hint">R$</span> {{value}}
                                         </div>
-                                        {{#label}}
-                                        <div class="hint">({{label}})</div>
-                                        {{/label}}
+                                        {{#if hint}}
+                                        <div class="hint">({{hint}})</div>
+                                        {{/if}}
                                     </div>
-                                    {{/prices}}
+                                    {{/each}}
                                 </div>
                             </td>
                         </tr>
-                        {{/extras}}
+                        {{/each}}
                     </tbody>
                 </table>
             </div>
-            {{/extras.length}}
+            {{/if}}
         </div>
-        {{/.}}
+        {{/each}}
     </script>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/mustache/mustache.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <!-- <script src="node_modules/moment/dist/moment.js"></script> -->
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>

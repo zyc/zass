@@ -18,27 +18,27 @@
     "items": [
       {
         "title": "Vegetariano",
-        "detail": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy de couve, sonumono, shimeji.",
+        "description": "Base de arroz, quinoa, melão, pepino, batata doce, tomate marinado em shoyu, folhas verdes, crispy de couve, sonumono, shimeji.",
         "prices": [ { "value": "33,90" } ]
       },
       {
         "title": "Pescada Branca",
-        "detail": "Base de arroz, 100g de pescada, laranja, ponzu, sunomono, crispy de couve, cream cheese, molho cítrico de laranja, doritos.",
+        "description": "Base de arroz, 100g de pescada, laranja, ponzu, sunomono, crispy de couve, cream cheese, molho cítrico de laranja, doritos.",
         "prices": [ { "value": "34,90" } ]
       },
       {
         "title": "Atum",
-        "detail": "Base de arroz, 100g de atum, vinagrete de melão, crispy de couve, cream cheese, chips de banana, ponzu, pimenta biquinho, salada de quinoa.",
+        "description": "Base de arroz, 100g de atum, vinagrete de melão, crispy de couve, cream cheese, chips de banana, ponzu, pimenta biquinho, salada de quinoa.",
         "prices": [ { "value": "33,90" } ]
       },
       {
         "title": "Salmão",
-        "detail": "Base de arroz, 100g de salmão, vinagrete de manga, crispy de couve, cream cheese, tomate cereja, sunomono, chips de batata doce.",
+        "description": "Base de arroz, 100g de salmão, vinagrete de manga, crispy de couve, cream cheese, tomate cereja, sunomono, chips de batata doce.",
         "prices": [ { "value": "34,90" } ]
       },
       {
         "title": "Camarão",
-        "detail": "Base de arroz, 100g de camarão, laranja, cream cheese, abacate, nori, shimeji.",
+        "description": "Base de arroz, 100g de camarão, laranja, cream cheese, abacate, nori, shimeji.",
         "prices": [ { "value": "43,90" } ]
       }
     ]
@@ -48,33 +48,33 @@
     "items": [
       {
         "title": "Pescada Branca",
-        "detail": "Peixe marinado em limão, coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa rocoto, (pimenta peruana levemente picante).",
-        "prices": [ { "value": "37,90", "label": "250g" }, { "value": "61,90", "label": "500g" } ]
+        "description": "Peixe marinado em limão, coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa rocoto, (pimenta peruana levemente picante).",
+        "prices": [ { "value": "37,90", "hint": "250g" }, { "value": "61,90", "hint": "500g" } ]
       },
       {
         "title": "Vegetariano",
-        "detail": "Vinagrete de melão, shimeji grelhado na manteiga com tofu, quinoa mista, pepino, batata doce, tomate marinado, folhas verdes, grão de bico, cebola roxa, coentro, purê de batata, sumo de limão.",
-        "prices": [ { "value": "39,90", "label": "250g" }, { "value": "63,90", "label": "500g" } ]
+        "description": "Vinagrete de melão, shimeji grelhado na manteiga com tofu, quinoa mista, pepino, batata doce, tomate marinado, folhas verdes, grão de bico, cebola roxa, coentro, purê de batata, sumo de limão.",
+        "prices": [ { "value": "39,90", "hint": "250g" }, { "value": "63,90", "hint": "500g" } ]
       },
       {
         "title": "Atum",
-        "detail": "Peixe marinado com leche de tigre, com abacaxi, castanha de caju e coentro, finalizado com um toque de salsa levemente picante.",
-        "prices": [ { "value": "38,90", "label": "250g" }, { "value": "62,50", "label": "500g" } ]
+        "description": "Peixe marinado com leche de tigre, com abacaxi, castanha de caju e coentro, finalizado com um toque de salsa levemente picante.",
+        "prices": [ { "value": "38,90", "hint": "250g" }, { "value": "62,50", "hint": "500g" } ]
       },
       {
         "title": "Salmão",
-        "detail": "100g de salmão marinado em molho cítrico, pepino japonês, cebola roxa, vinagrete de manga, salsa rocoto, gengibre e gergelim torrado.",
-        "prices": [ { "value": "39,90", "label": "250g" }, { "value": "63,90", "label": "500g" } ]
+        "description": "100g de salmão marinado em molho cítrico, pepino japonês, cebola roxa, vinagrete de manga, salsa rocoto, gengibre e gergelim torrado.",
+        "prices": [ { "value": "39,90", "hint": "250g" }, { "value": "63,90", "hint": "500g" } ]
       },
       {
         "title": "Camarão",
-        "detail": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta dedo de moça e nori.",
-        "prices": [ { "value": "42,90", "label": "250g" }, { "value": "68,50", "label": "500g" } ]
+        "description": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta dedo de moça e nori.",
+        "prices": [ { "value": "42,90", "hint": "250g" }, { "value": "68,50", "hint": "500g" } ]
       },
       {
         "title": "Capulana",
-        "detail": "Salmão, camarão, polvo, pescada e kani-kama, marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta e coentro, finalizado com maionese de alga.",
-        "prices": [ { "value": "45,90", "label": "250g" }, { "value": "72,50", "label": "500g" } ]
+        "description": "Salmão, camarão, polvo, pescada e kani-kama, marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta e coentro, finalizado com maionese de alga.",
+        "prices": [ { "value": "45,90", "hint": "250g" }, { "value": "72,50", "hint": "500g" } ]
       }
     ]
   },
