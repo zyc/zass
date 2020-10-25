@@ -96,17 +96,17 @@
       {
         "title": "Frango tradicional",
         "detail": "Com farofa de manteiga.",
-        "prices": [ { "value": "24,00", "label": "Meio" }, { "value": "38,00", "label": "Inteiro" } ]
+        "prices": [ { "value": "24,00", "label": "meio" }, { "value": "38,00", "label": "inteiro" } ]
       },
       {
         "title": "Frango tradicional",
         "detail": "Com farofa de miúdos.",
-        "prices": [ { "value": "28,00", "label": "Meio" }, { "value": "49,90", "label": "Inteiro" } ]
+        "prices": [ { "value": "28,00", "label": "meio" }, { "value": "49,90", "label": "inteiro" } ]
       },
       {
         "title": "Frango com queijo",
         "detail": "Com farofa de miúdos.",
-        "prices": [ { "value": "32,00", "label": "Meio" }, { "value": "56,00", "label": "Inteiro" } ]
+        "prices": [ { "value": "32,00", "label": "meio" }, { "value": "56,00", "label": "inteiro" } ]
       }
     ]
   },
