@@ -64,12 +64,12 @@ var Global = {
             $('body').css('background-color', 'white');
             $('.container, .container-fluid').css({
                 'background-color': 'white',
-                'color': '#65392D'
+                'color': '#AB343A'
             });
             
-            $('.table').css('color', '#65392D');
+            $('.table').css('color', '#AB343A');
             $('.header .title span').css('color', 'white');
-            $('.items .table .line div').css('border-bottom-color', '#65392D');
+            $('.items .table .line div').css('border-bottom-color', '#AB343A');
 
             font = 'Merriweather';
         }

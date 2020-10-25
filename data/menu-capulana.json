@@ -83,7 +83,8 @@
     "items": [
       {
         "title": "Tradicional com granola",
-        "prices": [ { "value": "12,90", "label": "300g"  } ]
+        "hint": "300g",
+        "prices": [ { "value": "12,90" } ]
       }
     ]
   },
@@ -126,19 +127,23 @@
     "items": [
       {
         "title": "Schweppes",
-        "prices": [ { "value": "4,80", "label": "350ml"  } ]
+        "hint": "350ml",
+        "prices": [ { "value": "4,80"  } ]
       },
       {
         "title": "Guaraná Antarctica",
-        "prices": [ { "value": "4,50", "label": "350ml"  } ]
+        "hint": "350ml",
+        "prices": [ { "value": "4,50" } ]
       },
       {
         "title": "Coca-Cola",
-        "prices": [ { "value": "4,50", "label": "350ml"  } ]
+        "hint": "350ml",
+        "prices": [ { "value": "4,50" } ]
       },
       {
         "title": "Coca-Cola Zero",
-        "prices": [ { "value": "4,20", "label": "350ml"  } ]
+        "hint": "350ml",
+        "prices": [ { "value": "4,20" } ]
       }
     ]
   },
@@ -147,15 +152,18 @@
     "items": [
       {
         "title": "Império",
-        "prices": [ { "value": "8,00", "label": "210ml"  } ]
+        "hint": "210ml",
+        "prices": [ { "value": "8,00"  } ]
       },
       {
         "title": "Stella Artois",
-        "prices": [ { "value": "9,00", "label": "275ml" } ]
+        "hint": "275ml",
+        "prices": [ { "value": "9,00" } ]
       },
       {
         "title": "Heineken",
-        "prices": [ { "value": "9,50", "label": "330ml" } ]
+        "hint": "330ml",
+        "prices": [ { "value": "9,50" } ]
       }
     ]
   }
