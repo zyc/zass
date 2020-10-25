@@ -1,10 +1,9 @@
 .info > p:nth-child(2) {
-    /* font-weight: 200; */
-    font-size: 140%;
+    font-size: large;
 }
 
 .info  {
-    font-weight: 200;
+    font-weight: lighter;
     font-size: 16px;
 }
 

@@ -33,6 +33,8 @@ var Global = {
         $('.logo').attr('src', 'images/logo-' + e + '.png');
         $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
 
+        var font;
+
         if (e === 'mana') {
             $('body').css('background-color', '#3f4d2c');
             $('.container, .container-fluid').css({
@@ -42,6 +44,8 @@ var Global = {
             $('.table').css('color', 'white');
             $('.header .title span').css('color', '#4E897C');
             $('.items .table .line div').css('border-bottom-color', 'white');
+
+            font = 'Nunito';
 
         } else if (e === 'capulana') {
             $('body').css('background-color', '#763041');
@@ -53,6 +57,19 @@ var Global = {
             $('.table').css('color', 'white');
             $('.header .title span').css('color', '#ee1b29');
             $('.items .table .line div').css('border-bottom-color', 'white');
+
+            font = 'Ubuntu';
+        }
+
+        if (font != null) {
+            WebFont.load({
+                google: {
+                  families: [font]
+                },
+                active: () => {
+                   $('body').css('font-family', font);
+                }
+              });
         }
     },
 
@@ -64,5 +81,5 @@ var Global = {
         } else if (e === 'capulana') {
             return 'Capulana+Poke+Ceviche';
         }
-    }
+    },
 }

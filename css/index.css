@@ -60,16 +60,14 @@
     width: 100%;
 }
 
-/* .header {
-    padding-bottom: 10px;
-} */
-
-/* .table div { */
-    /* border: 1px solid blue; */
-/* } */
-
 .items .info {
     padding-right: 10px;
+    font-weight: bold;
+}
+
+.items .detail {
+    padding-right: 10px;
+    font-size: small;
 }
 
 .items .info .detail {
@@ -85,8 +83,7 @@
 }
 
 .extras tbody {
-    font-size: .9em;
-    opacity: 0.8;
+    font-size: small;
 }
 
 .extras .info {
@@ -99,7 +96,7 @@
 }
 
 .description, .detail {
-    font-weight: 220;
+    font-weight: 200;
 }
 
 .price {
@@ -109,62 +106,7 @@
     text-align: right;
 }
 
-/* .table .price {
-
-} */
-
-/* .header .description {
-    font-weight: 250;
-} */
-
-/*
-.table td:first-child {
-    padding-right: 10px;
-} */
-
-/* .item.row > div  {
-    padding-bottom: 6px; */
-    /* border-bottom: 0.5px dashed white; */
-/* } */
-
-/* .description {
-    font-size: 85%;
-    font-weight: 200;
-} */
-
 .hint {
-    font-size: .8em;
-    font-weight: 300;
+    font-size: small;
+    font-weight: lighter;
 }
-
-/* 
-.title {
-    font-size-adjust: unset;
-}
-
-.top-spacing {
-    margin-top: 15px;
-}
-
-.extra > .title {
-    font-size: .8em;
-}
-
-.extra > .price {
-    font-size: 98%;
-} */
-
-/* .price {
-    text-align: right; */
-    /* padding-top: 12px; */
-    /* padding-bottom: 4px; */
-/* } */
-
-/* .prices div:first-of-type {
-    padding-top: 0px;
-} */
-
-/* .price > div {
-    overflow: hidden;
-    white-space: nowrap;
-} */
