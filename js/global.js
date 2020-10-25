@@ -59,6 +59,19 @@ var Global = {
             $('.items .table .line div').css('border-bottom-color', 'white');
 
             font = 'Ubuntu';
+
+        } else if (e === 'sufrango') {
+            $('body').css('background-color', 'white');
+            $('.container, .container-fluid').css({
+                'background-color': 'white',
+                'color': 'black'
+            });
+            
+            $('.table').css('color', 'black');
+            $('.header .title span').css('color', 'white');
+            $('.items .table .line div').css('border-bottom-color', 'black');
+
+            font = 'Merriweather';
         }
 
         if (font != null) {
@@ -80,6 +93,8 @@ var Global = {
             return 'Mana+Rangaria+da+Praia';
         } else if (e === 'capulana') {
             return 'Capulana+Poke+Ceviche';
+        } else if (e === 'sufrango') {
+            return 'Su+Frango';
         }
     },
 }

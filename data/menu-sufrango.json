@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Guarnições",
+    "items": [
+      {
+        "title": "Arroz branco",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Arroz com brócolis",
+        "prices": [ { "value": "18,00" } ]
+      },
+      {
+        "title": "Arroz e açafrão",
+        "prices": [ { "value": "16,00" } ]
+      },
+      {
+        "title": "Feijão tropeiro",
+        "prices": [ { "value": "19,00" } ]
+      },
+      {
+        "title": "Feijão fradinho",
+        "prices": [ { "value": "16,00" } ]
+      },
+      {
+        "title": "Farofa de miúdos",
+        "prices": [ { "value": "18,00" } ]
+      },
+      {
+        "title": "Farofa de manteiga",
+        "prices": [ { "value": "12,00" } ]
+      },
+      {
+        "title": "Pirão de leite",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Purê de batata",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Purê de aipim",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Aipim com queijo maçaricado",
+        "prices": [ { "value": "22,00" } ]
+      },
+      {
+        "title": "Batata frita",
+        "prices": [ { "value": "16,00" } ]
+      },
+      {
+        "title": "Molho vinagrete",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Legumes",
+        "prices": [ { "value": "13,00" } ]
+      },
+      {
+        "title": "Salada crua",
+        "prices": [ { "value": "12,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Pratos principais",
+    "description": "Os pratos para duas pessoas acompanham meio frango. Os pratos para uma pessoa acompanham coxa e sobrecoxa, ou peito de frango, à escolha.",
+    "items": [
+      {
+        "title": "Frango Inteligente",
+        "detail": "Frango assado, aipim com queijo maçaricado, arroz branco e feijão fradinho.",
+        "prices": [ { "value": "29,80", "label": "1 pessoa" }, { "value": "59,80", "label": "2 pessoas" } ]
+      },
+      {
+        "title": "Frango Alegre",
+        "detail": "Frango assado com queijo, farofa de miúdos, arroz branco e molho vinagrete.",
+        "prices": [ { "value": "29,80", "label": "1 pessoa" }, { "value": "59,80", "label": "2 pessoas" } ]
+      },
+      {
+        "title": "Frango Guloso",
+        "detail": "Frango assado, arroz branco, pirão de leite e feijão tropeiro.",
+        "prices": [ { "value": "29,80", "label": "1 pessoa" }, { "value": "59,80", "label": "2 pessoas" } ]
+      },
+      {
+        "title": "Frango Simpático",
+        "detail": "Frango assado, feijão preto, arroz branco, farofa de manteiga e batatas fritas.",
+        "prices": [ { "value": "32,90", "label": "1 pessoa" }, { "value": "60,80", "label": "2 pessoas" } ]
+      }
+    ]
+  },
+  {
+    "title": "Frangos assados",
+    "items": [
+      {
+        "title": "Frango tradicional",
+        "detail": "Com farofa de manteiga.",
+        "prices": [ { "value": "24,00", "label": "Meio" }, { "value": "38,00", "label": "Inteiro" } ]
+      },
+      {
+        "title": "Frango tradicional",
+        "detail": "Com farofa de miúdos.",
+        "prices": [ { "value": "28,00", "label": "Meio" }, { "value": "49,90", "label": "Inteiro" } ]
+      },
+      {
+        "title": "Frango com queijo",
+        "detail": "Com farofa de miúdos.",
+        "prices": [ { "value": "32,00", "label": "Meio" }, { "value": "56,00", "label": "Inteiro" } ]
+      }
+    ]
+  },
+  {
+    "title": "Sobremesas",
+    "items": [
+      {
+        "title": "Rabanada com sorvete",
+        "prices": [ { "value": "19,80" } ]
+      },
+      {
+        "title": "Rabanada",
+        "prices": [ { "value": "8,00" } ]
+      },
+      {
+        "title": "Pudim de leite moça",
+        "prices": [ { "value": "8,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Bebidas sem álcool",
+    "items": [
+      {
+        "title": "Refrigerante em lata 350ml",
+        "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "Aquarius Fresh",
+        "prices": [ { "value": "6,00" } ]
+      },
+      {
+        "title": "Água mineral com gás 350ml",
+        "prices": [ { "value": "3,50" } ]
+      },      {
+        "title": "Água mineral com gás 500ml",
+        "prices": [ { "value": "5,00" } ]
+      },
+      {
+        "title": "Água mineral sem gás 350ml",
+        "prices": [ { "value": "2,90" } ]
+      },
+      {
+        "title": "Água mineral sem gás 500ml",
+        "prices": [ { "value": "4,00" } ]
+      },
+      {
+        "title": "Suco Del Valle em lata",
+        "prices": [ { "value": "6,00" } ]
+      },
+      {
+        "title": "Suco de polpa (copo)",
+        "prices": [ { "value": "5,00" } ]
+      },      {
+        "title": "Suco de polpa (jarra)",
+        "prices": [ { "value": "9,00" } ]
+      },
+      {
+        "title": "Suco da fruta (copo)",
+        "prices": [ { "value": "7,00" } ]
+      },      {
+        "title": "Suco da fruta (jarra)",
+        "prices": [ { "value": "12,00" } ]
+      },
+      {
+        "title": "Café expresso (capsula)",
+        "prices": [ { "value": "5,00" } ]
+      },
+      {
+        "title": "Café coado",
+        "prices": [ { "value": "2,50" } ]
+      },
+      {
+        "title": "Cappuccino",
+        "prices": [ { "value": "7,90" } ]
+      },
+      {
+        "title": "Suco Del Valle 1L",
+        "prices": [ { "value": "12,00" } ]
+      },
+      {
+        "title": "Refrigerante 2L",
+        "prices": [ { "value": "12,00" } ]
+      },
+      {
+        "title": "Refrigerante 1L",
+        "prices": [ { "value": "8,00" } ]
+      }
+    ]
+  }
+]
