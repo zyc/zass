@@ -12,7 +12,7 @@ body {
 }
 
 .container, .container-fluid {
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     /* line-height: 100%; */
     padding-top: 5px;
     padding-bottom: 16px;
@@ -43,19 +43,24 @@ button > b {
     font-weight: 500;
 }
 
-.group > .title {
+.header .title {
     font-size: large;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 46px;
+    margin-bottom: 36px;
+    vertical-align: middle;
 }
 
-.group > .title > span {
+.header .title span {
     /* background-image: url("../images/title-mana.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
-    color: white;
+    /* color: white; */
+}
+
+.header .description {
+    padding-bottom: 10px;
 }

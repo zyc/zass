@@ -43,56 +43,93 @@
     <script id="menu-template-1" type="text/template">
         {{#.}}
         <div class="group">
-            <div class="title"><span>{{title}}</span></div>
-            <div class="description top-spacing">{{description}}</div>
-            <div class="options top-spacing">
+            <div class="header">
+                <div class="title"><span>{{title}}</span></div>
+            </div>
+            {{#options.length}}
+            <div class="options">
                 {{#options}}
-                <div class="option row">
-                    <div class="title offset-2">. {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
-                </div>
+                <div class="option">◦ {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div> 
                 {{/options}}
             </div>
-            <div class="items top-spacing">
-                {{#items}}
-                <div class="row item">
-                    <!-- <div class="item"> -->
-                        <div class="offset-2 col-7">
-                            <div class="title">◦ {{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
-                            {{#detail}}
-                            <div class="hint">{{detail}}</div>
-                            {{/detail}}
-                        </div>
-                        <div class="col-3">
-                            {{#prices}}
-                            <div class="price">
-                                <span class="hint">R$</span> {{value}}
-                                {{#label}}
-                                <div class="hint">({{label}})</div>
-                                {{/label}}
+            {{/options.length}}
+            <div class="items">
+                {{#items.length}}
+                <table class="table">
+                    <tbody>
+                        {{#items}}
+                        <tr>
+                          <td>
+                            <div class="info">
+                                <div class="title">{{title}}{{#hint}} <span class="hint">({{hint}})</span>{{/hint}}</div>
+                                {{#detail}}
+                                <div class="detail">{{detail}}</div>
+                                {{/detail}}
                             </div>
-                            {{/prices}}
-                        </div>
-                    <!-- </div> -->
-                </div>
-                {{/items}}
+                          </td>
+                          <td>
+                            <div class="prices">
+                                {{#prices}}
+                                <div class="price">
+                                    <div class="">
+                                        <span class="hint">R$</span> {{value}}
+                                    </div>
+                                    {{#label}}
+                                    <div class="hint">{{label}}</div>
+                                    {{/label}}
+                                </div>
+                                {{/prices}}
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="line">
+                                <div></div>
+                            </td>
+                        </tr>
+                        {{/items}}
+                    </tbody>
+                </table>
+                {{/items.length}}
             </div>
-            <div class="extras top-spacing">
-                {{#extras}}
-                <div class="extra row">
-                    <div class="title offset-2 col-7">+ {{title}}</div>
-                    <div class="col-3">
-                        {{#prices}}
-                        <div class="price">
-                            <span class="hint">R$</span> {{value}}
-                            {{#label}}
-                            <div class="hint label">({{label}})</div>
-                            {{/label}}
-                        </div>
-                        {{/prices}}
-                    </div>
-                </div>
-                {{/extras}}
+            {{#extras.length}}
+            <div class="extras">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td colspan="2">
+                                Extras
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#extras}}
+                        <tr>
+                            <td>
+                                <div class="info">
+                                    <div class="title">+ {{title}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="prices">
+                                    {{#prices}}
+                                    <div class="price">
+                                        <div>
+                                            <span class="hint">R$</span> {{value}}
+                                        </div>
+                                        {{#label}}
+                                        <div class="hint label">({{label}})</div>
+                                        {{/label}}
+                                    </div>
+                                    {{/prices}}
+                                </div>
+                            </td>
+                        </tr>
+                        {{/extras}}
+                    </tbody>
+                </table>
             </div>
+            {{/extras.length}}
         </div>
         {{/.}}
     </script>
@@ -102,6 +139,7 @@
     <script src="node_modules/mustache/mustache.min.js"></script>
     <script src="node_modules/moment/dist/moment.js"></script>
     <script src="node_modules/numeral/min/numeral.min.js"></script>
+    <script src="node_modules/webfontloader/webfontloader.js"></script>
 
     <script src="js/global.js"></script>
     <script src="js/index.js"></script>

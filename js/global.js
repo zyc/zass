@@ -31,26 +31,28 @@ var Global = {
         const e = this.getEventAlias();
 
         $('.logo').attr('src', 'images/logo-' + e + '.png');
-        $('.group > .title > span').css('background-image', 'url("images/title-' + e + '.png"');
+        $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
 
         if (e === 'mana') {
-            $('body').css('background-color', '#414d30');
+            $('body').css('background-color', '#3f4d2c');
             $('.container, .container-fluid').css({
-                'background-color': '#538bae',
+                'background-color': '#58a8b2',
                 'color': 'white'
             });
-            $('.group > .title > span').css('color', 'white');
-            $('.item.row > div').css('border-bottom', '0.5px dashed white');
-
+            $('.table').css('color', 'white');
+            $('.header .title span').css('color', '#4E897C');
+            $('.items .table .line div').css('border-bottom-color', 'white');
 
         } else if (e === 'capulana') {
-            $('body').css('background-color', '#6d3441');
+            $('body').css('background-color', '#763041');
             $('.container, .container-fluid').css({
-                'background-color': 'white',
-                'color': 'black'
+                'background-color': '#3f7755',
+                'color': 'white'
             });
-            $('.group > .title > span').css('color', 'black');
-            $('.item.row > div').css('border-bottom', '0.5px dashed black');
+            
+            $('.table').css('color', 'white');
+            $('.header .title span').css('color', '#ee1b29');
+            $('.items .table .line div').css('border-bottom-color', 'white');
         }
     },
 

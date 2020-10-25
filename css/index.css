@@ -18,34 +18,126 @@
     position: fixed;
 }
 
-.options {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 95%;
-}
-
-.item > div, .extra > div {
+.table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 0px;
-}
-
-.item > div:first-child, .extra > div:first-child {
     padding-right: 0px;
+
+    border-top: none;
+    vertical-align: middle;
 }
 
-.item.row > div  {
-    padding-bottom: 6px;
+.options {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.options .option {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.items .table tr {
+    border: none;
+}
+
+.items .table tbody tr:first-child td {
+    padding-top: 0px;
+}
+
+.items .table .line {
+    padding: 0px;
+}
+
+.items .table .line div {
+    border-bottom: 1px dashed white;
+    opacity: 0.4;
+}
+
+.items .table td:first-child {
+    width: 100%;
+}
+
+/* .header {
+    padding-bottom: 10px;
+} */
+
+/* .table div { */
+    /* border: 1px solid blue; */
+/* } */
+
+.items .info {
+    padding-right: 10px;
+}
+
+.items .info .detail {
+    padding-top: 2px;
+}
+
+.items .price:last-child {
+    margin-bottom: 0px;
+}
+
+.extras {
+    padding-top: 10px;
+}
+
+.extras tbody {
+    font-size: .9em;
+    opacity: 0.8;
+}
+
+.extras .info {
+    padding-left: 36px;
+}
+
+.extras table td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.description, .detail {
+    font-weight: 220;
+}
+
+.price {
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* .table .price {
+
+} */
+
+/* .header .description {
+    font-weight: 250;
+} */
+
+/*
+.table td:first-child {
+    padding-right: 10px;
+} */
+
+/* .item.row > div  {
+    padding-bottom: 6px; */
     /* border-bottom: 0.5px dashed white; */
-}
+/* } */
 
-.description {
+/* .description {
     font-size: 85%;
     font-weight: 200;
-}
+} */
 
 .hint {
-    font-size: .7em;
+    font-size: .8em;
+    font-weight: 300;
 }
 
+/* 
 .title {
     font-size-adjust: unset;
 }
@@ -60,12 +152,19 @@
 
 .extra > .price {
     font-size: 98%;
-}
+} */
 
-.price {
-    text-align: right;
-}
+/* .price {
+    text-align: right; */
+    /* padding-top: 12px; */
+    /* padding-bottom: 4px; */
+/* } */
 
-.price > div {
-    padding-bottom: 10px;
-}
+/* .prices div:first-of-type {
+    padding-top: 0px;
+} */
+
+/* .price > div {
+    overflow: hidden;
+    white-space: nowrap;
+} */
