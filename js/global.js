@@ -61,15 +61,17 @@ var Global = {
             font = 'Ubuntu';
 
         } else if (e === 'sufrango') {
-            $('body').css('background-color', 'white');
+            const text_color = '#45241e';
+
+            $('body').css('background-color', '#FDDD7D');
             $('.container, .container-fluid').css({
-                'background-color': 'white',
-                'color': '#AB343A'
+                'background-color': '#FEF5DA',
+                'color': text_color
             });
             
-            $('.table').css('color', '#AB343A');
+            $('.table').css('color', text_color);
             $('.header .title span').css('color', 'white');
-            $('.items .table .line div').css('border-bottom-color', '#AB343A');
+            $('.items .table .line div').css('border-bottom-color', text_color);
 
             font = 'Merriweather';
         }
