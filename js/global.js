@@ -30,7 +30,7 @@ var Global = {
     applyStyle: function() {
         const e = this.getEventAlias();
 
-        $('.logo').attr('src', 'images/logo-' + e + '.png');
+        $('.logo img').attr('src', 'images/logo-' + e + '.png');
         $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
 
         var font;
@@ -50,7 +50,7 @@ var Global = {
         } else if (e === 'capulana') {
             $('body').css('background-color', '#763041');
             $('.container, .container-fluid').css({
-                'background-color': '#3f7755',
+                'background-color': '#267952',
                 'color': 'white'
             });
             
@@ -74,8 +74,23 @@ var Global = {
             $('.items .table .line div').css('border-bottom-color', text_color);
 
             font = 'Merriweather';
-        }
 
+        } else if (e === 'fuego') {
+            const text_color = 'black';
+
+            $('body').css('background-color', 'white');
+            $('.container, .container-fluid').css({
+                'background-color': 'white',
+                'color': text_color
+            });
+            
+            $('.table').css('color', text_color);
+            $('.header .title span').css('color', 'black');
+            $('.items .table .line div').css('border-bottom-color', text_color);
+
+            font = 'Comfortaa';
+        }
+        
         if (font != null) {
             WebFont.load({
                 google: {

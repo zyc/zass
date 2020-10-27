@@ -2,6 +2,7 @@
   {
     "title": "Pratos principais",
     "description": "Os pratos para uma pessoa acompanham coxa e sobrecoxa, ou peito de frango, à escolha. Os pratos para duas pessoas acompanham meio frango.",
+    "show_options": false,
     "options": [
       {
         "title": "Coxa e sobrecoxa",

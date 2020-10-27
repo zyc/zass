@@ -26,9 +26,11 @@
 </head>
 
 <body>
-    <img src="" class="logo img-fluid"></img>
-
     <div class="container-fluid">
+        <div class="logo">
+            <img src="" class="img-fluid"></img>
+        </div>
+        
         <div id="menu"></div>
  
         <div>
@@ -50,11 +52,13 @@
                 {{/if}}
             </div>
             {{#if options.length}}
+            {{#if show_options}}
             <div class="options">
                 {{#each options}}
                 <div class="option">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
                 {{/each}}
             </div>
+            {{/if}}
             {{/if}}
             <div class="items">
                 {{#if items.length}}

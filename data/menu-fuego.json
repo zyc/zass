@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Combos del Fuego",
+    "items": [
+      {
+        "title": "Combo #1",
+        "description": "1 Picanha + 1 Pão de alho + 1 Budweiser",
+        "prices": [ { "value": "25,00" } ]
+      },
+      {
+        "title": "Combo #2",
+        "description": "1 Frango + 1 Queijo + 1 Budweiser",
+        "prices": [ { "value": "21,00" } ]
+      },
+      {
+        "title": "Combo #3",
+        "description": "1 Cupim + 1 Coração + 1 Budweiser",
+        "prices": [ { "value": "25,00" } ]
+      },
+      {
+        "title": "Combo #4",
+        "description": "1 Alcatra com queijo + 1 Linguiça suína + 1 Budweiser",
+        "prices": [ { "value": "24,00" } ]
+      },
+      {
+        "title": "Combo #5",
+        "description": "1 Medalhão de frango + 1 Fraldinha + 1 Refri, chá ou suco",
+        "prices": [ { "value": "23,00" } ]
+      }
+    ]
+  }
+]

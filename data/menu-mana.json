@@ -8,6 +8,7 @@
         "hint": "Banana"
       }
     ],
+    "show_options": true,
     "items": [
       {
         "title": "Tijela 300 ml",
@@ -26,6 +27,7 @@
   {
     "title": "Açaís Especiais",
     "description": "Nosso açaí orgânico batido com as mais variadas frutas. Sem conservantes, corantes ou aditivos.",
+    "show_options": true,
     "options": [
       {
         "title": "Boipeba",
@@ -142,6 +144,7 @@
   }, 
   {
     "title": "Suco de Acaí",
+    "show_options": true,
     "options": [
       {
         "title": "Puro"
@@ -163,6 +166,7 @@
   },
   {
     "title": "Sucos Especiais",
+    "show_options": true,
     "options": [
       {
         "title": "Frutas vermelhas"
