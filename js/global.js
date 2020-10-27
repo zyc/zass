@@ -27,98 +27,48 @@ var Global = {
         return url + '?e=' + this.getEventAlias() + '&o=' + this.getOrigin();
     },
 
+    buildFailUrl: function() {
+        return this.buildUrl('fail');
+    },
+
     applyStyle: function() {
         const e = this.getEventAlias();
 
-        $('.logo img').attr('src', 'images/logo-' + e + '.png');
-        $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
+        $.getJSON('data/info-' + e + '.json')
+        .done(data => {
+            $('.logo img').attr('src', 'images/logo-' + e + '.png');
+            $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
 
-        var fontBody, fontTitle;
-
-        if (e === 'mana') {
-            $('body').css('background-color', '#3f4d2c');
+            $('body').css('background-color', data.layout.bg_color.default);
             $('.container, .container-fluid').css({
-                'background-color': '#58a8b2',
-                'color': 'white'
+                'background-color': data.layout.bg_color.container,
+                'color': data.layout.text_color.default
             });
-            $('.table').css('color', 'white');
-            $('.header .title span').css('color', '#4E897C');
-            $('.items .table .line div').css('border-bottom-color', 'white');
+            $('.table').css('color', data.layout.text_color.default);
+            $('.header .title span').css('color', data.layout.text_color.title);
+            $('.items .table .line div').css('border-bottom-color', data.layout.text_color.default);
 
-            fontBody = 'Nunito';
+            const fontBody = data.layout.font.default;
+            const fontTitle = data.layout.font.title;
 
-        } else if (e === 'capulana') {
-            $('body').css('background-color', '#763041');
-            $('.container, .container-fluid').css({
-                'background-color': '#267952',
-                'color': 'white'
-            });
-            
-            $('.table').css('color', 'white');
-            $('.header .title span').css('color', '#ee1b29');
-            $('.items .table .line div').css('border-bottom-color', 'white');
-
-            fontBody = 'Ubuntu';
-
-        } else if (e === 'sufrango') {
-            const text_color = '#45241e';
-
-            $('body').css('background-color', '#FDDD7F');
-            $('.container, .container-fluid').css({
-                'background-color': '#FEF5DA',
-                'color': text_color
-            });
-            
-            $('.table').css('color', text_color);
-            $('.header .title span').css('color', 'white');
-            $('.items .table .line div').css('border-bottom-color', text_color);
-
-            fontBody = 'Merriweather';
-
-        } else if (e === 'fuego') {
-            // const text_color = 'black';
-            // const text_color = '#221912';
-            const text_color = '#D9DDDE';
-
-            // $('body').css('background-color', '#E9EAEB');
-            $('body').css('background-color', '#171916');
-            // $('body').css('background-color', '#221912');
-            $('.container, .container-fluid').css({
-                // 'background-color': '#E9EAEB',
-                // 'background-color': '#D8D8D9',
-                'background-color': '#1D201D',
-                // 'background-color': '#282018',
-                'color': text_color
-            });
-            
-            $('.table').css('color', text_color);
-            $('.header .title span').css('color', 'white');
-            $('.items .table .line div').css('border-bottom-color', text_color);
-
-            // font = 'ZCOOL QingKe HuangYou';
-            // font = 'Squada One';
-            fontBody = 'Electrolize';
-            fontTitle = 'Architects Daughter';
-            // fontTitle = 'Gloria Hallelujah';
-            // fontTitle = 'Rock Salt';
-        }
-
-        if (fontBody != null || fontTitle != null) {
-            var fonts = [];
-
-            if (fontBody != null) fonts.push(fontBody);
-            if (fontTitle != null) fonts.push(fontTitle);
-
-            WebFont.load({
-                google: {
-                  families: fonts
-                },
-                active: () => {
-                    if (fontBody != null) $('body').css('font-family', fontBody);
-                    if (fontBody != null) $('.header .title span').css('font-family', fontTitle);
-                }
-              });
-        }
+            if (fontBody != null || fontTitle != null) {
+                var fonts = [];
+    
+                if (fontBody != null) fonts.push(fontBody);
+                if (fontTitle != null) fonts.push(fontTitle);
+    
+                WebFont.load({
+                    google: {
+                      families: fonts
+                    },
+                    active: () => {
+                        if (fontBody != null) $('body').css('font-family', fontBody);
+                        if (fontBody != null) $('.header .title span').css('font-family', fontTitle);
+                    }
+                  });
+            }
+        })
+        .fail(() => location.href = Global.buildFailUrl());
     },
 
     getFormFilledField: function() {
@@ -130,6 +80,8 @@ var Global = {
             return 'Capulana+Poke+Ceviche';
         } else if (e === 'sufrango') {
             return 'Su+Frango';
+        } else if (e === 'fuego') {
+            return 'Fuego+Cultura+da+Carne';
         }
     },
 }

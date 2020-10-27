@@ -8,7 +8,7 @@ $(function () {
             
             Global.applyStyle();
         })
-        .fail(() => location.href = Global.buildUrl('fail'));
+        .fail(() => location.href = Global.buildFailUrl());
 
     $('#order').on('click', function() {
         location.href = Global.buildUrl('order');

@@ -1,0 +1,16 @@
+{
+    "layout": {
+        "text_color": {
+            "default": "#45241e",
+            "title": "white"
+        },
+        "bg_color": {
+            "default": "#FDDD7F",
+            "container": "#FEF5DA"
+        },
+        "font": {
+            "default": "Merriweather",
+            "title": null
+        }
+    }
+}

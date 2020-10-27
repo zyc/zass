@@ -1,0 +1,16 @@
+{
+    "layout": {
+        "text_color": {
+            "default": "#D9DDDE",
+            "title": "#E06D22"
+        },
+        "bg_color": {
+            "default": "#171916",
+            "container": "#1D201D"
+        },
+        "font": {
+            "default": "Electrolize",
+            "title": "Permanent Marker"
+        }
+    }
+}

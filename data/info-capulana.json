@@ -1,0 +1,16 @@
+{
+    "layout": {
+        "text_color": {
+            "default": "white",
+            "title": "#ee1b29"
+        },
+        "bg_color": {
+            "default": "#763041",
+            "container": "#267952"
+        },
+        "font": {
+            "default": "Ubuntu",
+            "title": null
+        }
+    }
+}
