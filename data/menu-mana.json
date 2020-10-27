@@ -3,10 +3,7 @@
     "title": "Açaí Tradicional",
     "description": "O melhor açaí da vida em sua versão tradicional. Orgânico sem xarope.",
     "options": [
-      {
-        "title": "Do Porto",
-        "hint": "Banana"
-      }
+      { "title": "Do Porto", "hint": "Banana" }
     ],
     "show_options": true,
     "items": [
@@ -29,30 +26,12 @@
     "description": "Nosso açaí orgânico batido com as mais variadas frutas. Sem conservantes, corantes ou aditivos.",
     "show_options": true,
     "options": [
-      {
-        "title": "Boipeba",
-        "hint": "Mangaba"
-      },
-      {
-        "title": "Itacaré",
-        "hint": "Cacau"
-      },
-      {
-        "title": "Itapuã",
-        "hint": "Amora"
-      },
-      {
-        "title": "Preguiça",
-        "hint": "Graviola"
-      },
-      {
-        "title": "Humaitá",
-        "hint": "Morango"
-      },
-      {
-        "title": "Barra Grande",
-        "hint": "Cupuaçu"
-      }
+      { "title": "Boipeba", "hint": "Mangaba" },
+      { "title": "Itacaré", "hint": "Cacau" },
+      { "title": "Itapuã", "hint": "Amora" },
+      { "title": "Preguiça", "hint": "Graviola" },
+      { "title": "Humaitá", "hint": "Morango" },
+      { "title": "Barra Grande", "hint": "Cupuaçu" }
     ],
     "items": [
       {
@@ -108,28 +87,15 @@
   {
     "title": "Frozen Yogurt",
     "description": "Sua fruta favorita batida com iogurte natural.",
+    "show_options": true,
     "options": [
-      {
-        "title": "Mangaba"
-      },
-      {
-        "title": "Cacau"
-      },
-      {
-        "title": "Cupuaçu"
-      },
-      {
-        "title": "Graviola"
-      },
-      {
-        "title": "Frutas vermelhas"
-      },
-      {
-        "title": "Uva"
-      },
-      {
-        "title": "Morango"
-      }
+      { "title": "Mangaba" },
+      { "title": "Cacau" },
+      { "title": "Cupuaçu" },
+      { "title": "Graviola" },
+      { "title": "Frutas vermelhas" },
+      { "title": "Uva" },
+      { "title": "Morango" }
     ],
     "items": [
       {
@@ -146,12 +112,8 @@
     "title": "Suco de Acaí",
     "show_options": true,
     "options": [
-      {
-        "title": "Puro"
-      },
-      {
-        "title": "Com limão"
-      }
+      { "title": "Puro" },
+      { "title": "Com limão" }
     ],
     "items": [
       {
@@ -168,33 +130,15 @@
     "title": "Sucos Especiais",
     "show_options": true,
     "options": [
-      {
-        "title": "Frutas vermelhas"
-      },
-      {
-        "title": "Limão"
-      },
-      {
-        "title": "Morango"
-      },
-      {
-        "title": "Cupuaçu"
-      },
-      {
-        "title": "Mangaba"
-      },
-      {
-        "title": "Graviola"
-      },
-      {
-        "title": "Cacau"
-      },
-      {
-        "title": "Amora com Uva"
-      },
-      {
-        "title": "Abacaxi com Hortelã"
-      }
+      { "title": "Frutas vermelhas" },
+      { "title": "Limão" },
+      { "title": "Morango" },
+      { "title": "Cupuaçu" },
+      { "title": "Mangaba" },
+      { "title": "Graviola" },
+      { "title": "Cacau" },
+      { "title": "Amora com Uva" },
+      { "title": "Abacaxi com Hortelã" }
     ],
     "items": [
       {

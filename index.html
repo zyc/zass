@@ -55,7 +55,7 @@
             {{#if show_options}}
             <div class="options">
                 {{#each options}}
-                <div class="option">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
+                <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
                 {{/each}}
             </div>
             {{/if}}
@@ -71,6 +71,15 @@
                                 <div class="title">{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}</div>
                                 {{#if description}}
                                 <div class="description alpha">{{description}}</div>
+                                {{/if}}
+                                {{#if options.length}}
+                                {{#if show_options}}
+                                <div class="options">
+                                    {{#each options}}
+                                    <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
+                                    {{/each}}
+                                </div>
+                                {{/if}}
                                 {{/if}}
                             </div>
                           </td>

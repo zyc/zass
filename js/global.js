@@ -63,7 +63,7 @@ var Global = {
         } else if (e === 'sufrango') {
             const text_color = '#45241e';
 
-            $('body').css('background-color', '#FDDD7D');
+            $('body').css('background-color', '#FDDD7F');
             $('.container, .container-fluid').css({
                 'background-color': '#FEF5DA',
                 'color': text_color
@@ -88,7 +88,9 @@ var Global = {
             $('.header .title span').css('color', 'black');
             $('.items .table .line div').css('border-bottom-color', text_color);
 
-            font = 'Comfortaa';
+            // font = 'ZCOOL QingKe HuangYou';
+            // font = 'Squada One';
+            font = 'Electrolize';
         }
         
         if (font != null) {

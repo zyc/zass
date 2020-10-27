@@ -25,7 +25,13 @@
       {
         "title": "Combo #5",
         "description": "1 Medalhão de frango + 1 Fraldinha + 1 Refri, chá ou suco",
-        "prices": [ { "value": "23,00" } ]
+        "prices": [ { "value": "23,00" } ],
+        "show_options": false,
+        "options": [
+          { "title": "Refri" },
+          { "title": "Chá" },
+          { "title": "Suco" }
+        ]
       }
     ]
   }

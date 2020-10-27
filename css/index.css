@@ -28,7 +28,7 @@
     vertical-align: middle;
 }
 
-.options {
+.group > .options {
     padding-top: 0px;
     padding-bottom: 20px;
 }
@@ -62,16 +62,24 @@
 
 .items .info {
     padding-right: 10px;
+}
+
+.items .info .title {
     font-weight: bold;
 }
 
 .items .description {
     padding-right: 10px;
-    font-size: 0.95em;
 }
 
 .items .info .description {
     padding-top: 2px;
+}
+
+.items .option {
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 0.94em;
 }
 
 .items .price:last-child {
@@ -97,6 +105,7 @@
 
 .description {
     font-weight: lighter;
+    font-size: 0.94em;
 }
 
 .price {
