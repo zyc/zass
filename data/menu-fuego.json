@@ -159,5 +159,165 @@
         "prices": [ { "value": "5,50" } ]
       }
     ]
+  },
+  {
+    "title": "Cervas Long Neck",
+    "items": [
+      {
+        "title": "Budweiser",
+        "prices": [ { "value": "7,00" } ]
+      },
+      {
+        "title": "Bohemia",
+        "prices": [ { "value": "7,00" } ]
+      },
+      {
+        "title": "Stella Artois",
+        "prices": [ { "value": "8,00" } ]
+      },
+      {
+        "title": "Beck's",
+        "prices": [ { "value": "9,00" } ]
+      },
+      {
+        "title": "Corona",
+        "prices": [ { "value": "10,00" } ]
+      },
+      {
+        "title": "Brahma Zero Álcool",
+        "prices": [ { "value": "8,00" } ]
+      },
+      {
+        "title": "Malzebier",
+        "prices": [ { "value": "8,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Cervas Colorado 600ml",
+    "items": [
+      {
+        "title": "Ribeirão",
+        "prices": [ { "value": "15,00" } ]
+      },
+      {
+        "title": "Appia",
+        "prices": [ { "value": "21,00" } ]
+      },
+      {
+        "title": "Indica",
+        "prices": [ { "value": "24,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Chopp Artesanal",
+    "description": "Cervejaria 2 de Julho.",
+    "items": [
+      {
+        "title": "American IPA",
+        "prices": [ { "value": "10,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "+ Bebidas Alcoólicas",
+    "items": [
+      {
+        "title": "Caipirosca Smirnoff",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Caipirosca Absolut",
+        "prices": [ { "value": "16,00" } ]
+      },
+      {
+        "title": "Gin Tônica + Especiarias",
+        "prices": [ { "value": "19,00" } ]
+      },
+      {
+        "title": "Caipirinha",
+        "prices": [ { "value": "13,00" } ]
+      },
+      {
+        "title": "Smirnoff Ice",
+        "prices": [ { "value": "10,00" } ]
+      },
+      {
+        "title": "Gin",
+        "hint": "dose",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Whisky 8 Anos",
+        "hint": "dose",
+        "prices": [ { "value": "13,00" } ]
+      },
+      {
+        "title": "Whisky 12 Anos",
+        "hint": "dose",
+        "prices": [ { "value": "17,00" } ]
+      },
+      {
+        "title": "Vodka Absolut",
+        "hint": "dose",
+        "prices": [ { "value": "14,00" } ]
+      },
+      {
+        "title": "Vodka Smirnoff",
+        "hint": "dose",
+        "prices": [ { "value": "9,00" } ]
+      },
+      {
+        "title": "Licor Don Luiz",
+        "hint": "garrafa",
+        "prices": [ { "value": "60,00" } ]
+      },
+      {
+        "title": "Licor Don Luiz",
+        "hint": "dose",
+        "prices": [ { "value": "7,00" } ]
+      },
+      {
+        "title": "Cachaça",
+        "hint": "dose",
+        "prices": [ { "value": "7,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Combinhos & Drinks Especiais",
+    "items": [
+      {
+        "title": "Vodka & Red Bull",
+        "description": "Dose de Vodka + Red Bull Energy Drink",
+        "prices": [ { "value": "25,00" } ]
+      },
+      {
+        "title": "Tropical Gin",
+        "description": "Dose de Gin + Red Bull Tropical",
+        "prices": [ { "value": "25,00" } ]
+      },
+      {
+        "title": "Meia Sete",
+        "description": "Dose de Gin + Red Bull Suggarfree",
+        "prices": [ { "value": "25,00" } ]
+      },
+      {
+        "title": "Whisky & Red Bull",
+        "description": "Dose de Whisky + Red Bull Energy Drink",
+        "prices": [ { "value": "25,00" } ]
+      }
+    ]
+  },
+  {
+    "title": "Sobremesa",
+    "items": [
+      {
+        "title": "Sorvete",
+        "hint": "consultar",
+        "prices": [ { "value": "8,00" } ]
+      }
+    ]
   }
 ]

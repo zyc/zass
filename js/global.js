@@ -95,7 +95,7 @@ var Global = {
             // fontTitle = 'Gloria Hallelujah';
             // fontTitle = 'Rock Salt';
         }
-        
+
         if (fontBody != null || fontTitle != null) {
             var fonts = [];
 
