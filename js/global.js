@@ -77,18 +77,22 @@ var Global = {
 
         } else if (e === 'fuego') {
             // const text_color = 'black';
+            // const text_color = '#221912';
             const text_color = '#D9DDDE';
 
             // $('body').css('background-color', '#E9EAEB');
-            $('body').css('background-color', '#221912');
+            $('body').css('background-color', '#171916');
+            // $('body').css('background-color', '#221912');
             $('.container, .container-fluid').css({
                 // 'background-color': '#E9EAEB',
-                'background-color': '#221912',
+                // 'background-color': '#D8D8D9',
+                'background-color': '#1D201D',
+                // 'background-color': '#282018',
                 'color': text_color
             });
             
             $('.table').css('color', text_color);
-            $('.header .title span').css('color', '#DC7300');
+            $('.header .title span').css('color', 'white');
             $('.items .table .line div').css('border-bottom-color', text_color);
 
             // font = 'ZCOOL QingKe HuangYou';
