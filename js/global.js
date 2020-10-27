@@ -76,11 +76,14 @@ var Global = {
             fontBody = 'Merriweather';
 
         } else if (e === 'fuego') {
-            const text_color = 'black';
+            // const text_color = 'black';
+            const text_color = '#D9DDDE';
 
-            $('body').css('background-color', '#E9EAEB');
+            // $('body').css('background-color', '#E9EAEB');
+            $('body').css('background-color', '#221912');
             $('.container, .container-fluid').css({
-                'background-color': '#E9EAEB',
+                // 'background-color': '#E9EAEB',
+                'background-color': '#221912',
                 'color': text_color
             });
             
