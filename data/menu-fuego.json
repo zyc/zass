@@ -34,5 +34,130 @@
         ]
       }
     ]
+  },
+  {
+    "title": "Espetos del Fuego",
+    "description": "Os espetos acompanham farofa crocante e salada vinagrete. Exceto queijo coalho, choripan e pão de alho.",
+    "items": [
+      {
+        "title": "Picanha",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Cupim",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Filé com bacon",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Filé",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Alcatra com queijo",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Fumeiro com banana da terra",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Bode",
+        "prices": [ { "value": "13,90" } ]
+      },
+      {
+        "title": "Carne do Sol com queijo coalho",
+        "prices": [ { "value": "14,90" } ]
+      },
+      {
+        "title": "Picanha ao alho",
+        "prices": [ { "value": "14,90" } ]
+      },
+      {
+        "title": "Choripan",
+        "description": "Tradicional sanduíche argentino de pão e linguiça com um toque de molho de alho e vinagrete do Fuego",
+        "prices": [ { "value": "14,90" } ]
+      },
+      {
+        "title": "Frango",
+        "prices": [ { "value": "8,90" } ]
+      },
+      {
+        "title": "Coração",
+        "prices": [ { "value": "8,90" } ]
+      },
+      {
+        "title": "Medalhão de frango",
+        "prices": [ { "value": "12,90" } ]
+      },
+      {
+        "title": "Kafta",
+        "prices": [ { "value": "12,90" } ]
+      },
+      {
+        "title": "Costela de carneiro",
+        "prices": [ { "value": "12,90" } ]
+      },
+      {
+        "title": "Pão de alho",
+        "prices": [ { "value": "7,90" } ]
+      },
+      {
+        "title": "Fraldinha",
+        "prices": [ { "value": "9,90" } ]
+      },
+      {
+        "title": "Queijo coalho com melaço",
+        "prices": [ { "value": "9,90" } ]
+      },
+      {
+        "title": "Linguiça suína",
+        "prices": [ { "value": "6,90" } ]
+      },
+      {
+        "title": "Linguiças artesanais",
+        "hint": "consultar",
+        "prices": [ { "value": "10,90" } ]
+      },
+      {
+        "title": "Codorna",
+        "prices": [ { "value": "15,90" } ]
+      }
+    ]
+  },
+  {
+    "title": "Bebidas sem álcool",
+    "items": [
+      {
+        "title": "Água sem gás",
+        "prices": [ { "value": "4,00" } ]
+      },
+      {
+        "title": "Água com gás",
+        "prices": [ { "value": "5,00" } ]
+      },
+      {
+        "title": "Refrigerantes",
+        "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "Chá gelado",
+        "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "Água tônica",
+        "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "H2O",
+        "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "Suco do bem",
+        "prices": [ { "value": "5,50" } ]
+      }
+    ]
   }
 ]

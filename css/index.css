@@ -79,7 +79,7 @@
 .items .option {
     padding-top: 10px;
     font-weight: lighter;
-    font-size: 0.94em;
+    /* font-size: 0.96em; */
 }
 
 .items .price:last-child {
@@ -90,9 +90,9 @@
     padding-top: 10px;
 }
 
-.extras tbody {
+/* .extras tbody {
     font-size: small;
-}
+} */
 
 .extras .info {
     padding-left: 36px;
@@ -105,7 +105,7 @@
 
 .description {
     font-weight: lighter;
-    font-size: 0.94em;
+    /* font-size: 0.96em; */
 }
 
 .price {

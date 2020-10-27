@@ -33,7 +33,7 @@ var Global = {
         $('.logo img').attr('src', 'images/logo-' + e + '.png');
         $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
 
-        var font;
+        var fontBody, fontTitle;
 
         if (e === 'mana') {
             $('body').css('background-color', '#3f4d2c');
@@ -45,7 +45,7 @@ var Global = {
             $('.header .title span').css('color', '#4E897C');
             $('.items .table .line div').css('border-bottom-color', 'white');
 
-            font = 'Nunito';
+            fontBody = 'Nunito';
 
         } else if (e === 'capulana') {
             $('body').css('background-color', '#763041');
@@ -58,7 +58,7 @@ var Global = {
             $('.header .title span').css('color', '#ee1b29');
             $('.items .table .line div').css('border-bottom-color', 'white');
 
-            font = 'Ubuntu';
+            fontBody = 'Ubuntu';
 
         } else if (e === 'sufrango') {
             const text_color = '#45241e';
@@ -73,33 +73,37 @@ var Global = {
             $('.header .title span').css('color', 'white');
             $('.items .table .line div').css('border-bottom-color', text_color);
 
-            font = 'Merriweather';
+            fontBody = 'Merriweather';
 
         } else if (e === 'fuego') {
             const text_color = 'black';
 
-            $('body').css('background-color', 'white');
+            $('body').css('background-color', '#E9EAEB');
             $('.container, .container-fluid').css({
-                'background-color': 'white',
+                'background-color': '#E9EAEB',
                 'color': text_color
             });
             
             $('.table').css('color', text_color);
-            $('.header .title span').css('color', 'black');
+            $('.header .title span').css('color', '#DC7300');
             $('.items .table .line div').css('border-bottom-color', text_color);
 
             // font = 'ZCOOL QingKe HuangYou';
             // font = 'Squada One';
-            font = 'Electrolize';
+            fontBody = 'Electrolize';
+            fontTitle = 'Architects Daughter';
+            // fontTitle = 'Gloria Hallelujah';
+            // fontTitle = 'Rock Salt';
         }
         
-        if (font != null) {
+        if (fontBody != null || fontTitle != null) {
             WebFont.load({
                 google: {
-                  families: [font]
+                  families: [fontBody, fontTitle]
                 },
                 active: () => {
-                   $('body').css('font-family', font);
+                   $('body').css('font-family', fontBody);
+                   $('.header .title span').css('font-family', fontTitle);
                 }
               });
         }
