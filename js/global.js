@@ -97,13 +97,18 @@ var Global = {
         }
         
         if (fontBody != null || fontTitle != null) {
+            var fonts = [];
+
+            if (fontBody != null) fonts.push(fontBody);
+            if (fontTitle != null) fonts.push(fontTitle);
+
             WebFont.load({
                 google: {
-                  families: [fontBody, fontTitle]
+                  families: fonts
                 },
                 active: () => {
-                   $('body').css('font-family', fontBody);
-                   $('.header .title span').css('font-family', fontTitle);
+                    if (fontBody != null) $('body').css('font-family', fontBody);
+                    if (fontBody != null) $('.header .title span').css('font-family', fontTitle);
                 }
               });
         }
