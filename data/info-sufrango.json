@@ -12,5 +12,11 @@
             "default": "Merriweather",
             "title": null
         }
+    },
+    "connections": {
+        "instagram": {
+            "label": "Ver no Instagram",
+            "url": "https://www.instagram.com/sufrango"
+        }
     }
 }

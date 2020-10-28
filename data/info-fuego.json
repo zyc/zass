@@ -12,5 +12,15 @@
             "default": "Electrolize",
             "title": "Architects Daughter"
         }
+    },
+    "connections": {
+        "ifood": {
+            "label": "Pedir pelo iFood",
+            "url": "https://www.ifood.com.br/delivery/salvador-ba/fuego-espeteria-costa-azul/a91c0ad3-7f6d-4325-83f9-fbf6ac52b388?utm_medium=share"
+        },
+        "instagram": {
+            "label": "Ver no Instagram",
+            "url": "https://www.instagram.com/fuego_culturadacarne"
+        }
     }
 }

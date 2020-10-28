@@ -10,6 +10,20 @@ $(() => {
         })
         .fail(() => location.href = Global.buildFailUrl());
 
+    $.getJSON('data/info-' + e + '.json')
+    .done(data => {
+        const template = Handlebars.compile($('#buttons-template').html());
+        $('#buttons').prepend(template(data));
+
+        $('.connection').on('click', event => {
+            const conn = $(event.target).data('connection');
+            const url = Global.buildUrl('connection') + '&d=' + conn;
+
+            window.open(url, '_blank');
+        });
+    })
+    .fail(() => location.href = Global.buildFailUrl());
+
     // $('.buttons').prepend('<button /><button />');
 
     $('#order').on('click', function () {

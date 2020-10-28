@@ -33,7 +33,7 @@
         
         <div id="menu"></div>
  
-        <div class="buttons">
+        <div id="buttons">
             <button id="share" type="button" class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
             <button id="contact" type="button" class="btn btn-secondary btn-lg btn-block">Críticas & Sugestões</button>
         </div>
@@ -151,7 +151,11 @@
         {{/each}}
     </script>
 
-    <script id="buttons-template" type="text/template"></script>
+    <script id="buttons-template" type="text/template">
+        {{#each connections}}
+        <button id="share" type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="{{@key}}">{{label}}</button>
+        {{/each}}
+    </script>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

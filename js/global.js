@@ -6,19 +6,19 @@ var Global = {
     getParam: name => new URL(document.location).searchParams.get(name),
 
     getEventAlias: () => {
-        if (this.eventAlias == null) {
-            this.eventAlias = Global.getParam('e');
+        if (Global.eventAlias == null) {
+            Global.eventAlias = Global.getParam('e');
         }
 
-        return this.eventAlias;
+        return Global.eventAlias;
     },
 
     getOrigin: () => {
-        if (this.origin == null) {
-            this.origin = Global.getParam('o');
+        if (Global.origin == null) {
+            Global.origin = Global.getParam('o');
         }
 
-        return this.origin;
+        return Global.origin;
     },
 
     buildUrl: url => url + '?e=' + Global.getEventAlias() + '&o=' + Global.getOrigin(),
