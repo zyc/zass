@@ -27,7 +27,7 @@ $(() => {
 });
 
 function register() {
-    $('#share').one('click', event => {
+    $('#share').on('click', event => {
         // shareButton.addEventListener('click', event => {
         if (navigator.share) {
             navigator.share({
@@ -36,10 +36,10 @@ function register() {
             }).then(() => {
                 console.log('Thanks for sharing!');
             }).catch(err => {
-                console.log(err);
+                window.location.reload();
             });
 
-            register();
+            //register();
         } else {
             console.error('ops');
         }
