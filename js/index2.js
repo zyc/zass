@@ -20,33 +20,19 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
-    // if (navigator.share) {
-        console.log('passou aqui');
+    console.log('opaaa');
+    const shareButton = document.querySelector('.share-btn');
 
-        const shareButton = document.querySelector('.share-btn');
-
-        shareButton.addEventListener('click', event => {
-        // $('#share').on('click', () => {
-            var url = location.href;
-
-            if (Global.getParam('o') != 'test') {
-                url = url.replace(/o\=\w+/, 'o=share');
-            }
-
-            if (navigator.share) {
-                navigator.share({
-                    title: window.title,
-                    url: url
-                }).then(() => {
-                    console.log('Thanks for sharing!');
-                }).catch(err => {
-                    console.log(`Couldn't share because of`, err.message);
-                });
-            } else {
-                console.log('web share not supported');
-            }
-        });
-    // } else {
-    //     $('#share').remove();
-    // }
+    shareButton.addEventListener('click', event => {
+        if (navigator.share) {
+            navigator.share({
+                title: 'WebShare API Demo',
+                url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch(console.error);
+        } else {
+            console.error('ops');
+        }
+    });
 });
