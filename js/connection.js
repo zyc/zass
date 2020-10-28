@@ -20,7 +20,7 @@ $(function () {
 
             setTimeout(() => {
                 window.close();
-            }, 100);
+            }, 2000);
         }, 1500);
     })
     .fail(() => location.href = Global.buildFailUrl());
