@@ -20,7 +20,7 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
-    console.log('opaaa3');
+    console.log('opaaa4');
     // const shareButton = document.querySelector('.share-btn');
 
     register()
@@ -36,7 +36,7 @@ function register() {
             }).then(() => {
                 console.log('Thanks for sharing!');
             }).catch(err => {
-                window.location.reload(true);
+                window.location.reload();
             });
 
             //register();
