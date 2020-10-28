@@ -28,10 +28,18 @@ $(() => {
                 url = url.replace(/o\=\w+/, 'o=share');
             }
 
-            navigator.share({
-                title: window.title,
-                url: url
-            })
+            if (navigator.share) {
+                navigator.share({
+                    title: window.title,
+                    url: url
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(err => {
+                    console.log(`Couldn't share because of`, err.message);
+                });
+            } else {
+                console.log('web share not supported');
+            }
         });
     } else {
         $('#share').remove();
