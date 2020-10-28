@@ -20,28 +20,27 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
-    console.log('opaaa4');
+    console.log('opaaa5');
     // const shareButton = document.querySelector('.share-btn');
 
-    register()
-});
+    if (navigator.share) {
+        var url = location.href;
 
-function register() {
-    $('#share').on('click', event => {
-        // shareButton.addEventListener('click', event => {
-        if (navigator.share) {
+        if (Global.getParam('o') != 'test') {
+            url = url.replace(/o\=\w+/, 'o=share');
+        }
+
+        $('#share').on('click', () => {
             navigator.share({
-                title: 'WebShare API Demo',
-                url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+                title: window.title,
+                url: url
             }).then(() => {
                 console.log('Thanks for sharing!');
             }).catch(err => {
                 window.location.reload();
             });
-
-            //register();
-        } else {
-            console.error('ops');
-        }
-    });
-}
+        });
+    } else {
+        $('#share').remove();
+    }
+});
