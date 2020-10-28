@@ -3,36 +3,30 @@ var Global = {
     eventAlias: null,
     origin: null,
 
-    getParam: function (name) {
-        return new URL(document.location).searchParams.get(name)
-    },
+    getParam: (name) => new URL(document.location).searchParams.get(name),
 
-    getEventAlias: function () {
+    getEventAlias: () => {
         if (this.eventAlias == null) {
-            this.eventAlias = this.getParam('e');
+            this.eventAlias = Global.getParam('e');
         }
 
         return this.eventAlias;
     },
 
-    getOrigin: function () {
+    getOrigin: () => {
         if (this.origin == null) {
-            this.origin = this.getParam('o');
+            this.origin = Global.getParam('o');
         }
 
         return this.origin;
     },
 
-    buildUrl: function(url) {
-        return url + '?e=' + this.getEventAlias() + '&o=' + this.getOrigin();
-    },
+    buildUrl: (url) => url + '?e=' + Global.getEventAlias() + '&o=' + Global.getOrigin(),
 
-    buildFailUrl: function() {
-        return this.buildUrl('fail');
-    },
+    buildFailUrl: () => Global.buildUrl('fail'),
 
-    applyStyle: function() {
-        const e = this.getEventAlias();
+    applyStyle: () => {
+        const e = Global.getEventAlias();
 
         $.getJSON('data/info-' + e + '.json')
         .done(data => {
@@ -71,8 +65,8 @@ var Global = {
         .fail(() => location.href = Global.buildFailUrl());
     },
 
-    getFormFilledField: function() {
-        const e = this.getEventAlias();
+    getFormFilledField: () => {
+        const e = Global.getEventAlias();
         
         if (e === 'mana') {
             return 'Mana+Rangaria+da+Praia';
