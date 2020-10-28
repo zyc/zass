@@ -3,7 +3,7 @@ var Global = {
     eventAlias: null,
     origin: null,
 
-    getParam: (name) => new URL(document.location).searchParams.get(name),
+    getParam: name => new URL(document.location).searchParams.get(name),
 
     getEventAlias: () => {
         if (this.eventAlias == null) {
@@ -21,7 +21,7 @@ var Global = {
         return this.origin;
     },
 
-    buildUrl: (url) => url + '?e=' + Global.getEventAlias() + '&o=' + Global.getOrigin(),
+    buildUrl: url => url + '?e=' + Global.getEventAlias() + '&o=' + Global.getOrigin(),
 
     buildFailUrl: () => Global.buildUrl('fail'),
 

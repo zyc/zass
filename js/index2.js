@@ -20,10 +20,10 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
-    if (navigator.share) {
+    // if (navigator.share) {
         console.log('passou aqui');
 
-        const shareButton = document.querySelector('#share');
+        const shareButton = document.querySelector('.share-btn');
 
         shareButton.addEventListener('click', event => {
         // $('#share').on('click', () => {
@@ -33,7 +33,7 @@ $(() => {
                 url = url.replace(/o\=\w+/, 'o=share');
             }
 
-            // if (navigator.share) {
+            if (navigator.share) {
                 navigator.share({
                     title: window.title,
                     url: url
@@ -42,11 +42,11 @@ $(() => {
                 }).catch(err => {
                     console.log(`Couldn't share because of`, err.message);
                 });
-            // } else {
-            //     console.log('web share not supported');
-            // }
+            } else {
+                console.log('web share not supported');
+            }
         });
-    } else {
-        $('#share').remove();
-    }
+    // } else {
+    //     $('#share').remove();
+    // }
 });
