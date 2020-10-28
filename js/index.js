@@ -21,25 +21,21 @@ $(() => {
     });
 
     if (navigator.share) {
+        var url = location.href;
+
+        if (Global.getParam('o') != 'test') {
+            url = url.replace(/o\=\w+/, 'o=share');
+        }
+
         $('#share').on('click', () => {
-            var url = location.href;
-
-            if (Global.getParam('o') != 'test') {
-                url = url.replace(/o\=\w+/, 'o=share');
-            }
-
-            if (navigator.share) {
-                navigator.share({
-                    title: window.title,
-                    url: url
-                }).then(() => {
-                    console.log('Thanks for sharing!');
-                }).catch(err => {
-                    console.log(`Couldn't share because of`, err.message);
-                });
-            } else {
-                console.log('web share not supported');
-            }
+            navigator.share({
+                title: window.title,
+                url: url
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch(err => {
+                window.location.reload();
+            });
         });
     } else {
         $('#share').remove();
