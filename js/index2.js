@@ -20,10 +20,15 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
-    console.log('opaaa');
-    const shareButton = document.querySelector('.share-btn');
+    console.log('opaaa2');
+    // const shareButton = document.querySelector('.share-btn');
 
-    shareButton.addEventListener('click', event => {
+    register()
+});
+
+function register() {
+    $('#share').one('click', event => {
+        // shareButton.addEventListener('click', event => {
         if (navigator.share) {
             navigator.share({
                 title: 'WebShare API Demo',
@@ -33,8 +38,10 @@ $(() => {
             }).catch(err => {
                 console.log(err);
             });
+
+            register();
         } else {
             console.error('ops');
         }
     });
-});
+}
