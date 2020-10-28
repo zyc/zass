@@ -17,6 +17,10 @@
         "instagram": {
             "label": "Ver no Instagram",
             "url": "https://www.instagram.com/manaportodabarra"
+        },
+        "ifood": {
+            "label": "Pedir pelo iFood",
+            "url": "https://www.ifood.com.br/delivery/salvador-ba/mana-rangaria-da-praia-barra/55ec6cc5-ddd2-4cf1-b3f5-ef224c46c054?utm_medium=share"
         }
     }
 }
