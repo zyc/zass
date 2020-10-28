@@ -20,8 +20,15 @@ $(() => {
         window.open(Global.buildUrl('contact'), '_blank');
     });
 
+    const shareButton = document.querySelector('#share');
+
     if (navigator.share) {
-        $('#share').on('click', () => {
+
+        console.log('entrou');
+
+        shareButton.addEventListener('click', event => {
+
+        // $('#share').on('click', () => {
             var url = location.href;
 
             if (Global.getParam('o') != 'test') {
@@ -29,7 +36,7 @@ $(() => {
             }
 
             if (navigator.share) {
-                navigator.share({
+                await navigator.share({
                     title: window.title,
                     url: url
                 }).then(() => {
