@@ -153,10 +153,13 @@
     </script>
 
     <script id="buttons-template" type="text/template">
-        {{#each connections}}
-        <button id="share" type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="{{@key}}">{{label}}</button>
+        {{#each .}}
+        <button type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="{{@key}}">{{label}}</button>
         {{/each}}
     </script>
+
+    <!-- <script src="proxy/MenuProxy.js"></script>
+    <script src="manager/MenuManager.js"></script> -->
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -165,7 +168,9 @@
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>
 
-    <script src="js/global.js"></script>
+    <script src="js/Util.js"></script>
+    <script src="js/MenuManager.js"></script>
+    <script src="js/EstablishmentManager.js"></script>
     <script src="js/index.js"></script>
 </body>
 

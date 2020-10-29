@@ -1,8 +1,8 @@
 $(() => {
-    const e = Global.getEventAlias();
-    const dest = Global.getParam('d');
+    const e = Util.getEventAlias();
+    const dest = Util.getParam('d');
 
-    $.getJSON('data/info-' + e + '.json')
+    EstablishmentManager.get(e)
         .done(data => {
             setTimeout(() => {
                 const conn = data.connections[dest];
@@ -13,7 +13,7 @@ $(() => {
                 }
 
                 if (url == null) {
-                    url = Global.buildFailUrl();
+                    url = Util.buildFailUrl();
                 }
 
                 location.href = url;
@@ -22,6 +22,5 @@ $(() => {
                     window.close();
                 }, 2000);
             }, 1500);
-        })
-        .fail(() => location.href = Global.buildFailUrl());
+        });
 });

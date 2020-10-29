@@ -1,19 +1,18 @@
 $(() => {
-    const e = Global.getEventAlias();
+    const e = Util.getEventAlias();
 
-    $.getJSON('data/menu-' + e + '.json')
+    MenuManager.get(e)
         .done(data => {
-            Global.applyStyle();
-        })
-        .fail(() => location.href = Global.buildUrl('fail'));
+            Util.applyStyle();
+        });
 
     $('#back').on('click', event => {
         history.back();
     });
 
     $('#lead').on('click', event => {
-        window.open(Global.buildUrl('lead'), '_blank');
+        window.open(Util.buildUrl('lead'), '_blank');
     });
 
-    Global.applyStyle();
+    Util.applyStyle();
 });

@@ -1,37 +1,44 @@
-var Global = {
+class Util {
 
-    eventAlias: null,
-    origin: null,
+    static getParam(name) {
+        return new URL(document.location).searchParams.get(name)
+    };
 
-    getParam: name => new URL(document.location).searchParams.get(name),
-
-    getEventAlias: () => {
-        if (Global.eventAlias == null) {
-            Global.eventAlias = Global.getParam('e');
+    static getEventAlias() {
+        if (this.eventAlias == null) {
+            this.eventAlias = this.getParam('e');
         }
 
-        return Global.eventAlias;
-    },
+        return this.eventAlias;
+    };
 
-    getOrigin: () => {
-        if (Global.origin == null) {
-            Global.origin = Global.getParam('o');
+    static getOrigin() {
+        if (this.origin == null) {
+            this.origin = this.getParam('o');
         }
 
-        return Global.origin;
-    },
+        return this.origin;
+    };
 
-    buildUrl: url => url + '?e=' + Global.getEventAlias() + '&o=' + Global.getOrigin(),
+    static buildUrl(url) {
+        return url + '?e=' + this.getEventAlias() + '&o=' + this.getOrigin()
+    };
 
-    buildFailUrl: () => Global.buildUrl('fail'),
+    static buildFailUrl() {
+        return this.buildUrl('fail')
+    };
 
-    applyStyle: () => {
-        const e = Global.getEventAlias();
+    static handle404 () {
+        location.href = this.buildFailUrl();
+    };
+
+    static applyStyle() {
+        const e = this.getEventAlias();
 
         $.getJSON('data/info-' + e + '.json')
             .done(data => {
-                $('.logo img').attr('src', 'images/logo-' + e + '.png');
-                $('.header .title span').css('background-image', 'url("images/title-' + e + '.png"');
+                $('.logo img').attr('src', 'image/logo-' + e + '.png');
+                $('.header .title span').css('background-image', 'url("image/title-' + e + '.png"');
 
                 $('body').css('background-color', data.layout.bg_color.default);
                 $('.container, .container-fluid').css({
@@ -62,11 +69,11 @@ var Global = {
                     });
                 }
             })
-            .fail(() => location.href = Global.buildFailUrl());
-    },
+            .fail(() => location.href = this.buildFailUrl());
+    };
 
-    getFormFilledField: () => {
-        const e = Global.getEventAlias();
+    static getFormFilledField() {
+        const e = this.getEventAlias();
 
         if (e === 'mana') {
             return 'Mana+Rangaria+da+Praia';
@@ -77,5 +84,18 @@ var Global = {
         } else if (e === 'fuego') {
             return 'Fuego+Cultura+da+Carne';
         }
-    },
+    };
 }
+
+Util.eventAlias = null;
+Util.origin = null;
+
+$.ajaxSetup({
+    error: function (request) {
+        switch (request.status) {
+            case 404:
+                Util.handle404();
+                break;
+        }
+    }
+});

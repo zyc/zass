@@ -1,43 +1,47 @@
 $(() => {
-    const e = Global.getEventAlias();
+    const e = Util.getEventAlias();
 
-    $.getJSON('data/menu-' + e + '.json')
+    MenuManager.get(e)
         .done(data => {
             const template = Handlebars.compile($('#menu-template').html());
             $('#menu').html(template(data));
 
-            Global.applyStyle();
-        })
-        .fail(() => location.href = Global.buildFailUrl());
+            Util.applyStyle();
+        });
 
-    $.getJSON('data/info-' + e + '.json')
+    EstablishmentManager.get(e)
         .done(data => {
             const template = Handlebars.compile($('#buttons-template').html());
-            $('#buttons').prepend(template(data));
+            const html = template(data.connections);
+            $('#buttons').prepend(html);
+            // $('#buttons').prepend(template(data));
+            // $('#buttons').prepend(template(data));
+            // $('#buttons').prepend('<button id="share" type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="instagram">Ver no Instagram</button>')
+
+            // alert(html);
 
             $('.connection').on('click', event => {
                 const conn = $(event.target).data('connection');
-                const url = Global.buildUrl('connection') + '&d=' + conn;
+                const url = Util.buildUrl('connection') + '&d=' + conn;
 
                 window.open(url, '_blank');
             });
-        })
-        .fail(() => location.href = Global.buildFailUrl());
+        });
 
     // $('.buttons').prepend('<button /><button />');
 
     $('#order').on('click', event => {
-        location.href = Global.buildUrl('order');
+        location.href = Util.buildUrl('order');
     });
 
     $('#contact').on('click', event => {
-        window.open(Global.buildUrl('contact'), '_blank');
+        window.open(Util.buildUrl('contact'), '_blank');
     });
 
     if (navigator.share) {
         var url = location.href;
 
-        if (Global.getParam('o') != 'test') {
+        if (Util.getParam('o') != 'test') {
             url = url.replace(/o\=\w+/, 'o=share');
         }
 
