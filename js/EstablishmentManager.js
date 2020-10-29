@@ -1,13 +1,12 @@
 class EstablishmentManager {
 
     static get(e) {
-
-        const jwt = sessionStorage.getItem(this.key + e);
+        // const jwt = sessionStorage.getItem(this.key + e);
         var json = null;
 
-        if (jwt != null) {
-            json = JSON.parse(jwt);
-        }
+        // if (jwt != null) {
+        //     json = JSON.parse(jwt);
+        // }
 
         if (json == null) {
             const result = this.getFromRemote(e);
@@ -15,7 +14,7 @@ class EstablishmentManager {
             result.done(data => {
                 console.log('Dados do estabelecimento atualizados');
 
-                sessionStorage.setItem(this.key + e, JSON.stringify(data));
+                // sessionStorage.setItem(this.key + e, JSON.stringify(data));
                 return result;
             });
 

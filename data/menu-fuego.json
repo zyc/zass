@@ -157,6 +157,10 @@
       {
         "title": "Suco do bem",
         "prices": [ { "value": "5,50" } ]
+      },
+      {
+        "title": "Red Bull",
+        "prices": [ { "value": "12,00" } ]
       }
     ]
   },
