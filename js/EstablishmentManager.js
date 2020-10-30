@@ -1,6 +1,6 @@
 class EstablishmentManager {
 
-    static get2(e) {
+    static get(e) {
         const jwt = sessionStorage.getItem(this.key + e);
         var json = null;
 
@@ -12,7 +12,7 @@ class EstablishmentManager {
     }
 
     static load(e, done) {
-        const result = this.get2(e);
+        const result = this.get(e);
 
         if (result == null) {
             this.updateFromRemote(e, done);

@@ -58,7 +58,7 @@ class Util {
 
     static applyStyle() {
         const e = this.getEventAlias();
-        const establishment = EstablishmentManager.get2(e);
+        const establishment = EstablishmentManager.get(e);
 
         $('.logo img').attr('src', 'image/logo-' + e + '.png');
         $('.header .title span').css('background-image', 'url("image/title-' + e + '.png"');

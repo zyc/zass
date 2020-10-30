@@ -1,7 +1,7 @@
 $(() => {
     Util.loadData(e => {
         const dest = Util.getParam('d');
-        const establishment = EstablishmentManager.get2(e);
+        const establishment = EstablishmentManager.get(e);
 
         setTimeout(() => {
             const conn = establishment.connections[dest];

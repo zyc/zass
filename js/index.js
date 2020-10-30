@@ -11,7 +11,7 @@ $(() => {
 });
 
 function loadMenu(e, done) {
-    const menu = MenuManager.get2(e);
+    const menu = MenuManager.get(e);
     const template = Handlebars.compile($('#menu-template').html());
 
     $('#menu').html(template(menu));
@@ -20,7 +20,7 @@ function loadMenu(e, done) {
 }
 
 function loadButtons(e) {
-    const establishment = EstablishmentManager.get2(e);
+    const establishment = EstablishmentManager.get(e);
     const template = Handlebars.compile($('#buttons-template').html());
     const html = template(establishment.connections);
 
