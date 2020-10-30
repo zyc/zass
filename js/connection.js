@@ -1,26 +1,25 @@
 $(() => {
-    const e = Util.getEventAlias();
-    const dest = Util.getParam('d');
+    Util.loadData(e => {
+        const dest = Util.getParam('d');
+        const establishment = EstablishmentManager.get2(e);
 
-    EstablishmentManager.get(e)
-        .done(data => {
+        setTimeout(() => {
+            const conn = establishment.connections[dest];
+            var url = null;
+
+            if (conn != null) {
+                url = conn.url;
+            }
+
+            if (url == null) {
+                url = Util.buildFailUrl();
+            }
+
+            location.href = url;
+
             setTimeout(() => {
-                const conn = data.connections[dest];
-                var url = null;
-
-                if (conn != null) {
-                    url = conn.url;
-                }
-
-                if (url == null) {
-                    url = Util.buildFailUrl();
-                }
-
-                location.href = url;
-
-                setTimeout(() => {
-                    window.close();
-                }, 2000);
-            }, 1500);
-        });
+                window.close();
+            }, 2000);
+        }, 1500);
+    });
 });

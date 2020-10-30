@@ -1,53 +1,44 @@
 $(() => {
-    const e = Util.getEventAlias();
+    Util.loadData(e => {
+        loadMenu(e);
+        loadButtons(e);
+        loadShareButton();
 
-    var touchArea = $('.logo');
-    var region = new ZingTouch.Region(touchArea.parent().get(0));
-
-    region.bind(touchArea.get(0), 'swipe', e => {
-        const direction = e.detail.data[0].currentDirection;
-
-        if (direction >= 160 && direction <= 190) {
-            $('.ref').css('display', 'none');
-        } else if (direction >= 330 && direction <= 360) {
-            $('.ref').css('display', 'inline');
-        }
+        registerItemTaps();
+        registerPanGesture();
+        registerTaps();
     });
+});
 
-    MenuManager.get(e)
-        .done(data => {
-            const template = Handlebars.compile($('#menu-template').html());
-            $('#menu').html(template(data));
+function loadMenu(e, done) {
+    const menu = MenuManager.get2(e);
+    const template = Handlebars.compile($('#menu-template').html());
 
-            Util.applyStyle();
-        });
+    $('#menu').html(template(menu));
 
-    EstablishmentManager.get(e)
-        .done(data => {
-            const template = Handlebars.compile($('#buttons-template').html());
-            const html = template(data.connections);
-            $('#buttons').prepend(html);
+    Util.applyStyle();
+}
 
-            $('.connection').on('click', event => {
-                const conn = $(event.target).data('connection');
-                const url = Util.buildUrl('connection') + '&d=' + conn;
+function loadButtons(e) {
+    const establishment = EstablishmentManager.get2(e);
+    const template = Handlebars.compile($('#buttons-template').html());
+    const html = template(establishment.connections);
 
-                window.open(url, '_blank');
-            });
-        });
+    $('#buttons').prepend(html);
 
-    $('#order').on('click', event => {
-        location.href = Util.buildUrl('order');
+    $('.connection').on('click', event => {
+        const conn = $(event.currentTarget).data('connection');
+        const url = Util.buildUrl('connection') + '&d=' + conn;
+
+        window.open(url, '_blank');
     });
+}
 
-    $('#contact').on('click', event => {
-        window.open(Util.buildUrl('contact'), '_blank');
-    });
-
+function loadShareButton() {
     if (navigator.share) {
         var url = location.href;
 
-        if (Util.getParam('o') != 'test') {
+        if (!Util.isTestVersion()) {
             url = url.replace(/o\=\w+/, 'o=share');
         }
 
@@ -64,4 +55,39 @@ $(() => {
     } else {
         $('#share').remove();
     }
-});
+}
+
+function registerPanGesture() {
+    var touchArea = $('.logo');
+    var region = new ZingTouch.Region(touchArea.parent().get(0));
+
+    region.bind(touchArea.get(0), 'swipe', e => {
+        const direction = e.detail.data[0].currentDirection;
+
+        if (direction >= 160 && direction <= 190) {
+            $('.ref').css('display', 'none');
+        } else if (direction >= 330 && direction <= 360) {
+            $('.ref').css('display', 'inline');
+        }
+    });
+}
+
+function registerTaps() {
+    $('#order').on('click', event => {
+        location.href = Util.buildUrl('order');
+    });
+
+    $('#contact').on('click', event => {
+        window.open(Util.buildUrl('contact'), '_blank');
+    });
+}
+
+function registerItemTaps() {
+    if (!Util.isTestVersion()) {
+        return;
+    }
+
+    $('.item').on('click', event => {
+        console.log($(event.currentTarget).data('ref'));
+    });
+}

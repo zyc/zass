@@ -76,6 +76,11 @@
     padding-top: 2px;
 }
 
+/* .item { */
+    /* border: 1px solid red; */
+    /* background-color: red; */
+/* } */
+
 .items .option {
     padding-top: 10px;
     font-weight: lighter;

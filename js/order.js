@@ -1,18 +1,15 @@
 $(() => {
-    const e = Util.getEventAlias();
+    Util.loadData(e => {
+        Util.applyStyle();
 
-    MenuManager.get(e)
-        .done(data => {
-            Util.applyStyle();
+        $('#back').on('click', event => {
+            history.back();
         });
 
-    $('#back').on('click', event => {
-        history.back();
-    });
+        $('#lead').on('click', event => {
+            window.open(Util.buildUrl('lead'), '_blank');
+        });
 
-    $('#lead').on('click', event => {
-        window.open(Util.buildUrl('lead'), '_blank');
+        Util.applyStyle();
     });
-
-    Util.applyStyle();
 });
