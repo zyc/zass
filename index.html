@@ -28,10 +28,12 @@
 
 <body>
     <div class="container-fluid">
-        <div class="logo">
-            <img src="" class="img-fluid"></img>
+        <div id="divlogo">
+            <div class="logo">
+                <img src="" class="img-fluid"></img>
+            </div>
         </div>
-
+            
         <div id="menu"></div>
 
         <div id="buttons">
@@ -57,7 +59,7 @@
             {{#if show_options}}
             <div class="options">
                 {{#each options}}
-                <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
+                <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div> 
                 {{/each}}
             </div>
             {{/if}}
@@ -70,7 +72,7 @@
                         <tr>
                           <td>
                             <div class="info">
-                                <div class="title">{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}</div>
+                                <div class="title">{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div>
                                 {{#if description}}
                                 <div class="description alpha">{{description}}</div>
                                 {{/if}}
@@ -78,7 +80,7 @@
                                 {{#if show_options}}
                                 <div class="options">
                                     {{#each options}}
-                                    <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}</div> 
+                                    <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div> 
                                     {{/each}}
                                 </div>
                                 {{/if}}
@@ -95,6 +97,7 @@
                                     {{#if hint}}
                                     <div class="hint alpha">{{hint}}</div>
                                     {{/if}}
+                                    {{#if ref}}<span class="ref"> #{{ref}}</span>{{/if}}
                                 </div>
                                 {{/each}}
                             </div>
@@ -167,7 +170,9 @@
     <!-- <script src="node_modules/moment/dist/moment.js"></script> -->
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>
+    <script src="node_modules/zingtouch/dist/zingtouch.min.js"></script>
 
+    <!-- <script src="js/_temp.js"></script> -->
     <script src="js/Util.js"></script>
     <script src="js/MenuManager.js"></script>
     <script src="js/EstablishmentManager.js"></script>

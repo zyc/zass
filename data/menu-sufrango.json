@@ -6,37 +6,88 @@
     "options": [
       {
         "title": "Coxa e sobrecoxa",
-        "hint": "1 pessoa"
+        "hint": "1 pessoa",
+        "ref": "6449"
       },
       {
         "title": "Peito de frango",
-        "hint": "1 pessoa"
+        "hint": "1 pessoa",
+        "ref": "1680"
       },
       {
         "title": "Meio frango",
-        "hint": "2 pessoas"
+        "hint": "2 pessoas",
+        "ref": "2803"
       }
     ],
     "items": [
       {
         "title": "Frango Inteligente",
         "description": "Frango assado, aipim com queijo maçaricado, arroz branco e feijão fradinho.",
-        "prices": [ { "value": "29,80", "hint": "1 pessoa" }, { "value": "59,80", "hint": "2 pessoas" } ]
+        "prices": [
+          {
+            "value": "29,80",
+            "hint": "1 pessoa",
+            "ref": "2119"
+          },
+          {
+            "value": "59,80",
+            "hint": "2 pessoas",
+            "ref": "7549"
+          }
+        ],
+        "ref": "9101"
       },
       {
         "title": "Frango Alegre",
         "description": "Frango assado com queijo, farofa de miúdos, arroz branco e molho vinagrete.",
-        "prices": [ { "value": "29,80", "hint": "1 pessoa" }, { "value": "59,80", "hint": "2 pessoas" } ]
+        "prices": [
+          {
+            "value": "29,80",
+            "hint": "1 pessoa",
+            "ref": "4314"
+          },
+          {
+            "value": "59,80",
+            "hint": "2 pessoas",
+            "ref": "9134"
+          }
+        ],
+        "ref": "6220"
       },
       {
         "title": "Frango Guloso",
         "description": "Frango assado, arroz branco, pirão de leite e feijão tropeiro.",
-        "prices": [ { "value": "29,80", "hint": "1 pessoa" }, { "value": "59,80", "hint": "2 pessoas" } ]
+        "prices": [
+          {
+            "value": "29,80",
+            "hint": "1 pessoa",
+            "ref": "0687"
+          },
+          {
+            "value": "59,80",
+            "hint": "2 pessoas",
+            "ref": "5562"
+          }
+        ],
+        "ref": "3083"
       },
       {
         "title": "Frango Simpático",
         "description": "Frango assado, feijão preto, arroz branco, farofa de manteiga e batatas fritas.",
-        "prices": [ { "value": "32,90", "hint": "1 pessoa" }, { "value": "60,80", "hint": "2 pessoas" } ]
+        "prices": [
+          {
+            "value": "32,90",
+            "hint": "1 pessoa",
+            "ref": "3970"
+          },
+          {
+            "value": "60,80",
+            "hint": "2 pessoas",
+            "ref": "2316"
+          }
+        ],
+        "ref": "6962"
       }
     ]
   },
@@ -46,17 +97,53 @@
       {
         "title": "Frango tradicional",
         "description": "Com farofa de manteiga.",
-        "prices": [ { "value": "24,00", "hint": "meio" }, { "value": "38,00", "hint": "inteiro" } ]
+        "prices": [
+          {
+            "value": "24,00",
+            "hint": "meio",
+            "ref": "8470"
+          },
+          {
+            "value": "38,00",
+            "hint": "inteiro",
+            "ref": "9941"
+          }
+        ],
+        "ref": "7251"
       },
       {
         "title": "Frango tradicional",
         "description": "Com farofa de miúdos.",
-        "prices": [ { "value": "28,00", "hint": "meio" }, { "value": "49,90", "hint": "inteiro" } ]
+        "prices": [
+          {
+            "value": "28,00",
+            "hint": "meio",
+            "ref": "6983"
+          },
+          {
+            "value": "49,90",
+            "hint": "inteiro",
+            "ref": "6072"
+          }
+        ],
+        "ref": "8170"
       },
       {
         "title": "Frango com queijo",
         "description": "Com farofa de miúdos.",
-        "prices": [ { "value": "32,00", "hint": "meio" }, { "value": "56,00", "hint": "inteiro" } ]
+        "prices": [
+          {
+            "value": "32,00",
+            "hint": "meio",
+            "ref": "7425"
+          },
+          {
+            "value": "56,00",
+            "hint": "inteiro",
+            "ref": "0095"
+          }
+        ],
+        "ref": "7695"
       }
     ]
   },
@@ -65,63 +152,153 @@
     "items": [
       {
         "title": "Arroz branco",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "8185"
+          }
+        ],
+        "ref": "7637"
       },
       {
         "title": "Arroz com brócolis",
-        "prices": [ { "value": "18,00" } ]
+        "prices": [
+          {
+            "value": "18,00",
+            "ref": "1596"
+          }
+        ],
+        "ref": "1468"
       },
       {
         "title": "Arroz e açafrão",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "8805"
+          }
+        ],
+        "ref": "6075"
       },
       {
         "title": "Feijão tropeiro",
-        "prices": [ { "value": "19,00" } ]
+        "prices": [
+          {
+            "value": "19,00",
+            "ref": "7949"
+          }
+        ],
+        "ref": "2842"
       },
       {
         "title": "Feijão fradinho",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "9639"
+          }
+        ],
+        "ref": "1669"
       },
       {
         "title": "Farofa de miúdos",
-        "prices": [ { "value": "18,00" } ]
+        "prices": [
+          {
+            "value": "18,00",
+            "ref": "0693"
+          }
+        ],
+        "ref": "3243"
       },
       {
         "title": "Farofa de manteiga",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "4266"
+          }
+        ],
+        "ref": "0446"
       },
       {
         "title": "Pirão de leite",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "0937"
+          }
+        ],
+        "ref": "9751"
       },
       {
         "title": "Purê de batata",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "9143"
+          }
+        ],
+        "ref": "7677"
       },
       {
         "title": "Purê de aipim",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "8798"
+          }
+        ],
+        "ref": "9235"
       },
       {
         "title": "Aipim com queijo maçaricado",
-        "prices": [ { "value": "22,00" } ]
+        "prices": [
+          {
+            "value": "22,00",
+            "ref": "0629"
+          }
+        ],
+        "ref": "7752"
       },
       {
         "title": "Batata frita",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "3911"
+          }
+        ],
+        "ref": "6136"
       },
       {
         "title": "Molho vinagrete",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "6630"
+          }
+        ],
+        "ref": "7367"
       },
       {
         "title": "Legumes",
-        "prices": [ { "value": "13,00" } ]
+        "prices": [
+          {
+            "value": "13,00",
+            "ref": "9952"
+          }
+        ],
+        "ref": "2125"
       },
       {
         "title": "Salada crua",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "7465"
+          }
+        ],
+        "ref": "5030"
       }
     ]
   },
@@ -130,15 +307,33 @@
     "items": [
       {
         "title": "Rabanada com sorvete",
-        "prices": [ { "value": "19,80" } ]
+        "prices": [
+          {
+            "value": "19,80",
+            "ref": "9132"
+          }
+        ],
+        "ref": "0800"
       },
       {
         "title": "Rabanada",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "2148"
+          }
+        ],
+        "ref": "4675"
       },
       {
         "title": "Pudim de leite moça",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "5289"
+          }
+        ],
+        "ref": "1919"
       }
     ]
   },
@@ -148,81 +343,185 @@
       {
         "title": "Refrigerante em lata",
         "hint": "350ml",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "0584"
+          }
+        ],
+        "ref": "9266"
       },
       {
         "title": "Aquarius Fresh",
-        "prices": [ { "value": "6,00" } ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "9686"
+          }
+        ],
+        "ref": "4856"
       },
       {
         "title": "Água mineral com gás",
         "hint": "350ml",
-        "prices": [ { "value": "3,50" } ]
+        "prices": [
+          {
+            "value": "3,50",
+            "ref": "4210"
+          }
+        ],
+        "ref": "8401"
       },
       {
         "title": "Água mineral sem gás",
         "hint": "350ml",
-        "prices": [ { "value": "2,90" } ]
+        "prices": [
+          {
+            "value": "2,90",
+            "ref": "3176"
+          }
+        ],
+        "ref": "6337"
       },
       {
         "title": "Água mineral com gás",
         "hint": "500ml",
-        "prices": [ { "value": "5,00" } ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "3110"
+          }
+        ],
+        "ref": "8069"
       },
       {
         "title": "Água mineral sem gás",
         "hint": "500ml",
-        "prices": [ { "value": "4,00" } ]
+        "prices": [
+          {
+            "value": "4,00",
+            "ref": "6006"
+          }
+        ],
+        "ref": "6588"
       },
       {
         "title": "Suco Del Valle em lata",
-        "prices": [ { "value": "6,00" } ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "3781"
+          }
+        ],
+        "ref": "7935"
       },
       {
         "title": "Suco de polpa",
         "hint": "copo",
-        "prices": [ { "value": "5,00" } ]
-      },      {
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "3434"
+          }
+        ],
+        "ref": "8635"
+      },
+      {
         "title": "Suco de polpa",
         "hint": "jarra",
-        "prices": [ { "value": "9,00" } ]
+        "prices": [
+          {
+            "value": "9,00",
+            "ref": "9363"
+          }
+        ],
+        "ref": "2347"
       },
       {
         "title": "Suco da fruta",
         "hint": "copo",
-        "prices": [ { "value": "7,00" } ]
-      },      {
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "9846"
+          }
+        ],
+        "ref": "2787"
+      },
+      {
         "title": "Suco da fruta",
         "hint": "jarra",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "8318"
+          }
+        ],
+        "ref": "8899"
       },
       {
         "title": "Café expresso",
         "hint": "capsula",
-        "prices": [ { "value": "5,00" } ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "2196"
+          }
+        ],
+        "ref": "1364"
       },
       {
         "title": "Café coado",
-        "prices": [ { "value": "2,50" } ]
+        "prices": [
+          {
+            "value": "2,50",
+            "ref": "6501"
+          }
+        ],
+        "ref": "8620"
       },
       {
         "title": "Cappuccino",
-        "prices": [ { "value": "7,90" } ]
+        "prices": [
+          {
+            "value": "7,90",
+            "ref": "5339"
+          }
+        ],
+        "ref": "3417"
       },
       {
         "title": "Suco Del Valle",
         "hint": "1 litro",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "4144"
+          }
+        ],
+        "ref": "3147"
       },
       {
         "title": "Refrigerante",
         "hint": "2 litros",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "2387"
+          }
+        ],
+        "ref": "2391"
       },
       {
         "title": "Refrigerante",
         "hint": "1 litro",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "5016"
+          }
+        ],
+        "ref": "2068"
       }
     ]
   }

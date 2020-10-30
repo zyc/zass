@@ -111,3 +111,10 @@
     font-size: small;
     font-weight: lighter;
 }
+
+.ref {
+    opacity: 0.4;
+    font-size: small;
+    font-weight: lighter;
+    display: none;
+}

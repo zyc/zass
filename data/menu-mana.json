@@ -2,22 +2,44 @@
   {
     "title": "Açaí Tradicional",
     "description": "O melhor açaí da vida em sua versão tradicional. Orgânico sem xarope.",
-    "options": [
-      { "title": "Do Porto", "hint": "Banana" }
-    ],
     "show_options": true,
+    "options": [
+      {
+        "ref": "2288",
+        "title": "Do Porto",
+        "hint": "Banana"
+      }
+    ],
     "items": [
       {
+        "ref": "2921",
         "title": "Tijela 300 ml",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "ref": "6924",
+            "value": "12,00"
+          }
+        ]
       },
       {
+        "ref": "1338",
         "title": "Tijela 500 ml",
-        "prices": [ { "value": "18,00" } ]
+        "prices": [
+          {
+            "ref": "5655",
+            "value": "18,00"
+          }
+        ]
       },
       {
+        "ref": "8291",
         "title": "Tijela 700 ml",
-        "prices": [ { "value": "24,00" } ]
+        "prices": [
+          {
+            "ref": "1140",
+            "value": "24,00"
+          }
+        ]
       }
     ]
   },
@@ -26,25 +48,67 @@
     "description": "Nosso açaí orgânico batido com as mais variadas frutas. Sem conservantes, corantes ou aditivos.",
     "show_options": true,
     "options": [
-      { "title": "Boipeba", "hint": "Mangaba" },
-      { "title": "Itacaré", "hint": "Cacau" },
-      { "title": "Itapuã", "hint": "Amora" },
-      { "title": "Preguiça", "hint": "Graviola" },
-      { "title": "Humaitá", "hint": "Morango" },
-      { "title": "Barra Grande", "hint": "Cupuaçu" }
+      {
+        "ref": "0426",
+        "title": "Boipeba",
+        "hint": "Mangaba"
+      },
+      {
+        "ref": "5869",
+        "title": "Itacaré",
+        "hint": "Cacau"
+      },
+      {
+        "ref": "4959",
+        "title": "Itapuã",
+        "hint": "Amora"
+      },
+      {
+        "ref": "7300",
+        "title": "Preguiça",
+        "hint": "Graviola"
+      },
+      {
+        "ref": "8222",
+        "title": "Humaitá",
+        "hint": "Morango"
+      },
+      {
+        "ref": "9964",
+        "title": "Barra Grande",
+        "hint": "Cupuaçu"
+      }
     ],
     "items": [
       {
+        "ref": "1332",
         "title": "Tijela 300 ml",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "7183"
+          }
+        ]
       },
       {
+        "ref": "8320",
         "title": "Tijela 500 ml",
-        "prices": [ { "value": "22,00" } ]
+        "prices": [
+          {
+            "value": "22,00",
+            "ref": "1203"
+          }
+        ]
       },
       {
+        "ref": "6579",
         "title": "Tijela 700 ml",
-        "prices": [ { "value": "28,00" } ]
+        "prices": [
+          {
+            "value": "28,00",
+            "ref": "3273"
+          }
+        ]
       }
     ]
   },
@@ -53,16 +117,34 @@
     "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
+        "ref": "7402",
         "title": "Tijela 300 ml",
-        "prices": [ { "value": "18,00" } ]
+        "prices": [
+          {
+            "value": "18,00",
+            "ref": "1290"
+          }
+        ]
       },
       {
+        "ref": "0312",
         "title": "Tijela 500 ml",
-        "prices": [ { "value": "24,00" } ]
+        "prices": [
+          {
+            "value": "24,00",
+            "ref": "5378"
+          }
+        ]
       },
       {
+        "ref": "8335",
         "title": "Tijela 700 ml",
-        "prices": [ { "value": "30,00" } ]
+        "prices": [
+          {
+            "value": "30,00",
+            "ref": "8495"
+          }
+        ]
       }
     ]
   },
@@ -71,40 +153,91 @@
     "description": "Sua fruta favorita batida com iogurte natural.",
     "show_options": true,
     "options": [
-      { "title": "Mangaba" },
-      { "title": "Cacau" },
-      { "title": "Cupuaçu" },
-      { "title": "Graviola" },
-      { "title": "Frutas vermelhas" },
-      { "title": "Uva" },
-      { "title": "Morango" }
+      {
+        "title": "Mangaba",
+        "ref": "0031"
+      },
+      {
+        "title": "Cacau",
+        "ref": "1778"
+      },
+      {
+        "title": "Cupuaçu",
+        "ref": "1858"
+      },
+      {
+        "title": "Graviola",
+        "ref": "4125"
+      },
+      {
+        "title": "Frutas vermelhas",
+        "ref": "0122"
+      },
+      {
+        "title": "Uva",
+        "ref": "7307"
+      },
+      {
+        "title": "Morango",
+        "ref": "9043"
+      }
     ],
     "items": [
       {
+        "ref": "8879",
         "title": "Copo 300 ml",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "5077"
+          }
+        ]
       },
       {
+        "ref": "2889",
         "title": "Copo 500 ml",
-        "prices": [ { "value": "18,00" } ]
+        "prices": [
+          {
+            "value": "18,00",
+            "ref": "3718"
+          }
+        ]
       }
     ]
-  }, 
+  },
   {
     "title": "Suco de Acaí",
     "show_options": true,
     "options": [
-      { "title": "Puro" },
-      { "title": "Com limão" }
+      {
+        "title": "Puro",
+        "ref": "6263"
+      },
+      {
+        "title": "Com limão",
+        "ref": "4041"
+      }
     ],
     "items": [
       {
+        "ref": "6110",
         "title": "Copo 300 ml",
-        "prices": [ { "value": "11,00" } ]
+        "prices": [
+          {
+            "value": "11,00",
+            "ref": "9929"
+          }
+        ]
       },
       {
+        "ref": "1157",
         "title": "Copo 500 ml",
-        "prices": [ { "value": "15,00" } ]
+        "prices": [
+          {
+            "value": "15,00",
+            "ref": "7771"
+          }
+        ]
       }
     ]
   },
@@ -112,24 +245,63 @@
     "title": "Sucos Especiais",
     "show_options": true,
     "options": [
-      { "title": "Frutas vermelhas" },
-      { "title": "Limão" },
-      { "title": "Morango" },
-      { "title": "Cupuaçu" },
-      { "title": "Mangaba" },
-      { "title": "Graviola" },
-      { "title": "Cacau" },
-      { "title": "Amora com Uva" },
-      { "title": "Abacaxi com Hortelã" }
+      {
+        "title": "Frutas vermelhas",
+        "ref": "1192"
+      },
+      {
+        "title": "Limão",
+        "ref": "5404"
+      },
+      {
+        "title": "Morango",
+        "ref": "0471"
+      },
+      {
+        "title": "Cupuaçu",
+        "ref": "2292"
+      },
+      {
+        "title": "Mangaba",
+        "ref": "0470"
+      },
+      {
+        "title": "Graviola",
+        "ref": "6731"
+      },
+      {
+        "title": "Cacau",
+        "ref": "6399"
+      },
+      {
+        "title": "Amora com Uva",
+        "ref": "2926"
+      },
+      {
+        "title": "Abacaxi com Hortelã",
+        "ref": "9148"
+      }
     ],
     "items": [
       {
+        "ref": "8594",
         "title": "Copo 300 ml",
-        "prices": [ { "value": "7,00" } ]
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "0456"
+          }
+        ]
       },
       {
+        "ref": "8840",
         "title": "Copo 500 ml",
-        "prices": [ { "value": "11,00" } ]
+        "prices": [
+          {
+            "value": "11,00",
+            "ref": "6935"
+          }
+        ]
       }
     ]
   },
@@ -138,12 +310,24 @@
     "description": "Mix de frutas, gengibre, couve e hortelã.",
     "items": [
       {
+        "ref": "8010",
         "title": "Copo 300 ml",
-        "prices": [ { "value": "9,00" } ]
+        "prices": [
+          {
+            "value": "9,00",
+            "ref": "8555"
+          }
+        ]
       },
       {
+        "ref": "7816",
         "title": "Copo 500 ml",
-        "prices": [ { "value": "13,00" } ]
+        "prices": [
+          {
+            "value": "13,00",
+            "ref": "3385"
+          }
+        ]
       }
     ]
   },
@@ -151,29 +335,59 @@
     "title": "Café da Manhã",
     "items": [
       {
+        "ref": "0037",
         "title": "Combo OC1",
         "description": "Cuscuz recheado com queijo e café pequeno",
-        "prices": [ { "value": "15,00" } ]
+        "prices": [
+          {
+            "value": "15,00",
+            "ref": "8510"
+          }
+        ]
       },
       {
+        "ref": "3114",
         "title": "Combo OC2",
         "description": "Cuscuz recheado com queijo, ovos mexidos e café médio",
-        "prices": [ { "value": "20,00" } ]
+        "prices": [
+          {
+            "value": "20,00",
+            "ref": "2186"
+          }
+        ]
       },
       {
+        "ref": "4212",
         "title": "Combo OC6",
         "description": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio",
-        "prices": [ { "value": "24,00" } ]
+        "prices": [
+          {
+            "value": "24,00",
+            "ref": "7531"
+          }
+        ]
       },
       {
+        "ref": "2613",
         "title": "Combo SUP",
         "description": "Misto quente (ou fatia de bolo) e café médio",
-        "prices": [ { "value": "10,00" } ]
+        "prices": [
+          {
+            "value": "10,00",
+            "ref": "9685"
+          }
+        ]
       },
       {
+        "ref": "1551",
         "title": "Combo Surfski",
         "description": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "0891"
+          }
+        ]
       }
     ]
   },
@@ -182,25 +396,55 @@
     "description": "Tradicional cuscuz nordestino recheado feito com milho não trangênico.",
     "items": [
       {
+        "ref": "2659",
         "title": "Queijo",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "9068"
+          }
+        ]
       },
       {
+        "ref": "5941",
         "title": "Frango com queijo",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "6807"
+          }
+        ]
       },
       {
+        "ref": "3479",
         "title": "Calabresa com queijo",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "9661"
+          }
+        ]
       },
       {
+        "ref": "5693",
         "title": "Carne Seca com queijo",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "2480"
+          }
+        ]
       },
       {
+        "ref": "2725",
         "title": "Margherita da Mana",
         "description": "Tomate, queijo e manjericão",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "8984"
+          }
+        ]
       }
     ]
   },
@@ -209,29 +453,65 @@
     "description": "Sanduíche com deliciosos recheios. Massa fininha e crocante, sem ovos e sem leite, com fermentação natural.",
     "items": [
       {
+        "ref": "4418",
         "title": "Queijo",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "3372"
+          }
+        ]
       },
       {
+        "ref": "5607",
         "title": "Frango com queijo",
-        "prices": [ { "value":"14,00"} ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "1052"
+          }
+        ]
       },
       {
+        "ref": "8209",
         "title": "Calabresa com queijo",
-        "prices": [ { "value":"14,00"} ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "1201"
+          }
+        ]
       },
       {
+        "ref": "0657",
         "title": "Peito de peru com queijo",
-        "prices": [ { "value":"16,00"} ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "4168"
+          }
+        ]
       },
       {
+        "ref": "3447",
         "title": "Carne Seca com queijo",
-        "prices": [ { "value":"16,00"} ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "1277"
+          }
+        ]
       },
       {
+        "ref": "9248",
         "title": "Margherita da Mana",
         "description": "Tomate, queijo e manjericão",
-        "prices": [ { "value":"16,00"} ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "6571"
+          }
+        ]
       }
     ]
   },
@@ -239,22 +519,46 @@
     "title": "Outras Delícias",
     "items": [
       {
+        "ref": "3651",
         "title": "Queijo quente",
-        "prices": [ { "value":"6,00"} ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "0504"
+          }
+        ]
       },
       {
+        "ref": "9081",
         "title": "Misto quente",
-        "prices": [ { "value":"6,00"} ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "4496"
+          }
+        ]
       },
       {
+        "ref": "3431",
         "title": "Bolo",
         "hint": "fatia",
-        "prices": [ { "value":"6,00"} ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "5841"
+          }
+        ]
       },
       {
+        "ref": "9264",
         "title": "Bolo com cobertura",
         "hint": "fatia",
-        "prices": [ { "value":"8,00"} ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "6091"
+          }
+        ]
       }
     ]
   },
@@ -262,28 +566,64 @@
     "title": "Porções Extra",
     "items": [
       {
+        "ref": "0811",
         "title": "Granola",
-        "prices": [ { "value": "3,00" } ]
+        "prices": [
+          {
+            "value": "3,00",
+            "ref": "8513"
+          }
+        ]
       },
       {
-        "title": "Whey Protein",
-        "prices": [ { "value": "5,00" } ]
+        "ref": "9840",
+        "title": "Whey protein",
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "8710"
+          }
+        ]
       },
       {
+        "ref": "6231",
         "title": "Leite em pó",
-        "prices": [ { "value": "3,00" } ]
+        "prices": [
+          {
+            "value": "3,00",
+            "ref": "8232"
+          }
+        ]
       },
       {
+        "ref": "6627",
         "title": "Paçoca",
-        "prices": [ { "value": "3,00" } ]
+        "prices": [
+          {
+            "value": "3,00",
+            "ref": "9723"
+          }
+        ]
       },
       {
+        "ref": "9989",
         "title": "Ovos mexidos",
-        "prices": [ { "value":"4,00"} ]
+        "prices": [
+          {
+            "value": "4,00",
+            "ref": "8658"
+          }
+        ]
       },
       {
+        "ref": "2195",
         "title": "Banana da Terra",
-        "prices": [ { "value":"3,00"} ]
+        "prices": [
+          {
+            "value": "3,00",
+            "ref": "6048"
+          }
+        ]
       }
     ]
   },
@@ -291,25 +631,55 @@
     "title": "Cafés",
     "items": [
       {
+        "ref": "4414",
         "title": "Café Expresso curto",
-        "prices": [ { "value":"5,00"} ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "1307"
+          }
+        ]
       },
       {
+        "ref": "6211",
         "title": "Café Expresso longo",
-        "prices": [ { "value":"6,00"} ]
+        "prices": [
+          {
+            "value": "6,00",
+            "ref": "9622"
+          }
+        ]
       },
       {
+        "ref": "1899",
         "title": "Café da Mana pequeno",
-        "prices": [ { "value":"3,00"} ]
+        "prices": [
+          {
+            "value": "3,00",
+            "ref": "2153"
+          }
+        ]
       },
       {
+        "ref": "0373",
         "title": "Café da Mana médio",
         "description": "Preparado na cafeteira italiana",
-        "prices": [ { "value":"5,00"} ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "3901"
+          }
+        ]
       },
       {
+        "ref": "1354",
         "title": "Café com leite",
-        "prices": [ { "value":"5,00"} ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "7608"
+          }
+        ]
       }
     ]
   }

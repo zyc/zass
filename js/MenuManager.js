@@ -30,6 +30,34 @@ class MenuManager {
             url: 'data/menu-' + e + '.json'
         });
     }
+
+    static refElements(json, handler) {
+        for (var group of json) {
+            if (group.options != null) {
+                for (var option of group.options) {
+                    handler(option);
+                }
+            }
+
+            if (group.items != null) {
+                for (var item of group.items) {
+                    handler(item);
+
+                    if (item.options != null) {
+                        for (var option of item.options) {
+                            handler(option);
+                        }
+                    }
+
+                    if (item.prices != null) {
+                        for (var price of item.prices) {
+                            handler(price);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 MenuManager.key = "menu_";

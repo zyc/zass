@@ -1,6 +1,19 @@
 $(() => {
     const e = Util.getEventAlias();
 
+    var touchArea = $('.logo');
+    var region = new ZingTouch.Region(touchArea.parent().get(0));
+
+    region.bind(touchArea.get(0), 'swipe', e => {
+        const direction = e.detail.data[0].currentDirection;
+
+        if (direction >= 160 && direction <= 190) {
+            $('.ref').css('display', 'none');
+        } else if (direction >= 330 && direction <= 360) {
+            $('.ref').css('display', 'inline');
+        }
+    });
+
     MenuManager.get(e)
         .done(data => {
             const template = Handlebars.compile($('#menu-template').html());
@@ -14,11 +27,6 @@ $(() => {
             const template = Handlebars.compile($('#buttons-template').html());
             const html = template(data.connections);
             $('#buttons').prepend(html);
-            // $('#buttons').prepend(template(data));
-            // $('#buttons').prepend(template(data));
-            // $('#buttons').prepend('<button id="share" type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="instagram">Ver no Instagram</button>')
-
-            // alert(html);
 
             $('.connection').on('click', event => {
                 const conn = $(event.target).data('connection');
@@ -27,8 +35,6 @@ $(() => {
                 window.open(url, '_blank');
             });
         });
-
-    // $('.buttons').prepend('<button /><button />');
 
     $('#order').on('click', event => {
         location.href = Util.buildUrl('order');

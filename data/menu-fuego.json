@@ -5,33 +5,72 @@
       {
         "title": "Combo #1",
         "description": "1 Picanha + 1 Pão de alho + 1 Budweiser",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "9669"
+          }
+        ],
+        "ref": "0416"
       },
       {
         "title": "Combo #2",
         "description": "1 Frango + 1 Queijo + 1 Budweiser",
-        "prices": [ { "value": "21,00" } ]
+        "prices": [
+          {
+            "value": "21,00",
+            "ref": "0770"
+          }
+        ],
+        "ref": "1671"
       },
       {
         "title": "Combo #3",
         "description": "1 Cupim + 1 Coração + 1 Budweiser",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "6023"
+          }
+        ],
+        "ref": "4099"
       },
       {
         "title": "Combo #4",
         "description": "1 Alcatra com queijo + 1 Linguiça suína + 1 Budweiser",
-        "prices": [ { "value": "24,00" } ]
+        "prices": [
+          {
+            "value": "24,00",
+            "ref": "1816"
+          }
+        ],
+        "ref": "7909"
       },
       {
         "title": "Combo #5",
         "description": "1 Medalhão de frango + 1 Fraldinha + 1 Refri, chá ou suco",
-        "prices": [ { "value": "23,00" } ],
+        "prices": [
+          {
+            "value": "23,00",
+            "ref": "9698"
+          }
+        ],
         "show_options": false,
         "options": [
-          { "title": "Refri" },
-          { "title": "Chá" },
-          { "title": "Suco" }
-        ]
+          {
+            "title": "Refri",
+            "ref": "4203"
+          },
+          {
+            "title": "Chá",
+            "ref": "1514"
+          },
+          {
+            "title": "Suco",
+            "ref": "3038"
+          }
+        ],
+        "ref": "9985"
       }
     ]
   },
@@ -41,89 +80,215 @@
     "items": [
       {
         "title": "Picanha",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "5584"
+          }
+        ],
+        "ref": "1889"
       },
       {
         "title": "Cupim",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "1384"
+          }
+        ],
+        "ref": "1699"
       },
       {
         "title": "Filé com bacon",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "3169"
+          }
+        ],
+        "ref": "6400"
       },
       {
         "title": "Filé",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "6452"
+          }
+        ],
+        "ref": "3356"
       },
       {
         "title": "Alcatra com queijo",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "1406"
+          }
+        ],
+        "ref": "3806"
       },
       {
         "title": "Fumeiro com banana da terra",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "9103"
+          }
+        ],
+        "ref": "5619"
       },
       {
         "title": "Bode",
-        "prices": [ { "value": "13,90" } ]
+        "prices": [
+          {
+            "value": "13,90",
+            "ref": "8232"
+          }
+        ],
+        "ref": "3226"
       },
       {
         "title": "Carne do Sol com queijo coalho",
-        "prices": [ { "value": "14,90" } ]
+        "prices": [
+          {
+            "value": "14,90",
+            "ref": "9044"
+          }
+        ],
+        "ref": "0292"
       },
       {
         "title": "Picanha ao alho",
-        "prices": [ { "value": "14,90" } ]
+        "prices": [
+          {
+            "value": "14,90",
+            "ref": "4044"
+          }
+        ],
+        "ref": "0939"
       },
       {
         "title": "Choripan",
         "description": "Tradicional sanduíche argentino de pão e linguiça com um toque de molho de alho e vinagrete do Fuego",
-        "prices": [ { "value": "14,90" } ]
+        "prices": [
+          {
+            "value": "14,90",
+            "ref": "9337"
+          }
+        ],
+        "ref": "2625"
       },
       {
         "title": "Frango",
-        "prices": [ { "value": "8,90" } ]
+        "prices": [
+          {
+            "value": "8,90",
+            "ref": "1318"
+          }
+        ],
+        "ref": "7197"
       },
       {
         "title": "Coração",
-        "prices": [ { "value": "8,90" } ]
+        "prices": [
+          {
+            "value": "8,90",
+            "ref": "3820"
+          }
+        ],
+        "ref": "2340"
       },
       {
         "title": "Medalhão de frango",
-        "prices": [ { "value": "12,90" } ]
+        "prices": [
+          {
+            "value": "12,90",
+            "ref": "2385"
+          }
+        ],
+        "ref": "3442"
       },
       {
         "title": "Kafta",
-        "prices": [ { "value": "12,90" } ]
+        "prices": [
+          {
+            "value": "12,90",
+            "ref": "6651"
+          }
+        ],
+        "ref": "0437"
       },
       {
         "title": "Costela de carneiro",
-        "prices": [ { "value": "12,90" } ]
+        "prices": [
+          {
+            "value": "12,90",
+            "ref": "7237"
+          }
+        ],
+        "ref": "7005"
       },
       {
         "title": "Pão de alho",
-        "prices": [ { "value": "7,90" } ]
+        "prices": [
+          {
+            "value": "7,90",
+            "ref": "7249"
+          }
+        ],
+        "ref": "6994"
       },
       {
         "title": "Fraldinha",
-        "prices": [ { "value": "9,90" } ]
+        "prices": [
+          {
+            "value": "9,90",
+            "ref": "4697"
+          }
+        ],
+        "ref": "4452"
       },
       {
         "title": "Queijo coalho com melaço",
-        "prices": [ { "value": "9,90" } ]
+        "prices": [
+          {
+            "value": "9,90",
+            "ref": "4106"
+          }
+        ],
+        "ref": "8676"
       },
       {
         "title": "Linguiça suína",
-        "prices": [ { "value": "6,90" } ]
+        "prices": [
+          {
+            "value": "6,90",
+            "ref": "8010"
+          }
+        ],
+        "ref": "3724"
       },
       {
         "title": "Linguiças artesanais",
         "hint": "consultar",
-        "prices": [ { "value": "10,90" } ]
+        "prices": [
+          {
+            "value": "10,90",
+            "ref": "7899"
+          }
+        ],
+        "ref": "8767"
       },
       {
         "title": "Codorna",
-        "prices": [ { "value": "15,90" } ]
+        "prices": [
+          {
+            "value": "15,90",
+            "ref": "5011"
+          }
+        ],
+        "ref": "3860"
       }
     ]
   },
@@ -132,35 +297,83 @@
     "items": [
       {
         "title": "Água sem gás",
-        "prices": [ { "value": "4,00" } ]
+        "prices": [
+          {
+            "value": "4,00",
+            "ref": "0120"
+          }
+        ],
+        "ref": "9577"
       },
       {
         "title": "Água com gás",
-        "prices": [ { "value": "5,00" } ]
+        "prices": [
+          {
+            "value": "5,00",
+            "ref": "8364"
+          }
+        ],
+        "ref": "0539"
       },
       {
         "title": "Refrigerantes",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "3539"
+          }
+        ],
+        "ref": "7854"
       },
       {
         "title": "Chá gelado",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "4876"
+          }
+        ],
+        "ref": "4198"
       },
       {
         "title": "Água tônica",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "7385"
+          }
+        ],
+        "ref": "0322"
       },
       {
         "title": "H2O",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "9588"
+          }
+        ],
+        "ref": "6608"
       },
       {
         "title": "Suco do bem",
-        "prices": [ { "value": "5,50" } ]
+        "prices": [
+          {
+            "value": "5,50",
+            "ref": "0511"
+          }
+        ],
+        "ref": "7387"
       },
       {
         "title": "Red Bull",
-        "prices": [ { "value": "12,00" } ]
+        "prices": [
+          {
+            "value": "12,00",
+            "ref": "7466"
+          }
+        ],
+        "ref": "9959"
       }
     ]
   },
@@ -169,31 +382,73 @@
     "items": [
       {
         "title": "Budweiser",
-        "prices": [ { "value": "7,00" } ]
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "7208"
+          }
+        ],
+        "ref": "7109"
       },
       {
         "title": "Bohemia",
-        "prices": [ { "value": "7,00" } ]
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "5265"
+          }
+        ],
+        "ref": "9229"
       },
       {
         "title": "Stella Artois",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "9884"
+          }
+        ],
+        "ref": "5667"
       },
       {
         "title": "Beck's",
-        "prices": [ { "value": "9,00" } ]
+        "prices": [
+          {
+            "value": "9,00",
+            "ref": "5845"
+          }
+        ],
+        "ref": "4046"
       },
       {
         "title": "Corona",
-        "prices": [ { "value": "10,00" } ]
+        "prices": [
+          {
+            "value": "10,00",
+            "ref": "4450"
+          }
+        ],
+        "ref": "1546"
       },
       {
         "title": "Brahma Zero Álcool",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "3095"
+          }
+        ],
+        "ref": "4862"
       },
       {
         "title": "Malzebier",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "6113"
+          }
+        ],
+        "ref": "2798"
       }
     ]
   },
@@ -202,15 +457,33 @@
     "items": [
       {
         "title": "Ribeirão",
-        "prices": [ { "value": "15,00" } ]
+        "prices": [
+          {
+            "value": "15,00",
+            "ref": "6619"
+          }
+        ],
+        "ref": "5135"
       },
       {
         "title": "Appia",
-        "prices": [ { "value": "21,00" } ]
+        "prices": [
+          {
+            "value": "21,00",
+            "ref": "2085"
+          }
+        ],
+        "ref": "2121"
       },
       {
         "title": "Indica",
-        "prices": [ { "value": "24,00" } ]
+        "prices": [
+          {
+            "value": "24,00",
+            "ref": "5482"
+          }
+        ],
+        "ref": "8774"
       }
     ]
   },
@@ -220,7 +493,13 @@
     "items": [
       {
         "title": "American IPA",
-        "prices": [ { "value": "10,00" } ]
+        "prices": [
+          {
+            "value": "10,00",
+            "ref": "3584"
+          }
+        ],
+        "ref": "0909"
       }
     ]
   },
@@ -229,63 +508,141 @@
     "items": [
       {
         "title": "Caipirosca Smirnoff",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "1781"
+          }
+        ],
+        "ref": "4544"
       },
       {
         "title": "Caipirosca Absolut",
-        "prices": [ { "value": "16,00" } ]
+        "prices": [
+          {
+            "value": "16,00",
+            "ref": "6521"
+          }
+        ],
+        "ref": "1528"
       },
       {
         "title": "Gin Tônica + Especiarias",
-        "prices": [ { "value": "19,00" } ]
+        "prices": [
+          {
+            "value": "19,00",
+            "ref": "6058"
+          }
+        ],
+        "ref": "9200"
       },
       {
         "title": "Caipirinha",
-        "prices": [ { "value": "13,00" } ]
+        "prices": [
+          {
+            "value": "13,00",
+            "ref": "2889"
+          }
+        ],
+        "ref": "8269"
       },
       {
         "title": "Smirnoff Ice",
-        "prices": [ { "value": "10,00" } ]
+        "prices": [
+          {
+            "value": "10,00",
+            "ref": "4206"
+          }
+        ],
+        "ref": "9689"
       },
       {
         "title": "Gin",
         "hint": "dose",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "8737"
+          }
+        ],
+        "ref": "5744"
       },
       {
         "title": "Whisky 8 Anos",
         "hint": "dose",
-        "prices": [ { "value": "13,00" } ]
+        "prices": [
+          {
+            "value": "13,00",
+            "ref": "1090"
+          }
+        ],
+        "ref": "0784"
       },
       {
         "title": "Whisky 12 Anos",
         "hint": "dose",
-        "prices": [ { "value": "17,00" } ]
+        "prices": [
+          {
+            "value": "17,00",
+            "ref": "4083"
+          }
+        ],
+        "ref": "0987"
       },
       {
         "title": "Vodka Absolut",
         "hint": "dose",
-        "prices": [ { "value": "14,00" } ]
+        "prices": [
+          {
+            "value": "14,00",
+            "ref": "6590"
+          }
+        ],
+        "ref": "5636"
       },
       {
         "title": "Vodka Smirnoff",
         "hint": "dose",
-        "prices": [ { "value": "9,00" } ]
+        "prices": [
+          {
+            "value": "9,00",
+            "ref": "5231"
+          }
+        ],
+        "ref": "2761"
       },
       {
         "title": "Licor Don Luiz",
         "hint": "garrafa",
-        "prices": [ { "value": "60,00" } ]
+        "prices": [
+          {
+            "value": "60,00",
+            "ref": "5694"
+          }
+        ],
+        "ref": "0589"
       },
       {
         "title": "Licor Don Luiz",
         "hint": "dose",
-        "prices": [ { "value": "7,00" } ]
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "2920"
+          }
+        ],
+        "ref": "2393"
       },
       {
         "title": "Cachaça",
         "hint": "dose",
-        "prices": [ { "value": "7,00" } ]
+        "prices": [
+          {
+            "value": "7,00",
+            "ref": "9867"
+          }
+        ],
+        "ref": "5510"
       }
     ]
   },
@@ -295,22 +652,46 @@
       {
         "title": "Vodka & Red Bull",
         "description": "Dose de Vodka + Red Bull Energy Drink",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "0604"
+          }
+        ],
+        "ref": "9993"
       },
       {
         "title": "Tropical Gin",
         "description": "Dose de Gin + Red Bull Tropical",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "5810"
+          }
+        ],
+        "ref": "1600"
       },
       {
         "title": "Meia Sete",
         "description": "Dose de Gin + Red Bull Suggarfree",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "6903"
+          }
+        ],
+        "ref": "6275"
       },
       {
         "title": "Whisky & Red Bull",
         "description": "Dose de Whisky + Red Bull Energy Drink",
-        "prices": [ { "value": "25,00" } ]
+        "prices": [
+          {
+            "value": "25,00",
+            "ref": "8591"
+          }
+        ],
+        "ref": "5021"
       }
     ]
   },
@@ -320,7 +701,13 @@
       {
         "title": "Sorvete",
         "hint": "consultar",
-        "prices": [ { "value": "8,00" } ]
+        "prices": [
+          {
+            "value": "8,00",
+            "ref": "9866"
+          }
+        ],
+        "ref": "7132"
       }
     ]
   }
