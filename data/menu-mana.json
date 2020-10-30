@@ -46,24 +46,6 @@
         "title": "Tijela 700 ml",
         "prices": [ { "value": "28,00" } ]
       }
-    ],
-    "extras": [
-      {
-        "title": "Granola extra",
-        "prices": [ { "value": "3,00" } ]
-      },
-      {
-        "title": "Porção de whey",
-        "prices": [ { "value": "5,00" } ]
-      },
-      {
-        "title": "Leite em pó",
-        "prices": [ { "value": "3,00" } ]
-      },
-      {
-        "title": "Paçoca",
-        "prices": [ { "value": "3,00" } ]
-      }
     ]
   },
   {
@@ -170,27 +152,27 @@
     "items": [
       {
         "title": "Combo OC1",
-        "description": "Cuscuz recheado com queijo e café pequeno.",
+        "description": "Cuscuz recheado com queijo e café pequeno",
         "prices": [ { "value": "15,00" } ]
       },
       {
         "title": "Combo OC2",
-        "description": "Cuscuz recheado com queijo, ovos mexidos e café médio.",
+        "description": "Cuscuz recheado com queijo, ovos mexidos e café médio",
         "prices": [ { "value": "20,00" } ]
       },
       {
         "title": "Combo OC6",
-        "description": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio.",
+        "description": "Cuscuz recheado com queijo, ovos mexidos, porção de frutas e café médio",
         "prices": [ { "value": "24,00" } ]
       },
       {
         "title": "Combo SUP",
-        "description": "Misto quente (ou fatia de bolo) e café médio.",
+        "description": "Misto quente (ou fatia de bolo) e café médio",
         "prices": [ { "value": "10,00" } ]
       },
       {
         "title": "Combo Surfski",
-        "description": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia.",
+        "description": "Misto quente, fatia de bolo, porção de frutas, café médio e suco de frutas do dia",
         "prices": [ { "value": "25,00" } ]
       }
     ]
@@ -217,14 +199,8 @@
       },
       {
         "title": "Margherita da Mana",
-        "description": "Tomate, queijo e manjericão.",
+        "description": "Tomate, queijo e manjericão",
         "prices": [ { "value": "16,00" } ]
-      }
-    ],
-    "extras": [
-      {
-        "title": "Banana da Terra",
-        "prices": [ { "value": "3,00" } ]
       }
     ]
   },
@@ -245,19 +221,17 @@
         "prices": [ { "value":"14,00"} ]
       },
       {
+        "title": "Peito de peru com queijo",
+        "prices": [ { "value":"16,00"} ]
+      },
+      {
         "title": "Carne Seca com queijo",
         "prices": [ { "value":"16,00"} ]
       },
       {
         "title": "Margherita da Mana",
-        "description": "Tomate, queijo e manjericão.",
+        "description": "Tomate, queijo e manjericão",
         "prices": [ { "value":"16,00"} ]
-      }
-    ],
-    "extras": [
-      {
-        "title": "Banana da Terra",
-        "prices": [ { "value":"3,00"} ]
       }
     ]
   },
@@ -285,6 +259,35 @@
     ]
   },
   {
+    "title": "Porções Extra",
+    "items": [
+      {
+        "title": "Granola",
+        "prices": [ { "value": "3,00" } ]
+      },
+      {
+        "title": "Whey Protein",
+        "prices": [ { "value": "5,00" } ]
+      },
+      {
+        "title": "Leite em pó",
+        "prices": [ { "value": "3,00" } ]
+      },
+      {
+        "title": "Paçoca",
+        "prices": [ { "value": "3,00" } ]
+      },
+      {
+        "title": "Ovos mexidos",
+        "prices": [ { "value":"4,00"} ]
+      },
+      {
+        "title": "Banana da Terra",
+        "prices": [ { "value":"3,00"} ]
+      }
+    ]
+  },
+  {
     "title": "Cafés",
     "items": [
       {
@@ -301,7 +304,7 @@
       },
       {
         "title": "Café da Mana médio",
-        "description": "Preparado na cafeteira italiana.",
+        "description": "Preparado na cafeteira italiana",
         "prices": [ { "value":"5,00"} ]
       },
       {
