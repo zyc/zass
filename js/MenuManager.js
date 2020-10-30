@@ -11,12 +11,35 @@ class MenuManager {
         return json;
     }
 
+    static getItem(ref, e) {
+        var result = null;
+        const json = this.get(e);
+
+        if (json != null) {
+            for (var group of json) {
+                if (group.items != null) {
+                    for (var item of group.items) {
+                        if (item.ref == ref) {
+                            delete group.items;
+                            item.group = group;
+                            result = item;
+
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        return result;
+    }
+
     static load(e, done) {
         const result = this.get(e);
 
         if (result == null) {
             this.updateFromRemote(e, done);
-        } else if (done != null){
+        } else if (done != null) {
             done(result);
         }
     }

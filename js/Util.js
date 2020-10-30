@@ -20,6 +20,14 @@ class Util {
         return this.origin;
     }
 
+    static getItemRef() {
+        if (this.itemRef == null) {
+            this.itemRef = this.getParam('i');
+        }
+
+        return this.itemRef;
+    }
+
     static buildUrl(url) {
         return url + '?e=' + this.getEventAlias() + '&o=' + this.getOrigin()
     }
@@ -110,6 +118,8 @@ class Util {
 
 Util.eventAlias = null;
 Util.origin = null;
+Util.itemRef = null;
+
 Util.isAutoUpdateOn = false;
 
 $.ajaxSetup({

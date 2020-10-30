@@ -88,6 +88,7 @@ function registerItemTaps() {
     }
 
     $('.item').on('click', event => {
-        console.log($(event.currentTarget).data('ref'));
+        const i = $(event.currentTarget).data('ref');
+        location.href = Util.buildUrl('order') + '&i=' + i;
     });
 }
