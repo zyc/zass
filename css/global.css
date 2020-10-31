@@ -3,6 +3,20 @@ body {
     background-color: black;
 }
 
+@media (min-width: 978px) {
+    .container-fluid{
+        width: 500px !important;
+        overflow-x: hidden;
+    }
+
+    .fixed {
+        width: 470px !important;
+        left: inherit !important;
+        right: inherit !important;
+        /* overflow-x: hidden; */
+    }
+}
+
 .container, .container-fluid {
     /* font-size: 1.1em; */
     /* line-height: 100%; */
@@ -12,6 +26,16 @@ body {
     /* margin-bottom: 100px; */
     /* background-color: #538bae;
     color: white; */
+}
+
+.fixed {
+    /* bottom: 24px !important;
+    left: 15px !important;
+    right: 15px !important; */
+    bottom: 24px;
+    left: 15px;
+    right: 15px;
+    position: fixed;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {

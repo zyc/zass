@@ -33,16 +33,19 @@
                 <img src="" class="img-fluid"></img>
             </div>
         </div>
-            
+
         <div id="menu"></div>
 
         <div id="buttons">
-            <button id="share" type="button" class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
-            <button id="contact" type="button" class="btn btn-secondary btn-lg btn-block">Críticas & Sugestões</button>
+            <button id="share" type="button" hidden="true"
+                class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
+            <button id="contact" type="button" hidden="true" class="btn btn-secondary btn-lg btn-block">Críticas &
+                Sugestões</button>
         </div>
 
         <div class="fixed">
-            <button id="order" type="button" class="btn btn-primary btn-lg btn-block">Fazer meu Pedido</button>
+            <button id="order" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Fazer meu
+                Pedido</button>
         </div>
     </div>
 
@@ -57,7 +60,7 @@
             </div>
             {{#if options.length}}
             {{#if show_options}}
-            <div class="options">
+            <div class="options" hidden="true">
                 {{#each options}}
                 <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div> 
                 {{/each}}
@@ -157,7 +160,7 @@
 
     <script id="buttons-template" type="text/template">
         {{#each .}}
-        <button type="button" class="connection btn btn-secondary btn-lg btn-block" data-connection="{{@key}}">{{label}}</button>
+        <button type="button" class="connection btn btn-secondary btn-lg btn-block" hidden="true" data-connection="{{@key}}">{{label}}</button>
         {{/each}}
     </script>
 
@@ -170,7 +173,6 @@
     <!-- <script src="node_modules/moment/dist/moment.js"></script> -->
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>
-    <script src="node_modules/zingtouch/dist/zingtouch.min.js"></script>
 
     <!-- <script src="js/_temp.js"></script> -->
     <script src="js/Util.js"></script>

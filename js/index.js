@@ -5,7 +5,7 @@ $(() => {
         loadShareButton();
 
         registerItemTaps();
-        registerPanGesture();
+        registerEasterEgg();
         registerTaps();
     });
 });
@@ -57,17 +57,23 @@ function loadShareButton() {
     }
 }
 
-function registerPanGesture() {
-    var touchArea = $('.logo');
-    var region = new ZingTouch.Region(touchArea.parent().get(0));
+function registerEasterEgg() {
+    var count = 0;
+    var isTimeoutActive = false;
 
-    region.bind(touchArea.get(0), 'swipe', e => {
-        const direction = e.detail.data[0].currentDirection;
-
-        if (direction >= 160 && direction <= 190) {
-            $('.ref').css('display', 'none');
-        } else if (direction >= 330 && direction <= 360) {
+    $('.logo').on('click', event => {
+        count++;
+        if (count > 5) {
             $('.ref').css('display', 'inline');
+        }
+
+        if (!isTimeoutActive) {
+            isTimeoutActive = true;
+
+            setTimeout(() => {
+                count = 0;
+                isTimeoutActive = false;
+            }, 1000);
         }
     });
 }
@@ -84,6 +90,7 @@ function registerTaps() {
 
 function registerItemTaps() {
     if (!Util.isTestVersion()) {
+        $('.items .table tr').css('cursor', 'default');
         return;
     }
 

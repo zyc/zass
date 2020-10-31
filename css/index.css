@@ -11,13 +11,6 @@
     padding-bottom: 20px;
 }
 
-.fixed {
-    bottom: 24px !important;
-    left: 15px !important;
-    right: 15px !important;
-    position: fixed;
-}
-
 .table td {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -41,6 +34,7 @@
 
 .items .table tr {
     border: none;
+    cursor: pointer;
 }
 
 .items .table tbody tr:first-child td {

@@ -46,6 +46,7 @@ class Util {
         MenuManager.load(e, menu => {
             EstablishmentManager.load(e, establishment => {
                 done(e);
+                $('button').attr('hidden', false);
             });
         });
 
