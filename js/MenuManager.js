@@ -33,24 +33,6 @@ class MenuManager {
             result.group = group;
         }
 
-        // console.log(group);
-
-        // if (json != null) {
-        //     for (var group of json) {
-        //         if (group.items != null) {
-        //             for (var item of group.items) {
-        //                 if (item.ref == ref) {
-        //                     delete group.items;
-        //                     item.group = group;
-        //                     result = item;
-
-        //                     break;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-
         return result;
     }
 
@@ -81,6 +63,18 @@ class MenuManager {
         return $.ajax({
             type: "GET",
             url: 'data/menu-' + e + '.json'
+        });
+    }
+
+    static newOrder(e, json) {
+        console.log(JSON.stringify(json, null, '   '));
+        // return;
+
+        return $.ajax({
+            type: "POST",
+            url: EstablishmentManager.get(e).rest.base_url,
+            data: JSON.stringify(json),
+            contentType: "application/json"
         });
     }
 

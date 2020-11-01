@@ -14,8 +14,18 @@ $(() => {
             history.back();
         });
 
-        $('#lead').on('click', event => {
-            window.open(Util.buildUrl('lead'), '_blank');
+        $('#send').on('click', event => {
+            event.preventDefault();
+
+            MenuManager.newOrder(e, {
+                "Hora": new Date(),
+                "Mesa": "02",
+                "Cliente": "Cleverson",
+                // "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${getPriceLabel($('#price').data('obj')) != '' ? ', ' + getPriceLabel($('#price').data('obj')) : ''}`,
+                "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${$('#price').data('obj').hint != null ? ', ' + $('#price').data('obj').hint : ''}`,
+                "R$": $('#price').data('obj').value,
+                "Cod.": nanoid()
+            });
         });
 
         Util.applyStyle();
@@ -115,7 +125,7 @@ function loadItem(e, item) {
 }
 
 function getPriceLabel(price) {
-    return `${price.hint}`;
+    return price.hint;
 }
 
 function getOptionLabel(option) {
@@ -124,10 +134,12 @@ function getOptionLabel(option) {
 
 function setOption(option) {
     $('#option').val(option == null ? null : option.ref);
+    $('#option').data('obj', option);
     $('#option-la').text(option == null ? '' : getOptionLabel(option));
 }
 
 function setPrice(price) {
     $('#price').val(price == null ? null : price.ref);
+    $('#price').data('obj', price);
     $('#price-la').text('R$ ' + (price == null ? '0,00' : price.value));
 }

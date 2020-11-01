@@ -22,5 +22,8 @@
             "label": "Pedir pelo iFood",
             "url": "https://www.ifood.com.br/delivery/salvador-ba/fuego-espeteria-costa-azul/a91c0ad3-7f6d-4325-83f9-fbf6ac52b388?utm_medium=share"
         }
+    },
+    "rest": {
+        "base_url": "https://sheet.best/api/sheets/20411895-f7c1-4ac0-93ae-b1a016eb8fb7"
     }
 }
