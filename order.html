@@ -28,28 +28,55 @@
 
 <body>
     <div class="container-fluid">
-        <div class="logo">
-            <img src="" class="img-fluid"></img>
-        </div>
+        <div id="lead-container">
+            <div class="logo">
+                <img src="" class="img-fluid"></img>
+            </div>
 
-        <div class="group">
-            <div class="header">
-                <div class="title"><span>Pedido</span></div>
+            <div class="group">
+                <div class="header">
+                    <div class="title"><span>Pedido</span></div>
+                </div>
+            </div>
+
+            <div class="info">
+                <p class="alpha">Estamos nos preparando para tirar os pedidos por aqui.</p>
+                <p>Por enquanto continuamos da forma tradicional: <b>fale com o atendente</b></p>
+            </div>
+
+            <div class="lead alpha">
+                <p>Se você quer experimentar essa e outras facilidades antes de todo mundo, deixe seu contato.</p>
+            </div>
+
+            <div>
+                <button id="lead" type="button" class="btn btn-secondary btn-lg btn-block">Deixar meu Contato</button>
+                <button id="back" type="button" class="btn btn-primary btn-lg btn-block">Voltar para o Cardápio</button>
             </div>
         </div>
 
-        <div class="info">
-            <p class="alpha">Estamos nos preparando para tirar os pedidos por aqui.</p>
-            <p>Por enquanto continuamos da forma tradicional: <b>fale com o atendente</b></p>
-        </div>
+        <div id="order-container" class="hidden">
+            <form>
+                <div id="group-title" class="subtitle"></div>
+                <div id="title" class="title">Item</div>
+                <div id="description" class="description">Description</div>
 
-        <div class="lead alpha">
-            <p>Se você quer experimentar essa e outras facilidades antes de todo mundo, deixe seu contato.</p>
-        </div>
+                <div id="options">
+                    <div id="option-la" class="option"></div>
+                    <input type="hidden" id="option" name="option" />
+                    <select id="option-sel" required="true" class="form-control form-control-lg">
+                    </select>
+                </div>
 
-        <div>
-            <button id="lead" type="button" class="btn btn-secondary btn-lg btn-block">Deixar meu Contato</button>
-            <button id="back" type="button" class="btn btn-primary btn-lg btn-block">Voltar para o Cardápio</button>
+                <input type="hidden" id="price" name="price" />
+                <select id="price-sel" required="true" class="form-control form-control-lg"></select>
+                
+                <!-- <input class="form-control form-control-lg" type="text" placeholder="Alguma observação?"> -->
+                <div id="price-la" class="price">R$ 0,00</div>
+
+                <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o pedido</button>
+                <button id="back" type="button" class="btn btn-secondary btn-lg btn-block">Voltar para o
+                    Cardápio</button>
+            </form>
         </div>
     </div>
 

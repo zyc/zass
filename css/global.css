@@ -90,3 +90,7 @@ button > b {
 .header .description {
     padding-bottom: 20px;
 }
+
+.hidden {
+    display: none;
+}

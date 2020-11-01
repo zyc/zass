@@ -25,6 +25,8 @@ class EstablishmentManager {
         this.getFromRemote(e)
             .done(data => {
                 sessionStorage.setItem(this.key + e, JSON.stringify(data));
+                console.log('estabelecimento atualizado no storage');
+
                 if (done != null) done(data);
             })
             .fail(() => {

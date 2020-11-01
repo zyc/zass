@@ -1,19 +1,21 @@
 $(() => {
     const e = Util.getEventAlias();
-    var refs = [];
 
-    MenuManager.get(e).done(data => {
+    Util.loadData(e => {
+        const data = MenuManager.get(e);
         MenuManager.refElements(data, obj => {
             if (obj.ref != null) refs.push(obj.ref);
         })
 
-        MenuManager.refElements(e, obj => {
-            if (obj.ref == null) option.ref = getUniqueRandom(refs);
+        MenuManager.refElements(data, obj => {
+            if (obj.ref == null) obj.ref = getUniqueRandom();
         })
 
         console.log(JSON.stringify(data));
     });
 });
+
+var refs = [];
 
 function getRandom() {
     const min = 1, max = 9999;
@@ -24,7 +26,7 @@ function getRandom() {
     return new String(rdn.toFixed(0)).padStart(len, '0');
 }
 
-function getUniqueRandom(refs) {
+function getUniqueRandom() {
     var num = null;
 
     do {

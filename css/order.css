@@ -1,3 +1,19 @@
+.title {
+    font-size: x-large;
+}
+
+.subtitle {
+    font-size: large;
+}
+
+.description {
+    font-size: medium;
+}
+
+.price, .option {
+    font-size: x-large;
+}
+
 .info > p:nth-child(2) {
     font-size: large;
 }

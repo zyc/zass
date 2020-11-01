@@ -37,7 +37,7 @@ class Util {
     }
 
     static isTestVersion() {
-        return this.getOrigin() === 'test';
+        return this.getOrigin() === 'test' || this.getParam('exp') != null;
     }
 
     static loadData(done) {
@@ -100,6 +100,27 @@ class Util {
                 }
             });
         }
+    }
+
+    static registerEasterEgg(el, activated) {
+        var count = 0;
+        var isTimeoutActive = false;
+    
+        el.on('click', event => {
+            count++;
+            if (count > 5) {
+                activated();
+            }
+    
+            if (!isTimeoutActive) {
+                isTimeoutActive = true;
+    
+                setTimeout(() => {
+                    count = 0;
+                    isTimeoutActive = false;
+                }, 1000);
+            }
+        });
     }
 
     static getFormFilledField() {

@@ -11,25 +11,45 @@ class MenuManager {
         return json;
     }
 
+    static getPrice(ref, e) {
+        return this.getRefElement(ref, e, 'price');
+    }
+
+    static getOption(ref, e) {
+        return this.getRefElement(ref, e, 'option');
+    }
+
     static getItem(ref, e) {
         var result = null;
         const json = this.get(e);
 
-        if (json != null) {
-            for (var group of json) {
-                if (group.items != null) {
-                    for (var item of group.items) {
-                        if (item.ref == ref) {
-                            delete group.items;
-                            item.group = group;
-                            result = item;
+        var group = json.find(g => {
+            result = g.items.find(i => i.ref == ref);
+            return result != null
+        });
 
-                            break;
-                        }
-                    }
-                }
-            }
+        if (result != null) {
+            delete group.items;
+            result.group = group;
         }
+
+        // console.log(group);
+
+        // if (json != null) {
+        //     for (var group of json) {
+        //         if (group.items != null) {
+        //             for (var item of group.items) {
+        //                 if (item.ref == ref) {
+        //                     delete group.items;
+        //                     item.group = group;
+        //                     result = item;
+
+        //                     break;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
         return result;
     }
@@ -48,6 +68,8 @@ class MenuManager {
         this.getFromRemote(e)
             .done(data => {
                 sessionStorage.setItem(this.key + e, JSON.stringify(data));
+                console.log('menu atualizado no storage');
+
                 if (done != null) done(data);
             })
             .fail(() => {
@@ -62,27 +84,40 @@ class MenuManager {
         });
     }
 
+    static getRefElement(ref, e, type) {
+        var result = null;
+        const json = this.get(e);
+
+        this.refElements(json, (obj, t) => {
+            if (ref == obj.ref && type == t) {
+                result = obj;
+            }
+        });
+
+        return result;
+    }
+
     static refElements(json, handler) {
         for (var group of json) {
             if (group.options != null) {
                 for (var option of group.options) {
-                    handler(option);
+                    handler(option, 'option');
                 }
             }
 
             if (group.items != null) {
                 for (var item of group.items) {
-                    handler(item);
+                    handler(item, 'item');
 
                     if (item.options != null) {
                         for (var option of item.options) {
-                            handler(option);
+                            handler(option, 'option');
                         }
                     }
 
                     if (item.prices != null) {
                         for (var price of item.prices) {
-                            handler(price);
+                            handler(price, 'price');
                         }
                     }
                 }

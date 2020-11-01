@@ -59,13 +59,11 @@
                 {{/if}}
             </div>
             {{#if options.length}}
-            {{#if show_options}}
-            <div class="options">
+            <div class="options {{#unless show_options}}hidden{{/unless}}">
                 {{#each options}}
                 <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div> 
                 {{/each}}
             </div>
-            {{/if}}
             {{/if}}
             <div class="items">
                 {{#if items.length}}
@@ -80,13 +78,11 @@
                                 <div class="description alpha">{{description}}</div>
                                 {{/if}}
                                 {{#if options.length}}
-                                {{#if show_options}}
-                                <div class="options">
+                                <div class="options {{#unless show_options}}hidden{{/unless}}">
                                     {{#each options}}
                                     <div class="option alpha">◦ {{title}}{{#if hint}} <span class="hint">({{hint}})</span>{{/if}}<span class="ref"> #{{ref}}</span></div> 
                                     {{/each}}
                                 </div>
-                                {{/if}}
                                 {{/if}}
                             </div>
                           </td>

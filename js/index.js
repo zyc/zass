@@ -58,23 +58,9 @@ function loadShareButton() {
 }
 
 function registerEasterEgg() {
-    var count = 0;
-    var isTimeoutActive = false;
-
-    $('.logo').on('click', event => {
-        count++;
-        if (count > 5) {
-            $('.ref').css('display', 'inline');
-        }
-
-        if (!isTimeoutActive) {
-            isTimeoutActive = true;
-
-            setTimeout(() => {
-                count = 0;
-                isTimeoutActive = false;
-            }, 1000);
-        }
+    Util.registerEasterEgg($('.logo'), () => {
+        $('.ref').css('display', 'inline');
+        $('.hidden').removeClass('hidden');
     });
 }
 
