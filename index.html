@@ -37,15 +37,15 @@
         <div id="menu"></div>
 
         <div id="buttons">
-            <button id="share" type="button" hidden="true"
-                class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
-            <button id="contact" type="button" hidden="true" class="btn btn-secondary btn-lg btn-block">Críticas &
-                Sugestões</button>
+            <button id="share" type="button" class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
+            <button id="exit" type="button" class="hidden btn btn-secondary btn-lg btn-block">Parar Experimento</button>
         </div>
 
         <div class="fixed">
-            <button id="order" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Fazer meu
-                Pedido</button>
+            <button id="contact" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Críticas &
+                Sugestões</button>
+            <!-- <button id="order" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Fazer meu
+                Pedido</button> -->
         </div>
     </div>
 
@@ -112,44 +112,6 @@
                 </table>
                 {{/if}}
             </div>
-            <!-- {{#if extras.length}}
-            <div class="extras">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <td colspan="2">
-                                Extras
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody class="alpha">
-                        {{#each extras}}
-                        <tr>
-                            <td>
-                                <div class="info">
-                                    <div class="title">+ {{title}}</div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="prices">
-                                    {{#each prices}}
-                                    <div class="price">
-                                        <div>
-                                            <span class="hint">R$</span> {{value}}
-                                        </div>
-                                        {{#if hint}}
-                                        <div class="hint">({{hint}})</div>
-                                        {{/if}}
-                                    </div>
-                                    {{/each}}
-                                </div>
-                            </td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-            {{/if}} -->
         </div>
         {{/each}}
     </script>

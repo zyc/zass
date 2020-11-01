@@ -102,25 +102,35 @@ class Util {
         }
     }
 
+    static isEasterEggActive() {
+        const value = sessionStorage.getItem(this.easterEggKey);
+        return value == null ? false : value;
+    }
+
     static registerEasterEgg(el, activated) {
         var count = 0;
         var isTimeoutActive = false;
-    
+
         el.on('click', event => {
             count++;
             if (count > 5) {
+                sessionStorage.setItem(this.easterEggKey, true);
                 activated();
             }
-    
+
             if (!isTimeoutActive) {
                 isTimeoutActive = true;
-    
+
                 setTimeout(() => {
                     count = 0;
                     isTimeoutActive = false;
                 }, 1000);
             }
         });
+    }
+
+    static deactivateEasterEgg() {
+        sessionStorage.removeItem(this.easterEggKey);
     }
 
     static getFormFilledField() {
@@ -141,6 +151,7 @@ class Util {
 Util.eventAlias = null;
 Util.origin = null;
 Util.itemRef = null;
+Util.easterEggKey = 'easter_egg_active';
 
 Util.isAutoUpdateOn = false;
 

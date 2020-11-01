@@ -4,9 +4,13 @@ $(() => {
         loadButtons(e);
         loadShareButton();
 
-        registerItemTaps();
-        registerEasterEgg();
         registerTaps();
+
+        if (Util.isEasterEggActive()) {
+            loadEasterEgg();
+        } else {
+            registerEasterEgg();
+        }
     });
 });
 
@@ -57,16 +61,20 @@ function loadShareButton() {
     }
 }
 
-function registerEasterEgg() {
-    Util.registerEasterEgg($('.logo'), () => {
-        $('.ref').css('display', 'inline');
-        $('.hidden').removeClass('hidden');
-    });
-}
+// function registerEasterEgg() {
+//     Util.registerEasterEgg($('.logo'), () => {
+//         $('.ref').css('display', 'inline');
+//         $('.hidden').removeClass('hidden');
+//     });
+// }
 
 function registerTaps() {
-    $('#order').on('click', event => {
-        location.href = Util.buildUrl('order');
+    // $('#order').on('click', event => {
+    //     location.href = Util.buildUrl('order');
+    // });
+
+    $('#exit').on('click', event => {
+        deactivateEasterEgg();
     });
 
     $('#contact').on('click', event => {
@@ -84,4 +92,33 @@ function registerItemTaps() {
         const i = $(event.currentTarget).data('ref');
         location.href = Util.buildUrl('order') + '&i=' + i;
     });
+}
+
+// *********************
+// *    Easter Egg     *
+// *********************
+
+function registerEasterEgg() {
+    Util.registerEasterEgg($('.logo'), () => {
+        loadEasterEgg()
+    });
+}
+
+function loadEasterEgg() {
+    $('#order-container').removeClass('hidden');
+    $('#lead-container').remove();
+
+    $('.ref').css('display', 'inline');
+    $('.hidden').removeClass('hidden');
+
+    $('.items .table tr').css('cursor', 'pointer');
+
+    registerItemTaps();
+
+    // loadItem(e, item);
+}
+
+function deactivateEasterEgg() {
+    Util.deactivateEasterEgg();
+    location.reload();
 }

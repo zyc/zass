@@ -4,7 +4,11 @@ $(() => {
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
-        registerEasterEgg(e, item);
+        // registerEasterEgg(e, item);
+
+        if (Util.isEasterEggActive()) {
+            loadItem(e, item);
+        }
 
         $('#back').on('click', event => {
             history.back();
@@ -18,24 +22,24 @@ $(() => {
     });
 });
 
-function registerEasterEgg(e, item) {
-    if (sessionStorage.getItem('ee_order') == 'true') {
-        activateEasterEgg(e, item);
-    }
+// function registerEasterEgg(e, item) {
+//     if (sessionStorage.getItem('ee_order') == 'true') {
+//         activateEasterEgg(e, item);
+//     }
 
-    Util.registerEasterEgg($('.logo'), () => {
-        activateEasterEgg(e, item)
-    });
-}
+//     Util.registerEasterEgg($('.logo'), () => {
+//         activateEasterEgg(e, item)
+//     });
+// }
 
-function activateEasterEgg(e, item) {
-    sessionStorage.setItem('ee_order', true);
+// function activateEasterEgg(e, item) {
+//     sessionStorage.setItem('ee_order', true);
 
-    $('#order-container').removeClass('hidden');
-    $('#lead-container').remove();
+//     // $('#order-container').removeClass('hidden');
+//     // $('#lead-container').remove();
 
-    loadItem(e, item);
-}
+//     loadItem(e, item);
+// }
 
 function loadItem(e, item) {
     $('#group-title').text(item.group.title);
