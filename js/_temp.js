@@ -1,4 +1,6 @@
 $(() => {
+    if (!Util.isEasterEggActive()) return;
+
     const e = Util.getEventAlias();
 
     Util.loadData(e => {

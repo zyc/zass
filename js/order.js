@@ -4,8 +4,6 @@ $(() => {
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
-        // registerEasterEgg(e, item);
-
         if (Util.isEasterEggActive()) {
             loadItem(e, item);
         }
@@ -32,25 +30,6 @@ $(() => {
     });
 });
 
-// function registerEasterEgg(e, item) {
-//     if (sessionStorage.getItem('ee_order') == 'true') {
-//         activateEasterEgg(e, item);
-//     }
-
-//     Util.registerEasterEgg($('.logo'), () => {
-//         activateEasterEgg(e, item)
-//     });
-// }
-
-// function activateEasterEgg(e, item) {
-//     sessionStorage.setItem('ee_order', true);
-
-//     // $('#order-container').removeClass('hidden');
-//     // $('#lead-container').remove();
-
-//     loadItem(e, item);
-// }
-
 function loadItem(e, item) {
     $('#group-title').text(item.group.title);
     $('#title').text(item.title);
@@ -68,7 +47,7 @@ function loadItem(e, item) {
             $('#option-la').remove();
 
             const optionEl = $('#option-sel');
-            optionEl.append(`<option>Selecione...</option>`);
+            optionEl.append(`<option disabled selected>Escolha uma opção...</option>`);
 
             for (var option of options) {
                 optionEl.append(`<option value='${option.ref}'>${getOptionLabel(option)}</option>`);
@@ -107,7 +86,7 @@ function loadItem(e, item) {
 
     if (prices.length > 1) {
         const priceEl = $('#price-sel');
-        priceEl.append(`<option>Selecione...</option>`);
+        priceEl.append(`<option disabled selected>Escolha uma opção...</option>`);
 
         for (var price of prices) {
             priceEl.append(`<option value='${price.ref}'>${getPriceLabel(price)}</option>`);

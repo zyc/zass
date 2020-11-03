@@ -16,6 +16,25 @@ $(() => {
 
 function loadMenu(e, done) {
     const menu = MenuManager.get(e);
+
+    Handlebars.registerHelper('ifGreaterThan', function (current, limit, options) {
+        if (current > limit) {
+            return options.fn(this)
+        } else {
+            return options.inverse(this);
+        }
+    });
+
+    Handlebars.registerHelper('ifCond', function (v1, v2, options) {
+        if (v1 === v2) {
+            return options.fn(this);
+        }
+        return options.inverse(this);
+    });
+
+
+
+
     const template = Handlebars.compile($('#menu-template').html());
 
     $('#menu').html(template(menu));

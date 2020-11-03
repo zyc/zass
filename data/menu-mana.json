@@ -114,37 +114,28 @@
   },
   {
     "title": "Smoothie",
-    "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
-        "ref": "7402",
-        "title": "Tijela 300 ml",
+        "title": "O pós-treino preferido dos nossos atletas",
+        "description": "Açaí orgânico batido com banana, whey protein e pasta de amendoim. Servido na tigela, com nibs de cacau.",
         "prices": [
           {
             "value": "18,00",
+            "hint": "300ml",
             "ref": "1290"
-          }
-        ]
-      },
-      {
-        "ref": "0312",
-        "title": "Tijela 500 ml",
-        "prices": [
+          },
           {
             "value": "24,00",
+            "hint": "500ml",
             "ref": "5378"
-          }
-        ]
-      },
-      {
-        "ref": "8335",
-        "title": "Tijela 700 ml",
-        "prices": [
+          },
           {
             "value": "30,00",
+            "hint": "700ml",
             "ref": "8495"
           }
-        ]
+        ],
+        "ref": "2556"
       }
     ]
   },
@@ -153,7 +144,7 @@
     "items": [
       {
         "ref": "8879",
-        "description": "Sua fruta favorita batida com iogurte natural.",
+        "title": "Sua fruta favorita batida com iogurte natural",
         "show_options": true,
         "options": [
           {
@@ -205,7 +196,8 @@
     "items": [
       {
         "title": "Açaí",
-        "show_options": true,
+        "description": "Puro ou com limão",
+        "show_options": false,
         "options": [
           {
             "title": "Puro",
@@ -287,7 +279,7 @@
       },
       {
         "title": "Detox",
-        "description": "Mix de frutas, gengibre, couve e hortelã.",
+        "description": "Mix de frutas, gengibre, couve e hortelã",
         "prices": [
           {
             "value": "9,00",

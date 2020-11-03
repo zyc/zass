@@ -70,6 +70,13 @@
                 <table class="table">
                     <tbody>
                         {{#each items}}
+                        {{#if @first}}
+                        <tr>
+                            <td colspan="2" class="line">
+                                <div></div>
+                            </td>
+                        </tr>
+                        {{/if}}
                         <tr class="item" data-ref="{{ref}}">
                           <td>
                             <div class="info">
@@ -96,7 +103,7 @@
                                     {{#if hint}}
                                     <div class="hint alpha">{{hint}}</div>
                                     {{/if}}
-                                    {{#if ref}}<span class="ref"> #{{ref}}</span>{{/if}}
+                                    {{#ifGreaterThan ../prices.length 1 }}{{#if ref}}<span class="ref"> #{{ref}}</span>{{/if}}{{/ifGreaterThan}}
                                 </div>
                                 {{/each}}
                             </div>
@@ -132,7 +139,7 @@
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>
 
-    <!-- <script src="js/_temp.js"></script> -->
+    <script src="js/_temp.js"></script>
     <script src="js/Util.js"></script>
     <script src="js/MenuManager.js"></script>
     <script src="js/EstablishmentManager.js"></script>
