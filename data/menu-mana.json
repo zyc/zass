@@ -116,8 +116,8 @@
     "title": "Smoothie",
     "items": [
       {
-        "title": "O pós-treino preferido dos nossos atletas",
-        "description": "Açaí orgânico batido com banana, whey protein e pasta de amendoim. Servido na tigela, com nibs de cacau.",
+        "title": "Na tigela",
+        "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
         "prices": [
           {
             "value": "18,00",
@@ -144,7 +144,8 @@
     "items": [
       {
         "ref": "8879",
-        "title": "Sua fruta favorita batida com iogurte natural",
+        "title": "Na taça",
+        "description": "Sua fruta favorita batida com iogurte natural",
         "show_options": true,
         "options": [
           {
@@ -392,7 +393,7 @@
       },
       {
         "ref": "5693",
-        "title": "Carne Seca com queijo",
+        "title": "Carne seca com queijo",
         "prices": [
           {
             "value": "16,00",
@@ -459,7 +460,7 @@
       },
       {
         "ref": "3447",
-        "title": "Carne Seca com queijo",
+        "title": "Carne seca com queijo",
         "prices": [
           {
             "value": "16,00",
@@ -597,7 +598,7 @@
     "items": [
       {
         "ref": "4414",
-        "title": "Café Expresso curto",
+        "title": "Café expresso curto",
         "prices": [
           {
             "value": "5,00",
@@ -607,7 +608,7 @@
       },
       {
         "ref": "6211",
-        "title": "Café Expresso longo",
+        "title": "Café expresso longo",
         "prices": [
           {
             "value": "6,00",
