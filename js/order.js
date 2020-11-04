@@ -15,15 +15,17 @@ $(() => {
         $('#send').on('click', event => {
             event.preventDefault();
 
-            MenuManager.newOrder(e, {
-                "Hora": new Date(),
-                "Mesa": "02",
-                "Cliente": "Cleverson",
-                // "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${getPriceLabel($('#price').data('obj')) != '' ? ', ' + getPriceLabel($('#price').data('obj')) : ''}`,
-                "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${$('#price').data('obj').hint != null ? ', ' + $('#price').data('obj').hint : ''}`,
-                "R$": $('#price').data('obj').value,
-                "Cod.": nanoid()
-            });
+            if (confirm("Enviar o pedido?")) { 
+                MenuManager.newOrder(e, {
+                    "Hora": new Date(),
+                    "Mesa": "02",
+                    "Cliente": "Cleverson",
+                    // "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${getPriceLabel($('#price').data('obj')) != '' ? ', ' + getPriceLabel($('#price').data('obj')) : ''}`,
+                    "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${$('#price').data('obj').hint != null ? ', ' + $('#price').data('obj').hint : ''}`,
+                    "R$": $('#price').data('obj').value,
+                    "Cod.": nanoid()
+                });
+            }
         });
 
         Util.applyStyle();
@@ -40,6 +42,11 @@ function loadItem(e, item) {
         item._prices = item.prices;
     }
 
+    item._controls = (item._options != null && item._options.length > 0) || (item._prices != null && item._prices.length > 0)
+
+    item._description = `${item.group.description != null ? item.group.description : ''} ${item.description != null ? item.description : ''}`;
+    item._description = item._description.trim() != '' ? item._description.trim() : null;
+
     const template = Handlebars.compile($('#template').html());
     $('#order').html(template(item));
 
@@ -48,8 +55,6 @@ function loadItem(e, item) {
         const ref = $(event.currentTarget).val();
         const option = MenuManager.getOption(ref, e);
         var price = null;
-
-        console.log(ref);
 
         if (option != null) {
             price = item.prices.find(p => p.hint == option.hint);
@@ -69,12 +74,13 @@ function loadItem(e, item) {
     $('#price-sel').on('change', event => {
         const ref = $(event.currentTarget).val();
         const price = MenuManager.getPrice(ref, e);
+
+        console.log(price);
+
         setPrice(price);
     });
 
-
     console.log(JSON.stringify(item, null, '  '));
-
 
     return;
 
@@ -169,5 +175,8 @@ function setOption(option) {
 function setPrice(price) {
     $('#price').val(price == null ? null : price.ref);
     $('#price').data('obj', price);
-    $('#price-la').text('R$ ' + (price == null ? '0,00' : price.value));
+
+    console.log(price == null ? '0,00' : price.value);
+
+    $('#price-la').text(price == null ? '0,00' : price.value);
 }

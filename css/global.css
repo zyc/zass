@@ -87,8 +87,14 @@ button > b {
     /* color: white; */
 }
 
-.header .description {
-    padding-bottom: 20px;
+.description {
+    font-weight: lighter;
+    /* font-size: 0.96em; */
+}
+
+.hint {
+    font-size: .7em;
+    font-weight: lighter;
 }
 
 .hidden {

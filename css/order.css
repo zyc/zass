@@ -1,19 +1,20 @@
 .header .title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .info .title {
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 
 .info {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 46px;
 }
 
 .price {
     font-size: 40px;
+    font-weight: lighter;
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
@@ -21,36 +22,36 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    border: 2px dashed;
+    border: 1px dashed;
     border-radius: 14px;
+}
+
+.controls {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .price-painel {
     opacity: 0.4;
+    margin-top: -10px;
 }
 
 .description {
-    padding-top: 6px;
-    font-size: medium;
-    font-weight: lighter;
+    margin-top: 24px;
+    /* font-size: medium; */
+    /* font-weight: lighter; */
 }
 
-.price, .option {
-    /* font-size: x-large; */
-}
-
-.info > p:nth-child(2) {
-    /* font-size: large; */
-}
-
-.info  {
-    /* font-weight: lighter;
-    font-size: 16px; */
-}
-
-.lead {
-    /* font-weight: 200;
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 24px; */
-}
+select {
+    /* margin: 50px; */
+    /* width: 150px; */
+    /* padding: 5px 35px 5px 5px; */
+    /* font-size: 16px; */
+    /* border: 1px solid #CCC;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    /* background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat #EEE; */
+    /* background-color: red; */
+  }

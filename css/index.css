@@ -7,15 +7,15 @@
     /* margin-bottom: 100px; */
 }
 
-#menu {
+/* #menu {
     padding-bottom: 20px;
-}
+} */
 
 .table td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0px;
+    /* padding-right: 0px; */
 
     border-top: none;
     vertical-align: middle;
@@ -23,7 +23,8 @@
 
 .group > .options {
     padding-top: 0px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .options .option {
@@ -32,21 +33,26 @@
     display: inline-block;
 }
 
+.table {
+    margin-top: 18px;
+    margin-bottom: 46px;
+}
+
 .items .table tr {
     border: none;
     /* cursor: pointer; */
 }
 
-.items .table tbody tr:first-child td {
+/* .items .table tbody tr:first-child td {
     padding-top: 0px;
-}
+} */
 
 .items .table .line {
     padding: 0px;
 }
 
 .items .table .line div {
-    border-bottom: 0.8px solid white;
+    border-bottom: 1px solid white;
     /* border-bottom: 1px dashed white; */
     opacity: 0.2;
 }
@@ -69,10 +75,13 @@ td.chevron {
 } */
 
 .items .info {
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-right: 10px;
 }
 
 .items .info .title {
+    margin-bottom: 6px;
     font-weight: bold;
 }
 
@@ -80,9 +89,9 @@ td.chevron {
     padding-right: 10px;
 }
 
-.items .info .description {
+/* .items .info .description {
     padding-top: 2px;
-}
+} */
 
 /* .item { */
     /* border: 1px solid red; */
@@ -95,9 +104,9 @@ td.chevron {
     /* font-size: 0.96em; */
 }
 
-.items .price:last-child {
+/* .items .price:last-child {
     margin-bottom: 0px;
-}
+} */
 
 /* .extras .info {
     padding-left: 36px;
@@ -108,21 +117,22 @@ td.chevron {
     padding-bottom: 0px;
 } */
 
-.description {
-    font-weight: lighter;
-    /* font-size: 0.96em; */
+.header .description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header .title {
+    margin-top: 46px;
+    margin-bottom: 46px;
 }
 
 .price {
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     overflow: hidden;
     white-space: nowrap;
     text-align: right;
-}
-
-.hint {
-    font-size: small;
-    font-weight: lighter;
 }
 
 .ref {
