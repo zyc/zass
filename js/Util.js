@@ -164,3 +164,15 @@ $.ajaxSetup({
         }
     }
 });
+
+if (Handlebars != null) {
+    Handlebars.registerHelper('notSingle', function (obj, options) {
+        if (obj != null && obj.length != null) {
+            if (obj.length > 1) {
+                return options.fn(this)
+            } else if (obj.length == 1) {
+                return options.inverse(this);
+            }
+        }
+    });
+}

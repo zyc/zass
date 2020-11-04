@@ -17,26 +17,7 @@ $(() => {
 function loadMenu(e, done) {
     const menu = MenuManager.get(e);
 
-    Handlebars.registerHelper('ifGreaterThan', function (current, limit, options) {
-        if (current > limit) {
-            return options.fn(this)
-        } else {
-            return options.inverse(this);
-        }
-    });
-
-    Handlebars.registerHelper('ifCond', function (v1, v2, options) {
-        if (v1 === v2) {
-            return options.fn(this);
-        }
-        return options.inverse(this);
-    });
-
-
-
-
-    const template = Handlebars.compile($('#menu-template').html());
-
+    const template = Handlebars.compile($('#template').html());
     $('#menu').html(template(menu));
 
     Util.applyStyle();
@@ -80,18 +61,7 @@ function loadShareButton() {
     }
 }
 
-// function registerEasterEgg() {
-//     Util.registerEasterEgg($('.logo'), () => {
-//         $('.ref').css('display', 'inline');
-//         $('.hidden').removeClass('hidden');
-//     });
-// }
-
 function registerTaps() {
-    // $('#order').on('click', event => {
-    //     location.href = Util.buildUrl('order');
-    // });
-
     $('#exit').on('click', event => {
         deactivateEasterEgg();
     });
@@ -127,14 +97,13 @@ function loadEasterEgg() {
     $('#order-container').removeClass('hidden');
     $('#lead-container').remove();
 
-    $('.ref').css('display', 'inline');
+    // $('.ref').css('display', 'inline');
+    $('td.chevron').css('display', 'table-cell');
     $('.hidden').removeClass('hidden');
 
     $('.items .table tr').css('cursor', 'pointer');
 
     registerItemTaps();
-
-    // loadItem(e, item);
 }
 
 function deactivateEasterEgg() {

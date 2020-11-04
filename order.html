@@ -56,7 +56,10 @@
 
         <div>
             <form>
-                <div id="group-title" class="subtitle"></div>
+                <div id="order"></div>
+
+
+                <!-- <div id="group-title" class="subtitle"></div>
                 <div id="title" class="title">Item</div>
                 <div id="description" class="description">Description</div>
 
@@ -70,15 +73,68 @@
                 <input type="hidden" id="price" name="price" />
                 <select id="price-sel" required="true" class="form-control"></select>
 
+                <div id="price-la" class="price">R$ 0,00</div> -->
                 <!-- <input class="form-control form-control-lg" type="text" placeholder="Alguma observação?"> -->
-                <div id="price-la" class="price">R$ 0,00</div>
 
-                <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o Pedido</button>
+                <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o Pedido <span id="price-la"></span></button>
                 <button id="back" type="button" class="btn btn-secondary btn-lg btn-block">Voltar para o
                     Cardápio</button>
             </form>
         </div>
     </div>
+
+    <script id="template" type="text/template">
+        <form>
+            <div class="header">
+                <div class="title"><span>{{group.title}}</span></div>
+                {{#if group.description}}
+                <div class="description alpha"><span>{{group.description}}</span></div>
+                {{/if}}
+            </div>
+
+            <div class="info">
+                {{#if title}}
+                <div class="title">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <span>{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}</span>
+                </span>
+                {{/if}}
+
+                {{#if description}}
+                <div class="description alpha">{{description}}</div>
+                {{/if}}
+            </div>
+
+            <!-- <select></<select> -->
+            <div>
+                <input type="hidden" id="option" name="option" value="{{#notSingle _options}}{{else}}{{_options.[0].ref}}{{/notSingle}}" />
+                {{#notSingle _options}}
+                <select id="option-sel" required="true" class="form-control">
+                    <option disabled selected>Escolha uma opção...</option>
+                    {{#each _options}}
+                    <option value='{{ref}}'>{{title}}{{#if hint}} ({{hint}}){{/if}}</option>
+                    {{/each}}
+                </select>
+                {{/notSingle}}
+                
+                <input type="hidden" id="price" name="price" value="{{#notSingle prices}}{{else}}{{prices.[0].ref}}{{/notSingle}}" />
+                {{#notSingle _prices}}
+                <select id="price-sel" required="true" class="form-control">
+                    <option disabled selected>Escolha uma opção...</option>
+                    {{#each _prices}}
+                    <option value='{{ref}}'>{{hint}}</option>
+                    {{/each}}
+                </select>
+                {{/notSingle}}
+            </div>
+
+            <div class="price-painel">
+                <div id="price-la" class="price">R$ {{#unless _prices.length}}0,00{{/unless}}{{#notSingle _prices}}0,00{{else}}{{_prices.[0].value}}{{/notSingle}}</div>
+            </div>    
+        </form>
+    </script>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

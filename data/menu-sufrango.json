@@ -1,7 +1,7 @@
 [
   {
     "title": "Pratos principais",
-    "description": "Os pratos para uma pessoa acompanham coxa e sobrecoxa, ou peito de frango, à escolha. Os pratos para duas pessoas acompanham meio frango.",
+    "descriptionx": "Os pratos para uma pessoa acompanham coxa e sobrecoxa, ou peito de frango, à escolha. Os pratos para duas pessoas acompanham meio frango.",
     "show_options": false,
     "options": [
       {
@@ -362,7 +362,7 @@
         "ref": "4856"
       },
       {
-        "title": "Água mineral com gás",
+        "title": "Água com gás",
         "hint": "350ml",
         "prices": [
           {
@@ -373,7 +373,7 @@
         "ref": "8401"
       },
       {
-        "title": "Água mineral sem gás",
+        "title": "Água sem gás",
         "hint": "350ml",
         "prices": [
           {
@@ -384,7 +384,7 @@
         "ref": "6337"
       },
       {
-        "title": "Água mineral com gás",
+        "title": "Água com gás",
         "hint": "500ml",
         "prices": [
           {
@@ -395,7 +395,7 @@
         "ref": "8069"
       },
       {
-        "title": "Água mineral sem gás",
+        "title": "Água sem gás",
         "hint": "500ml",
         "prices": [
           {

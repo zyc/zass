@@ -1,31 +1,56 @@
-.title {
-    font-size: x-large;
+.header .title {
+    margin-bottom: 20px;
 }
 
-.subtitle {
-    font-size: large;
+.info .title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border: 2px dashed;
+    border-radius: 14px;
+}
+
+.price-painel {
+    opacity: 0.4;
 }
 
 .description {
+    padding-top: 6px;
     font-size: medium;
+    font-weight: lighter;
 }
 
 .price, .option {
-    font-size: x-large;
+    /* font-size: x-large; */
 }
 
 .info > p:nth-child(2) {
-    font-size: large;
+    /* font-size: large; */
 }
 
 .info  {
-    font-weight: lighter;
-    font-size: 16px;
+    /* font-weight: lighter;
+    font-size: 16px; */
 }
 
 .lead {
-    font-weight: 200;
+    /* font-weight: 200;
     font-size: 16px;
     padding-top: 10px;
-    padding-bottom: 24px;
+    padding-bottom: 24px; */
 }

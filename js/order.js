@@ -27,10 +27,59 @@ $(() => {
         });
 
         Util.applyStyle();
+        $('body').css('background-color', EstablishmentManager.get(e).layout.bg_color.container);
     });
 });
 
 function loadItem(e, item) {
+    item._options = (item.options != null ? item.options : item.group.options);
+
+    if (item._options != null && item.prices.length > 1) {
+        item._prices = item.prices.filter(p => item._options.filter(o => o.hint == p.hint).length == 0);
+    } else {
+        item._prices = item.prices;
+    }
+
+    const template = Handlebars.compile($('#template').html());
+    $('#order').html(template(item));
+
+    // if (item._options != null) {
+    $('#option-sel').on('change', event => {
+        const ref = $(event.currentTarget).val();
+        const option = MenuManager.getOption(ref, e);
+        var price = null;
+
+        console.log(ref);
+
+        if (option != null) {
+            price = item.prices.find(p => p.hint == option.hint);
+        } else if (option == null && $('#price').val() != null && $('#price-sel').length == 0) {
+            setPrice(null);
+        }
+
+        setOption(option);
+
+        if (price != null) {
+            console.log(price);
+            setPrice(price);
+        }
+    });
+    // }
+
+    $('#price-sel').on('change', event => {
+        const ref = $(event.currentTarget).val();
+        const price = MenuManager.getPrice(ref, e);
+        setPrice(price);
+    });
+
+
+    console.log(JSON.stringify(item, null, '  '));
+
+
+    return;
+
+
+
     $('#group-title').text(item.group.title);
     $('#title').text(item.title);
 

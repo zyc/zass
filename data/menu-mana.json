@@ -114,186 +114,220 @@
   },
   {
     "title": "Smoothie",
+    "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
     "items": [
       {
-        "title": "Na tigela",
-        "description": "O pós-treino preferido dos nossos atletas! Açaí orgânico batido com banana, whey protein e pasta de amendoim. Com nibs de cacau.",
+        "ref": "7402",
+        "title": "Tijela 300 ml",
         "prices": [
           {
             "value": "18,00",
-            "hint": "300ml",
             "ref": "1290"
-          },
+          }
+        ]
+      },
+      {
+        "ref": "0312",
+        "title": "Tijela 500 ml",
+        "prices": [
           {
             "value": "24,00",
-            "hint": "500ml",
             "ref": "5378"
-          },
-          {
-            "value": "30,00",
-            "hint": "700ml",
-            "ref": "8495"
           }
-        ],
-        "ref": "2556"
-      }
-    ]
-  },
-  {
-    "title": "Frozen Yogurt",
-    "items": [
+        ]
+      },
       {
-        "ref": "8879",
-        "title": "Na taça",
-        "description": "Sua fruta favorita batida com iogurte natural",
-        "show_options": true,
-        "options": [
-          {
-            "title": "Mangaba",
-            "ref": "6600"
-          },
-          {
-            "title": "Cacau",
-            "ref": "7256"
-          },
-          {
-            "title": "Cupuaçu",
-            "ref": "5701"
-          },
-          {
-            "title": "Graviola",
-            "ref": "9800"
-          },
-          {
-            "title": "Frutas vermelhas",
-            "ref": "5742"
-          },
-          {
-            "title": "Uva",
-            "ref": "7551"
-          },
-          {
-            "title": "Morango",
-            "ref": "2354"
-          }
-        ],
+        "ref": "8335",
+        "title": "Tijela 700 ml",
         "prices": [
           {
-            "value": "12,00",
-            "hint": "300ml",
-            "ref": "6824"
-          },
-          {
-            "value": "18,00",
-            "hint": "500ml",
-            "ref": "0034"
+            "value": "30,00",
+            "ref": "8495"
           }
         ]
       }
     ]
   },
   {
-    "title": "Sucos",
+    "title": "Frozen Yogurt",
+    "description": "Sua fruta favorita batida com iogurte natural.",
+    "show_options": true,
+    "options": [
+      {
+        "title": "Mangaba",
+        "ref": "0031"
+      },
+      {
+        "title": "Cacau",
+        "ref": "1778"
+      },
+      {
+        "title": "Cupuaçu",
+        "ref": "1858"
+      },
+      {
+        "title": "Graviola",
+        "ref": "4125"
+      },
+      {
+        "title": "Frutas vermelhas",
+        "ref": "0122"
+      },
+      {
+        "title": "Uva",
+        "ref": "7307"
+      },
+      {
+        "title": "Morango",
+        "ref": "9043"
+      }
+    ],
     "items": [
       {
-        "title": "Açaí",
-        "description": "Puro ou com limão",
-        "show_options": false,
-        "options": [
+        "ref": "8879",
+        "title": "Copo 300 ml",
+        "prices": [
           {
-            "title": "Puro",
-            "ref": "3123"
-          },
-          {
-            "title": "Com limão",
-            "ref": "0756"
+            "value": "12,00",
+            "ref": "5077"
           }
-        ],
+        ]
+      },
+      {
+        "ref": "2889",
+        "title": "Copo 500 ml",
+        "prices": [
+          {
+            "value": "18,00",
+            "ref": "3718"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Suco de Acaí",
+    "show_options": true,
+    "options": [
+      {
+        "title": "Puro",
+        "ref": "6263"
+      },
+      {
+        "title": "Com limão",
+        "ref": "4041"
+      }
+    ],
+    "items": [
+      {
+        "ref": "6110",
+        "title": "Copo 300 ml",
         "prices": [
           {
             "value": "11,00",
-            "hint": "300ml",
-            "ref": "2787"
-          },
-          {
-            "value": "15,00",
-            "hint": "500ml",
-            "ref": "4935"
+            "ref": "9929"
           }
-        ],
-        "ref": "2009"
+        ]
       },
       {
-        "title": "Especiais",
-        "show_options": true,
-        "options": [
+        "ref": "1157",
+        "title": "Copo 500 ml",
+        "prices": [
           {
-            "title": "Frutas vermelhas",
-            "ref": "9910"
-          },
-          {
-            "title": "Limão",
-            "ref": "4926"
-          },
-          {
-            "title": "Morango",
-            "ref": "4969"
-          },
-          {
-            "title": "Cupuaçu",
-            "ref": "8656"
-          },
-          {
-            "title": "Mangaba",
-            "ref": "2005"
-          },
-          {
-            "title": "Graviola",
-            "ref": "0551"
-          },
-          {
-            "title": "Cacau",
-            "ref": "1667"
-          },
-          {
-            "title": "Amora com Uva",
-            "ref": "7208"
-          },
-          {
-            "title": "Abacaxi com Hortelã",
-            "ref": "2894"
+            "value": "15,00",
+            "ref": "7771"
           }
-        ],
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sucos Especiais",
+    "show_options": true,
+    "options": [
+      {
+        "title": "Frutas vermelhas",
+        "ref": "1192"
+      },
+      {
+        "title": "Limão",
+        "ref": "5404"
+      },
+      {
+        "title": "Morango",
+        "ref": "0471"
+      },
+      {
+        "title": "Cupuaçu",
+        "ref": "2292"
+      },
+      {
+        "title": "Mangaba",
+        "ref": "0470"
+      },
+      {
+        "title": "Graviola",
+        "ref": "6731"
+      },
+      {
+        "title": "Cacau",
+        "ref": "6399"
+      },
+      {
+        "title": "Amora com Uva",
+        "ref": "2926"
+      },
+      {
+        "title": "Abacaxi com Hortelã",
+        "ref": "9148"
+      }
+    ],
+    "items": [
+      {
+        "ref": "8594",
+        "title": "Copo 300 ml",
         "prices": [
           {
             "value": "7,00",
-            "hint": "300ml",
-            "ref": "3261"
-          },
-          {
-            "value": "11,00",
-            "hint": "500ml",
-            "ref": "5477"
+            "ref": "0456"
           }
-        ],
-        "ref": "5797"
+        ]
       },
       {
-        "title": "Detox",
-        "description": "Mix de frutas, gengibre, couve e hortelã",
+        "ref": "8840",
+        "title": "Copo 500 ml",
+        "prices": [
+          {
+            "value": "11,00",
+            "ref": "6935"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Suco Detox",
+    "description": "Mix de frutas, gengibre, couve e hortelã.",
+    "items": [
+      {
+        "ref": "8010",
+        "title": "Copo 300 ml",
         "prices": [
           {
             "value": "9,00",
-            "hint": "300ml",
-            "ref": "5358"
-          },
+            "ref": "8555"
+          }
+        ]
+      },
+      {
+        "ref": "7816",
+        "title": "Copo 500 ml",
+        "prices": [
           {
             "value": "13,00",
-            "hint": "500ml",
-            "ref": "4880"
+            "ref": "3385"
           }
-        ],
-        "ref": "4815"
+        ]
       }
     ]
   },
@@ -393,7 +427,7 @@
       },
       {
         "ref": "5693",
-        "title": "Carne seca com queijo",
+        "title": "Carne Seca com queijo",
         "prices": [
           {
             "value": "16,00",
@@ -460,7 +494,7 @@
       },
       {
         "ref": "3447",
-        "title": "Carne seca com queijo",
+        "title": "Carne Seca com queijo",
         "prices": [
           {
             "value": "16,00",
@@ -598,7 +632,7 @@
     "items": [
       {
         "ref": "4414",
-        "title": "Café expresso curto",
+        "title": "Café Expresso curto",
         "prices": [
           {
             "value": "5,00",
@@ -608,7 +642,7 @@
       },
       {
         "ref": "6211",
-        "title": "Café expresso longo",
+        "title": "Café Expresso longo",
         "prices": [
           {
             "value": "6,00",

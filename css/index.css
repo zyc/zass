@@ -46,13 +46,27 @@
 }
 
 .items .table .line div {
-    border-bottom: 1px dashed white;
-    opacity: 0.4;
+    border-bottom: 0.8px solid white;
+    /* border-bottom: 1px dashed white; */
+    opacity: 0.2;
 }
 
 .items .table td:first-child {
     width: 100%;
 }
+
+td.chevron {
+    padding-left: 6px;
+    opacity: 0.4;
+    display: none;
+    /* vertical-align: middle; */
+
+    /* text-align: end; */
+}
+
+/* .items .table td.chevron svg {
+    opacity: 0.4;
+} */
 
 .items .info {
     padding-right: 10px;
