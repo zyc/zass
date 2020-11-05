@@ -1,14 +1,14 @@
 class MenuManager {
 
     static get(e) {
-        const jwt = sessionStorage.getItem(this.key + e);
-        var json = null;
+        // const jwt = sessionStorage.getItem(this.key + e);
+        // var json = null;
 
-        if (jwt != null) {
-            json = JSON.parse(jwt);
-        }
+        // if (jwt != null) {
+        //     json = JSON.parse(jwt);
+        // }
 
-        return json;
+        return Util.getMenuCache(e);
     }
 
     static getPrice(ref, e) {
@@ -49,9 +49,8 @@ class MenuManager {
     static updateFromRemote(e, done) {
         this.getFromRemote(e)
             .done(data => {
-                sessionStorage.setItem(this.key + e, JSON.stringify(data));
-                console.log('menu atualizado no storage');
-
+                // sessionStorage.setItem(this.key + e, JSON.stringify(data));
+                Util.setMenuCache(e, data);
                 if (done != null) done(data);
             })
             .fail(() => {
@@ -68,7 +67,6 @@ class MenuManager {
 
     static newOrder(e, json) {
         console.log(JSON.stringify(json, null, '   '));
-        return;
 
         return $.ajax({
             type: "POST",

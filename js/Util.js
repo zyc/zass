@@ -133,6 +133,32 @@ class Util {
         sessionStorage.removeItem(this.easterEggKey);
     }
 
+    static setMenuCache(e, json) {
+        this.setCache('menu', e, json);
+    }
+
+    static getMenuCache(e) {
+        return this.getCache('menu', e);
+    }
+
+    static setInfoCache(e, json) {
+        this.setCache('info', e, json);
+    }
+
+    static getInfoCache(e) {
+        return this.getCache('info', e);
+    }
+
+    static setCache(key, e, object) {
+        this.cache[key][e] = (object == null ? null : JSON.stringify(object, null, '  '));
+        console.log(`${key} ${e} atualizado no cache`);
+    }
+
+    static getCache(key, e) {
+        var string = this.cache[key][e];
+        return string == null ? null : JSON.parse(string);
+    }
+
     static getFormFilledField() {
         const e = this.getEventAlias();
 
@@ -152,8 +178,11 @@ Util.eventAlias = null;
 Util.origin = null;
 Util.itemRef = null;
 Util.easterEggKey = 'easter_egg_active';
-
 Util.isAutoUpdateOn = false;
+Util.cache = {
+    info: {},
+    menu: {}
+};
 
 $.ajaxSetup({
     error: function (request) {

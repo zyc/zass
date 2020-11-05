@@ -169,21 +169,55 @@ function registerTaps(e, item) {
             return;
         }
 
-        if (confirm("Enviar o pedido?")) {
-            const data = {
-                "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
-                "Mesa": "",
-                "Cliente": name,
-                "Pedido": stringify(item),
-                "R$": item.price.value,
-                "Cod.": item.id
-            }
-
-            alert(JSON.stringify(data, null, '  '));
-            return;
-            
-            MenuManager.newOrder(e, data);
+        const data = {
+            "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
+            "Mesa": "",
+            "Cliente": name,
+            "Pedido": stringify(item),
+            "R$": item.price.value,
+            "Cod.": item.id
         }
+
+        Swal.fire({
+            title: 'Posso pedir?',
+            text: stringify(item),
+            icon: 'question',
+            showCancelButton: true,
+            // confirmButtonColor: '#3085d6',
+            // cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, tudo certo!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // alert(JSON.stringify(data, null, '  '));
+
+                MenuManager.newOrder(e, data)
+                    .done(() => {
+                        Swal.fire({
+                            title: 'Pedido enviado!',
+                            text: 'Levaremos até você quando estiver pronto',
+                            icon: 'success'
+                        })
+                    });
+            }
+        })
+
+
+        // if (confirm("Enviar o pedido?")) {
+        //     const data = {
+        //         "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
+        //         "Mesa": "",
+        //         "Cliente": name,
+        //         "Pedido": stringify(item),
+        //         "R$": item.price.value,
+        //         "Cod.": item.id
+        //     }
+
+        //     alert(JSON.stringify(data, null, '  '));
+        //     return;
+
+        //     MenuManager.newOrder(e, data);
+        // }
     });
 }
 
