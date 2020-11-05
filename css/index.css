@@ -24,7 +24,7 @@
 .group > .options {
     padding-top: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .options .option {
@@ -65,18 +65,11 @@ td.chevron {
     padding-left: 6px;
     opacity: 0.4;
     display: none;
-    /* vertical-align: middle; */
-
-    /* text-align: end; */
 }
 
-/* .items .table td.chevron svg {
-    opacity: 0.4;
-} */
-
 .items .info {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     padding-right: 10px;
 }
 
@@ -89,43 +82,20 @@ td.chevron {
     padding-right: 10px;
 }
 
-/* .items .info .description {
-    padding-top: 2px;
-} */
-
-/* .item { */
-    /* border: 1px solid red; */
-    /* background-color: red; */
-/* } */
-
 .items .options {
     padding-top: 10px;
     font-weight: lighter;
-    /* font-size: 0.96em; */
 }
-
-/* .items .price:last-child {
-    margin-bottom: 0px;
-} */
-
-/* .extras .info {
-    padding-left: 36px;
-}
-
-.extras table td {
-    padding-top: 0px;
-    padding-bottom: 0px;
-} */
 
 .header .description {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-.header .title {
+/* .header .title {
     margin-top: 46px;
     margin-bottom: 46px;
-}
+} */
 
 .price {
     margin-top: 16px;

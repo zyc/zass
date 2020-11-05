@@ -1,15 +1,21 @@
-.header .title {
+/* .header .title {
     margin-bottom: 10px;
-}
+} */
 
 .info .title {
     font-size: large;
     font-weight: bold;
 }
 
+.info .title .icon {
+    padding-left: 10px;
+    opacity: .8;
+    display: inline-block;
+}
+
 .info {
-    margin-top: 40px;
-    margin-bottom: 46px;
+    margin-top: 30px;
+    margin-bottom: 36px;
 }
 
 .price {
@@ -27,19 +33,39 @@
 }
 
 .controls {
-    margin-top: 40px;
+    margin-top: -36px;
     margin-bottom: 30px;
 }
 
+/* .controls select {
+    background-color: #58a8b2;
+    color: white;
+    border: 1px solid white;
+}
+
+.controls select:hover {
+    background-color: green;
+    color:pink;
+}
+
+.controls select:visited {
+    background-color: burlywood;
+    color: purple;
+}
+
+.controls select:active {
+    background-color: red;
+    color: yellow;
+    border: none;
+} */
+
 .price-painel {
-    opacity: 0.4;
+    /* opacity: 0.4; */
     margin-top: -10px;
 }
 
 .description {
     margin-top: 24px;
-    /* font-size: medium; */
-    /* font-weight: lighter; */
 }
 
 select {

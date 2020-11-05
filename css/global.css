@@ -18,20 +18,11 @@ body {
 }
 
 .container, .container-fluid {
-    /* font-size: 1.1em; */
-    /* line-height: 100%; */
-    /* padding-top: 5px; */
     padding-bottom: 16px;
     background-color: black;
-    /* margin-bottom: 100px; */
-    /* background-color: #538bae;
-    color: white; */
 }
 
 .fixed {
-    /* bottom: 24px !important;
-    left: 15px !important;
-    right: 15px !important; */
     bottom: 24px;
     left: 15px;
     right: 15px;
@@ -75,7 +66,7 @@ button > b {
     font-weight: bolder;
     text-transform: uppercase;
     margin-top: 46px;
-    margin-bottom: 36px;
+    margin-bottom: 46px;
     vertical-align: middle;
 }
 
@@ -89,11 +80,10 @@ button > b {
 
 .description {
     font-weight: lighter;
-    /* font-size: 0.96em; */
 }
 
 .hint {
-    font-size: .7em;
+    font-size: .8em;
     font-weight: lighter;
 }
 

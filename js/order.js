@@ -1,6 +1,13 @@
 $(() => {
     const i = Util.getItemRef();
 
+    // Swal.fire({
+    //     title: 'Error!',
+    //     text: 'Do you want to continue',
+    //     icon: 'error',
+    //     confirmButtonText: 'Cool'
+    //   })
+
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
@@ -8,25 +15,7 @@ $(() => {
             loadItem(e, item);
         }
 
-        $('#back').on('click', event => {
-            history.back();
-        });
-
-        $('#send').on('click', event => {
-            event.preventDefault();
-
-            if (confirm("Enviar o pedido?")) { 
-                MenuManager.newOrder(e, {
-                    "Hora": new Date(),
-                    "Mesa": "02",
-                    "Cliente": "Cleverson",
-                    // "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${getPriceLabel($('#price').data('obj')) != '' ? ', ' + getPriceLabel($('#price').data('obj')) : ''}`,
-                    "Pedido": item.group.title + ', ' + item.title + `${$('#option').data('obj') != null ? ', ' + getOptionLabel($('#option').data('obj')) : ''}` + `${$('#price').data('obj').hint != null ? ', ' + $('#price').data('obj').hint : ''}`,
-                    "R$": $('#price').data('obj').value,
-                    "Cod.": nanoid()
-                });
-            }
-        });
+        registerTaps(e, item);
 
         Util.applyStyle();
         $('body').css('background-color', EstablishmentManager.get(e).layout.bg_color.container);
@@ -42,7 +31,7 @@ function loadItem(e, item) {
         item._prices = item.prices;
     }
 
-    item._controls = (item._options != null && item._options.length > 0) || (item._prices != null && item._prices.length > 0)
+    item._show_controls = (item._options == null ? 0 : item._options.length) > 1 || (item._prices == null ? 0 : item._prices.length) > 1;
 
     item._description = `${item.group.description != null ? item.group.description : ''} ${item.description != null ? item.description : ''}`;
     item._description = item._description.trim() != '' ? item._description.trim() : null;
@@ -50,7 +39,9 @@ function loadItem(e, item) {
     const template = Handlebars.compile($('#template').html());
     $('#order').html(template(item));
 
-    // if (item._options != null) {
+    if (item._options != null && item._options.length == 1) setOption(item._options[0]);
+    if (item.prices != null && item.prices.length == 1) setPrice(item.prices[0]);
+
     $('#option-sel').on('change', event => {
         const ref = $(event.currentTarget).val();
         const option = MenuManager.getOption(ref, e);
@@ -69,7 +60,6 @@ function loadItem(e, item) {
             setPrice(price);
         }
     });
-    // }
 
     $('#price-sel').on('change', event => {
         const ref = $(event.currentTarget).val();
@@ -81,85 +71,10 @@ function loadItem(e, item) {
     });
 
     console.log(JSON.stringify(item, null, '  '));
-
-    return;
-
-
-
-    $('#group-title').text(item.group.title);
-    $('#title').text(item.title);
-
-    if (item.description != null) {
-        $('#description').text(item.description);
-    } else {
-        $('#description').remove();
-    }
-
-    const options = (item.options != null ? item.options : item.group.options);
-
-    if (options != null) {
-        if (options.length > 1) {
-            $('#option-la').remove();
-
-            const optionEl = $('#option-sel');
-            optionEl.append(`<option disabled selected>Escolha uma opção...</option>`);
-
-            for (var option of options) {
-                optionEl.append(`<option value='${option.ref}'>${getOptionLabel(option)}</option>`);
-            }
-
-            optionEl.on('change', event => {
-                const ref = $(event.currentTarget).val();
-                const option = MenuManager.getOption(ref, e);
-                var price = null;
-
-                if (option != null) {
-                    price = item.prices.find(p => p.hint == option.hint);
-                } else if (option == null && $('#price').val() != null && $('#price-sel').length == 0) {
-                    setPrice(null);
-                }
-
-                setOption(option);
-
-                if (price != null) {
-                    setPrice(price);
-                }
-            });
-        } else {
-            $('#option-sel').remove();
-            setOption(options[0]);
-        }
-    } else {
-        $('#options').remove();
-    }
-
-    var prices = item.prices;
-
-    if (options != null && prices.length > 1) {
-        prices = prices.filter(p => options.filter(o => o.hint == p.hint).length == 0);
-    }
-
-    if (prices.length > 1) {
-        const priceEl = $('#price-sel');
-        priceEl.append(`<option disabled selected>Escolha uma opção...</option>`);
-
-        for (var price of prices) {
-            priceEl.append(`<option value='${price.ref}'>${getPriceLabel(price)}</option>`);
-        }
-
-        priceEl.on('change', event => {
-            const ref = $(event.currentTarget).val();
-            const price = MenuManager.getPrice(ref, e);
-            setPrice(price);
-        });
-    } else {
-        $('#price-sel').remove();
-        if (prices.length > 0) setPrice(prices[0]);
-    }
 }
 
 function getPriceLabel(price) {
-    return price.hint;
+    return price.hint != null ? price.hint : '';
 }
 
 function getOptionLabel(option) {
@@ -170,13 +85,111 @@ function setOption(option) {
     $('#option').val(option == null ? null : option.ref);
     $('#option').data('obj', option);
     $('#option-la').text(option == null ? '' : getOptionLabel(option));
+
+    console.log(option);
 }
 
 function setPrice(price) {
     $('#price').val(price == null ? null : price.ref);
     $('#price').data('obj', price);
-
-    console.log(price == null ? '0,00' : price.value);
-
     $('#price-la').text(price == null ? '0,00' : price.value);
+
+    console.log($('#price'));
+
+    console.log(price);
+}
+
+function registerTaps(e, item) {
+    $('#back').on('click', event => {
+        history.back();
+    });
+
+    $('.form').on('submit', event => {
+        event.preventDefault();
+
+        item.id = nanoid();
+        item.option = $('#option').data('obj');
+        item.price = $('#price').data('obj');
+
+        var name = localStorage.getItem('name');
+
+        if (name == null) {
+            name = prompt('Qual o seu nome?');
+
+            // Swal.fire({
+            //     title: 'Qual o seu nome?',
+            //     input: 'text',
+            //     // inputAttributes: {
+            //     //   autocapitalize: 'off'
+            //     // },
+            //     showCancelButton: true,
+            //     confirmButtonText: 'Guardar',
+            //     // showLoaderOnConfirm: true,
+            //     // preConfirm: (login) => {
+            //     //   return fetch(`//api.github.com/users/${login}`)
+            //     //     .then(response => {
+            //     //       if (!response.ok) {
+            //     //         throw new Error(response.statusText)
+            //     //       }
+            //     //       return response.json()
+            //     //     })
+            //     //     .catch(error => {
+            //     //       Swal.showValidationMessage(
+            //     //         `Request failed: ${error}`
+            //     //       )
+            //     //     })
+            //     // },
+            //     // allowOutsideClick: () => !Swal.isLoading()
+            //   }).then((result) => {
+            //     if (result.isConfirmed) {
+            //         console.log(result.value);
+
+            //     //   Swal.fire({
+            //     //     title: `${result.value.login}'s avatar`,
+            //     //     imageUrl: result.value.avatar_url
+            //     //   })
+            //     }
+            //   })
+
+            if (name != null && name.trim() == '') name = null;
+
+            if (name != null) {
+                localStorage.setItem('name', name);
+            }
+        }
+
+        if (name == null) {
+            Swal.fire({
+                title: 'Que pena',
+                text: 'Não podemos receber o pedido sem saber o seu nome',
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            })
+
+            return;
+        }
+
+        if (confirm("Enviar o pedido?")) {
+            const data = {
+                "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
+                "Mesa": "",
+                "Cliente": name,
+                "Pedido": stringify(item),
+                "R$": item.price.value,
+                "Cod.": item.id
+            }
+
+            alert(JSON.stringify(data, null, '  '));
+            return;
+            
+            MenuManager.newOrder(e, data);
+        }
+    });
+}
+
+function stringify(item) {
+    return item.group.title
+        + ', ' + item.title
+        + (item.option != null ? ', ' + getOptionLabel(item.option) : '')
+        + (item.price != null && item.price.hint != null ? ', ' + item.price.hint : '');
 }

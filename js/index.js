@@ -99,7 +99,7 @@ function loadEasterEgg() {
 
     // $('.ref').css('display', 'inline');
     $('td.chevron').css('display', 'table-cell');
-    // $('.hidden').removeClass('hidden');
+    $('.hidden').removeClass('hidden');
 
     $('.items .table tr').css('cursor', 'pointer');
 

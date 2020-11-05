@@ -28,34 +28,7 @@
 
 <body>
     <div class="container-fluid">
-        <!-- <div id="lead-container">
-            <div class="logo">
-                <img src="" class="img-fluid"></img>
-            </div>
-
-            <div class="group">
-                <div class="header">
-                    <div class="title"><span>Pedido</span></div>
-                </div>
-            </div>
-
-            <div class="info">
-                <p class="alpha">Estamos nos preparando para tirar os pedidos por aqui.</p>
-                <p>Por enquanto continuamos da forma tradicional: <b>fale com o atendente</b></p>
-            </div>
-
-            <div class="lead alpha">
-                <p>Se você quer experimentar essa e outras facilidades antes de todo mundo, deixe seu contato.</p>
-            </div>
-
-            <div>
-                <button id="lead" type="button" class="btn btn-secondary btn-lg btn-block">Deixar meu Contato</button>
-                <button id="back" type="button" class="btn btn-primary btn-lg btn-block">Voltar para o Cardápio</button>
-            </div>
-        </div> -->
-
-        <!-- <div> -->
-        <form>
+        <form class="form">
             <div id="order"></div>
 
             <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o Pedido</button>
@@ -65,10 +38,10 @@
         <!-- </div> -->
     </div>
 
-    <script id="template" type="text/template">
+    <script id="template" type="text/x-handlebars-template">
         <form>
-            <input type="hidden" id="option" name="option" value="{{#notSingle _options}}{{else}}{{_options.[0].ref}}{{/notSingle}}" />
-            <input type="hidden" id="price" name="price" value="{{#notSingle prices}}{{else}}{{prices.[0].ref}}{{/notSingle}}" />
+            <input type="hidden" id="option" name="option" />
+            <input type="hidden" id="price" name="price" />
 
             <div class="header">
                 <div class="title"><span>{{group.title}}</span></div>
@@ -77,47 +50,52 @@
                 {{/if}}
             </div>
 
-            {{#if _controls}}
-            <div class="controls">
-                {{#notSingle _options}}
-                <select id="option-sel" required="true" class="form-control">
-                    <option disabled selected>Escolha uma opção...</option>
-                    {{#each _options}}
-                    <option value='{{ref}}'>{{title}}{{#if hint}} ({{hint}}){{/if}}</option>
-                    {{/each}}
-                </select>
-                {{/notSingle}}
-                
-                {{#notSingle _prices}}
-                <select id="price-sel" required="true" class="form-control">
-                    <option disabled selected>Escolha uma opção...</option>
-                    {{#each _prices}}
-                    <option value='{{ref}}'>{{hint}}</option>
-                    {{/each}}
-                </select>
-                {{/notSingle}}
-            </div>
-            {{/if}}
-
             <div class="info">
                 <div class="title">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                    </svg>
+                    <div class="icon alpha">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-90deg-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z"/>
+                        </svg>
+                    </div>
                     <span>{{title}}{{#if hint}} <span class="hint alpha">({{hint}})</span>{{/if}}</span>
                 </span>
-
-                <div class="price-painel">
+                <div class="price-painel alpha">
                     <div class="price"><span class="hint">R$</span> <span id="price-la">{{#unless _prices.length}}0,00{{/unless}}{{#notSingle _prices}}0,00{{else}}{{_prices.[0].value}}{{/notSingle}}</span></div>
                 </div>
+
+                {{#if _show_controls}}
+                <div class="controls">
+                    {{#notSingle _options}}
+                    <select id="option-sel" required="true" class="form-control">
+                        <option disabled selected>{{#if option_placeholder}}{{option_placeholder}}{{else}}{{#if group.option_placeholder}}{{group.option_placeholder}}{{else}}Escolha uma opção{{/if}}{{/if}}</option>
+                        {{#each _options}}
+                        <option value='{{ref}}'>{{title}}{{#if hint}} ({{hint}}){{/if}}</option>
+                        {{/each}}
+                    </select>
+                    {{/notSingle}}
+                    
+                    {{#notSingle _prices}}
+                    <select id="price-sel" required="true" class="form-control">
+                        <option disabled selected>{{#if price_placeholder}}{{price_placeholder}}{{else}}Escolha um opção{{/if}}</option>
+                        {{#each _prices}}
+                        <option value='{{ref}}'>{{hint}}</option>
+                        {{/each}}
+                    </select>
+                    {{/notSingle}}
+                </div>
+                {{/if}}
             </div>
         </form>
     </script>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/lib/jquery-3.5.1.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
-    <!-- <script src="node_modules/moment/dist/moment.js"></script> -->
+    <!-- <script src="node_modules/handlebars/dist/handlebars.min.js"></script> -->
+    <script src="js/lib/handlebars.min-v4.7.6.js"></script>
+    <script src="js/lib/moment-with-locales.min.js"></script>
+    <script src="js/lib/sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
     <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
     <script src="node_modules/webfontloader/webfontloader.js"></script>
     <script src="node_modules/nanoid/nanoid.js"></script>

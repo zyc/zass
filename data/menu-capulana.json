@@ -92,6 +92,7 @@
         "ref": "6748",
         "title": "Pescada Branca",
         "description": "Peixe marinado em limão, coentro, cebola roxa, purê batata doce, finalizado com um toque de salsa rocoto, (pimenta peruana levemente picante).",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "37,90",
@@ -109,6 +110,7 @@
         "ref": "8530",
         "title": "Vegetariano",
         "description": "Vinagrete de melão, shimeji grelhado na manteiga com tofu, quinoa mista, pepino, batata doce, tomate marinado, folhas verdes, grão de bico, cebola roxa, coentro, purê de batata, sumo de limão.",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "39,90",
@@ -126,6 +128,7 @@
         "ref": "5363",
         "title": "Atum",
         "description": "Peixe marinado com leche de tigre, com abacaxi, castanha de caju e coentro, finalizado com um toque de salsa levemente picante.",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "38,90",
@@ -143,6 +146,7 @@
         "ref": "7746",
         "title": "Salmão",
         "description": "100g de salmão marinado em molho cítrico, pepino japonês, cebola roxa, vinagrete de manga, salsa rocoto, gengibre e gergelim torrado.",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "39,90",
@@ -160,6 +164,7 @@
         "ref": "3676",
         "title": "Camarão",
         "description": "Camarão marinado em sumo de limão, com manga, pepino, cebola roxa, coentro, cebolinha, pimenta dedo de moça e nori.",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "42,90",
@@ -177,6 +182,7 @@
         "ref": "1757",
         "title": "Capulana",
         "description": "Salmão, camarão, polvo, pescada e kani-kama, marinados em molho cítrico de laranja, com abacate, melão, cebola roxa, pepino, pimenta e coentro, finalizado com maionese de alga.",
+        "price_placeholder": "Escolha a porção",
         "prices": [
           {
             "value": "45,90",
