@@ -34,30 +34,8 @@
 
 .controls {
     margin-top: -36px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
-
-/* .controls select {
-    background-color: #58a8b2;
-    color: white;
-    border: 1px solid white;
-}
-
-.controls select:hover {
-    background-color: green;
-    color:pink;
-}
-
-.controls select:visited {
-    background-color: burlywood;
-    color: purple;
-}
-
-.controls select:active {
-    background-color: red;
-    color: yellow;
-    border: none;
-} */
 
 .price-painel {
     /* opacity: 0.4; */
@@ -67,17 +45,3 @@
 .description {
     margin-top: 24px;
 }
-
-select {
-    /* margin: 50px; */
-    /* width: 150px; */
-    /* padding: 5px 35px 5px 5px; */
-    /* font-size: 16px; */
-    /* border: 1px solid #CCC;
-    height: 34px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
-    /* background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat #EEE; */
-    /* background-color: red; */
-  }

@@ -66,7 +66,7 @@
                 {{#if _show_controls}}
                 <div class="controls">
                     {{#notSingle _options}}
-                    <select id="option-sel" required="true" class="form-control">
+                    <select id="option-sel" required="true" class="form-control form-control-lg">
                         <option disabled selected>{{#if option_placeholder}}{{option_placeholder}}{{else}}{{#if group.option_placeholder}}{{group.option_placeholder}}{{else}}Escolha uma opção{{/if}}{{/if}}</option>
                         {{#each _options}}
                         <option value='{{ref}}'>{{title}}{{#if hint}} ({{hint}}){{/if}}</option>
@@ -75,7 +75,7 @@
                     {{/notSingle}}
                     
                     {{#notSingle _prices}}
-                    <select id="price-sel" required="true" class="form-control">
+                    <select id="price-sel" required="true" class="form-control form-control-lg">
                         <option disabled selected>{{#if price_placeholder}}{{price_placeholder}}{{else}}Escolha um opção{{/if}}</option>
                         {{#each _prices}}
                         <option value='{{ref}}'>{{hint}}</option>
