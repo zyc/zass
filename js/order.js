@@ -150,8 +150,10 @@ function registerTaps(e, item) {
         }).then(result => {
             if (result.isConfirmed) {
 
+                $('#overlay').fadeIn();
+
                 MenuManager.newOrder(e, data)
-                    .done(() => {
+                    .done(data => {
                         Swal.fire({
                             title: 'Pedido enviado',
                             text: 'Levaremos até você quando estiver pronto',
@@ -165,7 +167,7 @@ function registerTaps(e, item) {
                             // history.back();
                         });
                     })
-                    .fail(() => {
+                    .fail(jqXHR => {
                         Swal.fire({
                             title: 'Tente outra vez',
                             text: 'Aconteceu uma falha e o seu pedido não foi enviado',
@@ -174,6 +176,9 @@ function registerTaps(e, item) {
                             buttonsStyling: false,
                             allowEnterKey: false
                         })
+                    })
+                    .always(data => {
+                        $('#overlay').fadeOut();
                     });
             }
         })
