@@ -68,10 +68,10 @@ class MenuManager {
     static newOrder(e, json) {
         console.log(JSON.stringify(json, null, '   '));
 
-        return $.ajax({
-            type: "GET",
-            url: 'http://slowwly.robertomurray.co.uk/delay/3000/url/http://www.google.co.uk'
-        });
+        // return $.ajax({
+        //     type: "GET",
+        //     url: 'http://slowwly.robertomurray.co.uk/delay/3000/url/http://www.google.co.uk'
+        // });
 
         return $.ajax({
             type: "POST",
