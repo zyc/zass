@@ -1,13 +1,6 @@
 $(() => {
     const i = Util.getItemRef();
 
-    // Swal.fire({
-    //     title: 'Error!',
-    //     text: 'Do you want to continue',
-    //     icon: 'error',
-    //     confirmButtonText: 'Cool'
-    //   })
-
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
@@ -115,42 +108,6 @@ function registerTaps(e, item) {
 
         if (name == null) {
             name = prompt('Qual o seu nome?');
-
-            // Swal.fire({
-            //     title: 'Qual o seu nome?',
-            //     input: 'text',
-            //     // inputAttributes: {
-            //     //   autocapitalize: 'off'
-            //     // },
-            //     showCancelButton: true,
-            //     confirmButtonText: 'Guardar',
-            //     // showLoaderOnConfirm: true,
-            //     // preConfirm: (login) => {
-            //     //   return fetch(`//api.github.com/users/${login}`)
-            //     //     .then(response => {
-            //     //       if (!response.ok) {
-            //     //         throw new Error(response.statusText)
-            //     //       }
-            //     //       return response.json()
-            //     //     })
-            //     //     .catch(error => {
-            //     //       Swal.showValidationMessage(
-            //     //         `Request failed: ${error}`
-            //     //       )
-            //     //     })
-            //     // },
-            //     // allowOutsideClick: () => !Swal.isLoading()
-            //   }).then((result) => {
-            //     if (result.isConfirmed) {
-            //         console.log(result.value);
-
-            //     //   Swal.fire({
-            //     //     title: `${result.value.login}'s avatar`,
-            //     //     imageUrl: result.value.avatar_url
-            //     //   })
-            //     }
-            //   })
-
             if (name != null && name.trim() == '') name = null;
 
             if (name != null) {
@@ -163,10 +120,10 @@ function registerTaps(e, item) {
                 title: 'Que pena',
                 text: 'Não podemos receber o pedido sem saber o seu nome',
                 icon: 'error',
-                confirmButtonText: 'Fechar'
+                confirmButtonText: 'Fechar',
+                confirmButtonClass: 'btn btn-primary btn-lg btn-block',
+                buttonsStyling: false
             })
-
-            return;
         }
 
         const data = {
@@ -179,45 +136,47 @@ function registerTaps(e, item) {
         }
 
         Swal.fire({
-            title: 'Posso pedir?',
+            title: 'Pedido',
             text: stringify(item),
             icon: 'question',
             showCancelButton: true,
-            // confirmButtonColor: '#3085d6',
-            // cancelButtonColor: '#d33',
-            confirmButtonText: 'Sim, tudo certo!',
-            cancelButtonText: 'Cancelar'
-        }).then((result) => {
+            confirmButtonText: 'Confirmar o Pedido',
+            cancelButtonText: 'Cancelar',
+            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
+            cancelButtonClass: 'btn btn-secondary btn-lg btn-block',
+            buttonsStyling: false,
+            allowEnterKey: false
+
+        }).then(result => {
             if (result.isConfirmed) {
-                // alert(JSON.stringify(data, null, '  '));
 
                 MenuManager.newOrder(e, data)
                     .done(() => {
                         Swal.fire({
-                            title: 'Pedido enviado!',
+                            title: 'Pedido enviado',
                             text: 'Levaremos até você quando estiver pronto',
-                            icon: 'success'
+                            icon: 'success',
+                            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
+                            buttonsStyling: false,
+                            allowEnterKey: false
+
+                        }).then(result => {
+                            $('#back').trigger("click");
+                            // history.back();
+                        });
+                    })
+                    .fail(() => {
+                        Swal.fire({
+                            title: 'Tente outra vez',
+                            text: 'Aconteceu uma falha e o seu pedido não foi enviado',
+                            icon: 'error',
+                            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
+                            buttonsStyling: false,
+                            allowEnterKey: false
                         })
                     });
             }
         })
-
-
-        // if (confirm("Enviar o pedido?")) {
-        //     const data = {
-        //         "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
-        //         "Mesa": "",
-        //         "Cliente": name,
-        //         "Pedido": stringify(item),
-        //         "R$": item.price.value,
-        //         "Cod.": item.id
-        //     }
-
-        //     alert(JSON.stringify(data, null, '  '));
-        //     return;
-
-        //     MenuManager.newOrder(e, data);
-        // }
     });
 }
 
