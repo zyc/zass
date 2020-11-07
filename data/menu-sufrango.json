@@ -100,12 +100,12 @@
         "prices": [
           {
             "value": "24,00",
-            "hint": "meio",
+            "hint": "Meio",
             "ref": "8470"
           },
           {
             "value": "38,00",
-            "hint": "inteiro",
+            "hint": "Inteiro",
             "ref": "9941"
           }
         ],
@@ -117,12 +117,12 @@
         "prices": [
           {
             "value": "28,00",
-            "hint": "meio",
+            "hint": "Meio",
             "ref": "6983"
           },
           {
             "value": "49,90",
-            "hint": "inteiro",
+            "hint": "Inteiro",
             "ref": "6072"
           }
         ],
@@ -134,12 +134,12 @@
         "prices": [
           {
             "value": "32,00",
-            "hint": "meio",
+            "hint": "Meio",
             "ref": "7425"
           },
           {
             "value": "56,00",
-            "hint": "inteiro",
+            "hint": "Inteiro",
             "ref": "0095"
           }
         ],

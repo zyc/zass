@@ -6,6 +6,10 @@ $(() => {
 
         registerTaps();
 
+        if (e == 'mana') {
+            registerItemTaps();
+        }
+
         if (Util.isEasterEggActive()) {
             loadEasterEgg();
         } else {
@@ -72,10 +76,10 @@ function registerTaps() {
 }
 
 function registerItemTaps() {
-    if (!Util.isTestVersion()) {
-        $('.items .table tr').css('cursor', 'default');
-        return;
-    }
+    // if (!Util.isTestVersion()) {
+    //     $('.items .table tr').css('cursor', 'default');
+    //     return;
+    // }
 
     $('.item').on('click', event => {
         const i = $(event.currentTarget).data('ref');

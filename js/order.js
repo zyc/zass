@@ -25,15 +25,20 @@ function loadItem(e, item) {
     }
 
     item._show_controls = (item._options == null ? 0 : item._options.length) > 1 || (item._prices == null ? 0 : item._prices.length) > 1;
-
     item._description = `${item.group.description != null ? item.group.description : ''} ${item.description != null ? item.description : ''}`;
+
+    if (item._options != null && item._options.length == 1) {
+        item._description = item._description + getOptionLabel(item._options[0]);
+    }
+
+    //if (item.prices != null && item.prices.length == 1) setPrice(item.prices[0]);
     item._description = item._description.trim() != '' ? item._description.trim() : null;
 
     const template = Handlebars.compile($('#template').html());
     $('#order').html(template(item));
 
-    if (item._options != null && item._options.length == 1) setOption(item._options[0]);
     if (item.prices != null && item.prices.length == 1) setPrice(item.prices[0]);
+    if (item._options != null && item._options.length == 1) setOption(item._options[0]);
 
     $('#option-sel').on('change', event => {
         const ref = $(event.currentTarget).val();
@@ -48,17 +53,12 @@ function loadItem(e, item) {
 
         setOption(option);
 
-        if (price != null) {
-            console.log(price);
-            setPrice(price);
-        }
+        if (price != null) setPrice(price);
     });
 
     $('#price-sel').on('change', event => {
         const ref = $(event.currentTarget).val();
         const price = MenuManager.getPrice(ref, e);
-
-        console.log(price);
 
         setPrice(price);
     });
@@ -75,21 +75,24 @@ function getOptionLabel(option) {
 }
 
 function setOption(option) {
+    // console.log('setOption');
+    // console.log(JSON.stringify(option, null, '  '));
+
     $('#option').val(option == null ? null : option.ref);
     $('#option').data('obj', option);
-    $('#option-la').text(option == null ? '' : getOptionLabel(option));
 
-    console.log(option);
+    // console.log('____');
+    // console.log($('#option').data('obj'));
+    // console.log('____');
+
+
+    $('#option-la').text(option == null ? '' : getOptionLabel(option));
 }
 
 function setPrice(price) {
     $('#price').val(price == null ? null : price.ref);
     $('#price').data('obj', price);
     $('#price-la').text(price == null ? '0,00' : price.value);
-
-    console.log($('#price'));
-
-    console.log(price);
 }
 
 function registerTaps(e, item) {
@@ -100,9 +103,15 @@ function registerTaps(e, item) {
     $('.form').on('submit', event => {
         event.preventDefault();
 
+        // console.log($('#option'));
+        // console.log($('#option').data('obj'));
+
         item.id = nanoid();
         item.option = $('#option').data('obj');
+
         item.price = $('#price').data('obj');
+
+        // console.log(JSON.stringify(item, null, '  '));
 
         var name = localStorage.getItem('name');
 
@@ -163,7 +172,7 @@ function registerTaps(e, item) {
                             allowEnterKey: false
 
                         }).then(result => {
-                            $('#back').trigger("click");
+                            // $('#back').trigger("click");
                             // history.back();
                         });
                     })
@@ -186,8 +195,13 @@ function registerTaps(e, item) {
 }
 
 function stringify(item) {
-    return item.group.title
-        + ', ' + item.title
-        + (item.option != null ? ', ' + getOptionLabel(item.option) : '')
-        + (item.price != null && item.price.hint != null ? ', ' + item.price.hint : '');
+    var string = item.group.title
+        + ': ' + item.title
+        + (item.option != null ? ', ' + getOptionLabel(item.option) : '');
+
+    if (item.price != null && item.price.hint != null && string.substring(item.price.hint) < 0) {
+        string = string + getPriceLabel(item.price);
+    }
+
+    return string;
 }

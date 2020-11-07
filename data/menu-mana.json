@@ -13,7 +13,7 @@
     "items": [
       {
         "ref": "2921",
-        "title": "Tijela 300 ml",
+        "title": "Tijela 300ml",
         "prices": [
           {
             "ref": "6924",
@@ -23,7 +23,7 @@
       },
       {
         "ref": "1338",
-        "title": "Tijela 500 ml",
+        "title": "Tijela 500ml",
         "prices": [
           {
             "ref": "5655",
@@ -33,7 +33,7 @@
       },
       {
         "ref": "8291",
-        "title": "Tijela 700 ml",
+        "title": "Tijela 700ml",
         "prices": [
           {
             "ref": "1140",
@@ -83,7 +83,7 @@
     "items": [
       {
         "ref": "1332",
-        "title": "Tijela 300 ml",
+        "title": "Tijela 300ml",
         "prices": [
           {
             "value": "16,00",
@@ -93,7 +93,7 @@
       },
       {
         "ref": "8320",
-        "title": "Tijela 500 ml",
+        "title": "Tijela 500ml",
         "prices": [
           {
             "value": "22,00",
@@ -103,7 +103,7 @@
       },
       {
         "ref": "6579",
-        "title": "Tijela 700 ml",
+        "title": "Tijela 700ml",
         "prices": [
           {
             "value": "28,00",
@@ -119,7 +119,7 @@
     "items": [
       {
         "ref": "7402",
-        "title": "Tijela 300 ml",
+        "title": "Tijela 300ml",
         "prices": [
           {
             "value": "18,00",
@@ -129,7 +129,7 @@
       },
       {
         "ref": "0312",
-        "title": "Tijela 500 ml",
+        "title": "Tijela 500ml",
         "prices": [
           {
             "value": "24,00",
@@ -139,7 +139,7 @@
       },
       {
         "ref": "8335",
-        "title": "Tijela 700 ml",
+        "title": "Tijela 700ml",
         "prices": [
           {
             "value": "30,00",
@@ -187,7 +187,7 @@
     "items": [
       {
         "ref": "8879",
-        "title": "Copo 300 ml",
+        "title": "Copo 300ml",
         "prices": [
           {
             "value": "12,00",
@@ -197,7 +197,7 @@
       },
       {
         "ref": "2889",
-        "title": "Copo 500 ml",
+        "title": "Copo 500ml",
         "prices": [
           {
             "value": "18,00",
@@ -224,7 +224,7 @@
     "items": [
       {
         "ref": "6110",
-        "title": "Copo 300 ml",
+        "title": "Copo 300ml",
         "prices": [
           {
             "value": "11,00",
@@ -234,7 +234,7 @@
       },
       {
         "ref": "1157",
-        "title": "Copo 500 ml",
+        "title": "Copo 500ml",
         "prices": [
           {
             "value": "15,00",
@@ -289,7 +289,7 @@
     "items": [
       {
         "ref": "8594",
-        "title": "Copo 300 ml",
+        "title": "Copo 300ml",
         "prices": [
           {
             "value": "7,00",
@@ -299,7 +299,7 @@
       },
       {
         "ref": "8840",
-        "title": "Copo 500 ml",
+        "title": "Copo 500ml",
         "prices": [
           {
             "value": "11,00",
@@ -315,7 +315,7 @@
     "items": [
       {
         "ref": "8010",
-        "title": "Copo 300 ml",
+        "title": "Copo 300ml",
         "prices": [
           {
             "value": "9,00",
@@ -325,7 +325,7 @@
       },
       {
         "ref": "7816",
-        "title": "Copo 500 ml",
+        "title": "Copo 500ml",
         "prices": [
           {
             "value": "13,00",
