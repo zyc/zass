@@ -4,6 +4,10 @@ $(() => {
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
+        if (EstablishmentManager.isFeatureAvailable(e, 'order')) {
+            loadItem(e, item);
+        }
+
         if (Util.isEasterEggActive()) {
             loadItem(e, item);
         }
@@ -128,18 +132,14 @@ function registerTaps(e, item) {
             return;
         }
 
-        var name = localStorage.getItem('name');
+        var user = UserManager.get();
 
-        if (name == null) {
-            name = prompt('Qual o seu nome?');
-            if (name != null && name.trim() == '') name = null;
-
-            if (name != null) {
-                localStorage.setItem('name', name);
-            }
+        if (user == null) {
+            const name = prompt('Qual o seu nome?');
+            user = UserManager.login(name);
         }
 
-        if (name == null) {
+        if (user == null) {
             swal.fire({
                 title: 'Que pena',
                 text: 'Não podemos receber o pedido sem saber o seu nome',
@@ -153,10 +153,11 @@ function registerTaps(e, item) {
         const data = {
             "Hora": moment().locale('pt-br').format('YYYY-MM-DD HH:mm:ss'),
             "Mesa": "",
-            "Cliente": name,
+            "Cliente": user.name,
             "Pedido": stringify(item),
             "R$": item.price.value,
-            "Cod.": item.id
+            "Cod.": item.id,
+            "ID Cliente": user.id
         }
 
         swal.fire({
@@ -169,8 +170,9 @@ function registerTaps(e, item) {
 
         }).then(result => {
             if (result.isConfirmed) {
-
                 $('#overlay').fadeIn();
+
+                console.log(JSON.stringify(data, null, '   '));
 
                 MenuManager.newOrder(e, data)
                     .done(data => {

@@ -39,6 +39,13 @@ class EstablishmentManager {
             url: 'data/info-' + e + '.json'
         });
     }
+
+    static isFeatureAvailable(e, feature) {
+        const establishment = this.get(e)
+        const { features } = establishment;
+
+        return (features != null) && (feature != null) && features.includes(feature)
+    }
 }
 
 EstablishmentManager.key = "establishment_";

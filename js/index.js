@@ -6,12 +6,12 @@ $(() => {
 
         registerTaps();
 
-        if (e == 'mana') {
-            registerItemTaps();
+        if (EstablishmentManager.isFeatureAvailable(e, 'order')) {
+            activateOrderFeature();
         }
 
         if (Util.isEasterEggActive()) {
-            loadEasterEgg();
+            loadEasterEgg();            
         } else {
             registerEasterEgg();
         }
@@ -98,15 +98,22 @@ function registerEasterEgg() {
 }
 
 function loadEasterEgg() {
-    $('#order-container').removeClass('hidden');
-    $('#lead-container').remove();
+    // $('#order-container').removeClass('hidden');
+    // $('#lead-container').remove();
 
     // $('.ref').css('display', 'inline');
-    $('td.chevron').css('display', 'table-cell');
+    // $('td.chevron').css('display', 'table-cell');
     $('.hidden').removeClass('hidden');
 
-    $('.items .table tr').css('cursor', 'pointer');
+    // $('.items .table tr').css('cursor', 'pointer');
 
+    // registerItemTaps();
+    activateOrderFeature();
+}
+
+function activateOrderFeature() {
+    $('td.chevron').css('display', 'table-cell');
+    $('.items .table tr').css('cursor', 'pointer');
     registerItemTaps();
 }
 
