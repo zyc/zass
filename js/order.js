@@ -107,16 +107,22 @@ function registerTaps(e, item) {
         item.option = $('#option').data('obj');
         item.price = $('#price').data('obj');
 
+        const swal = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-primary btn-lg btn-block',
+                cancelButton: 'btn btn-secondary btn-lg btn-block'
+            },
+            buttonsStyling: false,
+            allowEnterKey: false
+        })
+
         const message = validateForm();
         if (message != null) {
-            Swal.fire({
+            swal.fire({
                 title: message,
                 // text: message,
                 icon: 'error',
-                confirmButtonText: 'Fechar',
-                confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-                buttonsStyling: false,
-                allowEnterKey: false
+                confirmButtonText: 'Fechar'
             })
 
             return;
@@ -134,14 +140,11 @@ function registerTaps(e, item) {
         }
 
         if (name == null) {
-            Swal.fire({
+            swal.fire({
                 title: 'Que pena',
                 text: 'Não podemos receber o pedido sem saber o seu nome',
                 icon: 'error',
-                confirmButtonText: 'Fechar',
-                confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-                buttonsStyling: false,
-                allowEnterKey: false
+                confirmButtonText: 'Fechar'
             })
 
             return;
@@ -156,17 +159,13 @@ function registerTaps(e, item) {
             "Cod.": item.id
         }
 
-        Swal.fire({
+        swal.fire({
             title: 'Pedido',
             text: stringify(item),
             icon: 'question',
             showCancelButton: true,
             confirmButtonText: 'Confirmar o Pedido',
-            cancelButtonText: 'Cancelar',
-            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-            cancelButtonClass: 'btn btn-secondary btn-lg btn-block',
-            buttonsStyling: false,
-            allowEnterKey: false
+            cancelButtonText: 'Cancelar'
 
         }).then(result => {
             if (result.isConfirmed) {
@@ -175,13 +174,10 @@ function registerTaps(e, item) {
 
                 MenuManager.newOrder(e, data)
                     .done(data => {
-                        Swal.fire({
-                            title: 'Pedido enviado',
+                        swal.fire({
+                            title: 'Enviado',
                             text: 'Levaremos até você quando estiver pronto',
-                            icon: 'success',
-                            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-                            buttonsStyling: false,
-                            allowEnterKey: false
+                            icon: 'success'
 
                         }).then(result => {
                             // $('#back').trigger("click");
@@ -189,13 +185,10 @@ function registerTaps(e, item) {
                         });
                     })
                     .fail(jqXHR => {
-                        Swal.fire({
+                        swal.fire({
                             title: 'Tente outra vez',
                             text: 'Aconteceu uma falha e o seu pedido não foi enviado',
-                            icon: 'error',
-                            confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-                            buttonsStyling: false,
-                            allowEnterKey: false
+                            icon: 'error'
                         })
                     })
                     .always(data => {
