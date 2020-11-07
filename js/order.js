@@ -103,15 +103,24 @@ function registerTaps(e, item) {
     $('.form').on('submit', event => {
         event.preventDefault();
 
-        // console.log($('#option'));
-        // console.log($('#option').data('obj'));
-
         item.id = nanoid();
         item.option = $('#option').data('obj');
-
         item.price = $('#price').data('obj');
 
-        // console.log(JSON.stringify(item, null, '  '));
+        const message = validateForm();
+        if (message != null) {
+            Swal.fire({
+                title: message,
+                // text: message,
+                icon: 'error',
+                confirmButtonText: 'Fechar',
+                confirmButtonClass: 'btn btn-primary btn-lg btn-block',
+                buttonsStyling: false,
+                allowEnterKey: false
+            })
+
+            return;
+        }
 
         var name = localStorage.getItem('name');
 
@@ -131,8 +140,11 @@ function registerTaps(e, item) {
                 icon: 'error',
                 confirmButtonText: 'Fechar',
                 confirmButtonClass: 'btn btn-primary btn-lg btn-block',
-                buttonsStyling: false
+                buttonsStyling: false,
+                allowEnterKey: false
             })
+
+            return;
         }
 
         const data = {
@@ -194,12 +206,33 @@ function registerTaps(e, item) {
     });
 }
 
+function validateForm() {
+    var result = '';
+    var errors = [];
+
+    for (var select of $('select')) {
+        const el = $(select);
+
+        if (el.val() == null) {
+            errors.push(el.children('option:selected').text());
+        }
+    }
+
+    errors.forEach((el, i) => {
+        if (result.indexOf(el) < 0) {
+            result = `${result}${i > 0 ? ' e ' : ''}${el}`;
+        }
+    });
+
+    return result.trim().length > 0 ? result.trim() : null;
+}
+
 function stringify(item) {
     var string = item.group.title
         + ': ' + item.title
         + (item.option != null ? ', ' + getOptionLabel(item.option) : '');
 
-    if (item.price != null && item.price.hint != null && string.substring(item.price.hint) < 0) {
+    if (item.price != null && item.price.hint != null && string.indexOf(item.price.hint) < 0) {
         string = string + getPriceLabel(item.price);
     }
 
