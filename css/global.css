@@ -36,7 +36,7 @@ body {
 }
 
 .btn-light {
-    border-color: black;
+    border: 1px solid #bbb;
 }
 
 .btn-primary, .btn-primary:link, .btn-primary:visited, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {

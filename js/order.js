@@ -163,7 +163,7 @@ function registerTaps(e, item) {
             if (result.isConfirmed) {
                 $('#overlay').fadeIn();
 
-                Util.log((data);
+                Util.log(data);
 
                 MenuManager.newOrder(e, data)
                     .done(data => {
