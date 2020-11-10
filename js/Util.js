@@ -154,7 +154,7 @@ class Util {
 
     static setCache(key, e, object) {
         this.cache[key][e] = (object == null ? null : JSON.stringify(object, null, '  '));
-        console.log(`${key} ${e} atualizado no cache`);
+        Util.log(`${key} ${e} atualizado no cache`);
     }
 
     static getCache(key, e) {
@@ -177,7 +177,7 @@ class Util {
     }
 
     static log(data) {
-        console.log(JSON.stringify(data, null, '  '))
+        console.log(typeof data === "object" ? JSON.stringify(data, null, '  ') : data);
     }
 }
 

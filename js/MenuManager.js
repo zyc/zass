@@ -66,7 +66,7 @@ class MenuManager {
     }
 
     static newOrder(e, json) {
-        console.log(JSON.stringify(json, null, '   '));
+        Util.log(json);
 
         // return $.ajax({
         //     type: "GET",

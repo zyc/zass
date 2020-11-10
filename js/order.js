@@ -67,7 +67,7 @@ function loadItem(e, item) {
         setPrice(price);
     });
 
-    console.log(JSON.stringify(item, null, '  '));
+    Util.log(item);
 }
 
 function getPriceLabel(price) {
@@ -79,17 +79,8 @@ function getOptionLabel(option) {
 }
 
 function setOption(option) {
-    // console.log('setOption');
-    // console.log(JSON.stringify(option, null, '  '));
-
     $('#option').val(option == null ? null : option.ref);
     $('#option').data('obj', option);
-
-    // console.log('____');
-    // console.log($('#option').data('obj'));
-    // console.log('____');
-
-
     $('#option-la').text(option == null ? '' : getOptionLabel(option));
 }
 
@@ -172,7 +163,7 @@ function registerTaps(e, item) {
             if (result.isConfirmed) {
                 $('#overlay').fadeIn();
 
-                console.log(JSON.stringify(data, null, '   '));
+                Util.log((data);
 
                 MenuManager.newOrder(e, data)
                     .done(data => {

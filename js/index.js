@@ -57,7 +57,7 @@ function loadShareButton() {
                 title: window.title,
                 url: url
             }).then(() => {
-                console.log('Thanks for sharing!');
+                Util.log('Thanks for sharing!');
             }).catch(err => {
                 window.location.reload();
             });

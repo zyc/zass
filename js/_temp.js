@@ -13,7 +13,7 @@ $(() => {
             if (obj.ref == null) obj.ref = getUniqueRandom();
         })
 
-        console.log(JSON.stringify(data));
+        Util.log(data);
     });
 });
 
