@@ -114,8 +114,10 @@ class Util {
         el.on('click', event => {
             count++;
             if (count > 5) {
-                sessionStorage.setItem(this.easterEggKey, true);
-                activated();
+                if (confirm('Ativando funcionalidades experimentais 🧪')) {
+                    sessionStorage.setItem(this.easterEggKey, true);
+                    activated();
+                }
             }
 
             if (!isTimeoutActive) {
@@ -131,6 +133,7 @@ class Util {
 
     static deactivateEasterEgg() {
         sessionStorage.removeItem(this.easterEggKey);
+        alert('Tudo normal novamente 👍');
     }
 
     static setMenuCache(e, json) {
@@ -171,6 +174,10 @@ class Util {
         } else if (e === 'fuego') {
             return 'Fuego+Cultura+da+Carne';
         }
+    }
+
+    static log(data) {
+        console.log(JSON.stringify(data, null, '  '))
     }
 }
 

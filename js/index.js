@@ -11,10 +11,12 @@ $(() => {
         }
 
         if (Util.isEasterEggActive()) {
-            loadEasterEgg();            
+            loadEasterEgg();
         } else {
             registerEasterEgg();
         }
+
+        $("html, body").animate({ scrollTop: $("#exit").scrollTop() }, 1000);
     });
 });
 
@@ -76,11 +78,6 @@ function registerTaps() {
 }
 
 function registerItemTaps() {
-    // if (!Util.isTestVersion()) {
-    //     $('.items .table tr').css('cursor', 'default');
-    //     return;
-    // }
-
     $('.item').on('click', event => {
         const i = $(event.currentTarget).data('ref');
         location.href = Util.buildUrl('order') + '&i=' + i;
@@ -94,20 +91,14 @@ function registerItemTaps() {
 function registerEasterEgg() {
     Util.registerEasterEgg($('.logo'), () => {
         loadEasterEgg()
+        $("html").animate({ scrollTop: $(document).height() - $(window).height() }, () => {
+            alert('Funcionalidades experimentais ativadas 😎')
+        });
     });
 }
 
 function loadEasterEgg() {
-    // $('#order-container').removeClass('hidden');
-    // $('#lead-container').remove();
-
-    // $('.ref').css('display', 'inline');
-    // $('td.chevron').css('display', 'table-cell');
     $('.hidden').removeClass('hidden');
-
-    // $('.items .table tr').css('cursor', 'pointer');
-
-    // registerItemTaps();
     activateOrderFeature();
 }
 
