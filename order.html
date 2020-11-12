@@ -34,18 +34,11 @@
             </div>
         </div>
 
-        <form class="form">
-            <div id="order"></div>
-
-            <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o Pedido</button>
-            <button id="back" type="button" class="btn btn-secondary btn-lg btn-block">Voltar para o
-                Cardápio</button>
-        </form>
-        <!-- </div> -->
+        <div id="content"></div>
     </div>
 
     <script id="template" type="text/x-handlebars-template">
-        <form>
+        <form class="form">
             <input type="hidden" id="option" name="option" />
             <input type="hidden" id="price" name="price" />
 
@@ -91,6 +84,10 @@
                 </div>
                 {{/if}}
             </div>
+
+            <button id="send" type="submit" class="btn btn-primary btn-lg btn-block">Enviar o Pedido</button>
+            <button id="back" type="button" class="btn btn-secondary btn-lg btn-block">Voltar para o
+                Cardápio</button>
         </form>
     </script>
 
@@ -110,6 +107,8 @@
     <script src="js/UserManager.js"></script>
     <script src="js/MenuManager.js"></script>
     <script src="js/EstablishmentManager.js"></script>
+    <script src="js/BillManager.js"></script>
+    <script src="js/OrderManager.js"></script>
     <script src="js/order.js"></script>
 </body>
 

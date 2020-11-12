@@ -1,4 +1,4 @@
-$(() => {
+$(_ => {
     if (!Util.isEasterEggActive()) return;
 
     const e = Util.getEventAlias();

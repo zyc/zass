@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180839684-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180839684-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Cleverson Sacramento" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/material-icons/css/material-icons.min.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bill.css">
+
+    <title>Conta</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="content"></div>
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+        <h1> Minha conta</h1>
+        <table class="table">
+            <tbody>
+                {{#each .}}
+                {{#if @first}}
+                <tr>
+                    <td colspan="3" class="line">
+                        <div></div>
+                    </td>
+                </tr>
+                {{/if}}
+                <tr class="item" data-ref="{{ref}}">
+                    <td>
+                        {{date}}
+                    </td>
+                    <td>
+                        {{description}}
+                    </td>
+                    <td>
+                        {{ammount}}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="line">
+                        <div></div>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <button id="back" type="button" class="btn btn-primary btn-lg btn-block">Voltar para o
+            Cardápio</button>
+    </script>
+
+    <script id="buttons-template" type="text/template">
+        {{#each .}}
+        <button type="button" class="connection btn btn-secondary btn-lg btn-block" hidden="true" data-connection="{{@key}}">{{label}}</button>
+        {{/each}}
+    </script>
+
+    <!-- <script src="proxy/MenuProxy.js"></script>
+    <script src="manager/MenuManager.js"></script> -->
+
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="js/lib/jquery-3.5.1.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/handlebars/dist/handlebars.min.js"></script> -->
+    <script src="js/lib/handlebars.min-v4.7.6.js"></script>
+    <!-- <script src="node_modules/moment/dist/moment.js"></script> -->
+    <!-- <script src="node_modules/numeral/min/numeral.min.js"></script> -->
+    <script src="node_modules/webfontloader/webfontloader.js"></script>
+
+    <!-- <script src="js/_temp.js"></script> -->
+    <script src="js/Util.js"></script>
+    <script src="js/MenuManager.js"></script>
+    <script src="js/EstablishmentManager.js"></script>
+    <script src="js/BillManager.js"></script>
+    <script src="js/bill.js"></script>
+</body>
+
+</html>

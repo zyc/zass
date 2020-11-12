@@ -1,6 +1,6 @@
 body {
     touch-action: pan-x pan-y;
-    background-color: black;
+    /* background-color: black; */
 }
 
 @media (min-width: 978px) {
@@ -19,7 +19,7 @@ body {
 
 .container, .container-fluid {
     padding-bottom: 16px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .fixed {

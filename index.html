@@ -28,26 +28,16 @@
 
 <body>
     <div class="container-fluid">
-        <div id="divlogo">
-            <div class="logo">
-                <img src="" class="img-fluid"></img>
-            </div>
-        </div>
-
-        <div id="menu"></div>
-
-        <div id="buttons">
-            <button id="share" type="button" class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
-            <button id="exit" type="button" class="hidden btn btn-light btn-lg btn-block">Parar Experimento</button>
-        </div>
-
-        <div class="fixed">
-            <button id="contact" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Críticas &
-                Sugestões</button>
-        </div>
+        <div id="content"></div>
     </div>
 
     <script id="template" type="text/x-handlebars-template">
+        <div id="divlogo">
+            <div class="logo">
+                <img src="" class="img-fluid" />
+            </div>
+        </div>
+
         {{#each .}}
         <div class="group">
             <div class="header">
@@ -124,6 +114,16 @@
             </div>
         </div>
         {{/each}}
+
+        <div id="buttons">
+            <button id="share" type="button" class="btn btn-secondary btn-lg btn-block">Compartilhar</button>
+            <button id="exit" type="button" class="hidden btn btn-light btn-lg btn-block">Parar Experimento</button>
+        </div>
+
+        <div class="fixed">
+            <button id="contact" type="button" hidden="true" class="btn btn-primary btn-lg btn-block">Críticas &
+                Sugestões</button>
+        </div>
     </script>
 
     <script id="buttons-template" type="text/template">

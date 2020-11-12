@@ -53,7 +53,7 @@ class MenuManager {
                 Util.setMenuCache(e, data);
                 if (done != null) done(data);
             })
-            .fail(() => {
+            .fail(_ => {
                 if (done != null) done(null);
             });
     }
@@ -62,22 +62,6 @@ class MenuManager {
         return $.ajax({
             type: "GET",
             url: 'data/menu-' + e + '.json'
-        });
-    }
-
-    static newOrder(e, json) {
-        Util.log(json);
-
-        // return $.ajax({
-        //     type: "GET",
-        //     url: 'http://slowwly.robertomurray.co.uk/delay/3000/url/http://www.google.co.uk'
-        // });
-
-        return $.ajax({
-            type: "POST",
-            url: EstablishmentManager.get(e).rest.base_url,
-            data: JSON.stringify(json),
-            contentType: "application/json"
         });
     }
 

@@ -1,15 +1,11 @@
-$(() => {
+$(_ => {
     const i = Util.getItemRef();
 
     Util.loadData(e => {
         const item = MenuManager.getItem(i, e);
 
-        if (EstablishmentManager.isFeatureAvailable(e, 'order')) {
-            loadItem(e, item);
-        }
-
-        if (Util.isEasterEggActive()) {
-            loadItem(e, item);
+        if (EstablishmentManager.isFeatureAvailable(e, 'order') || Util.isEasterEggActive()) {
+            loadContent(e, item);
         }
 
         registerTaps(e, item);
@@ -19,7 +15,7 @@ $(() => {
     });
 });
 
-function loadItem(e, item) {
+function loadContent(e, item) {
     item._options = (item.options != null ? item.options : item.group.options);
 
     if (item._options != null && item.prices.length > 1) {
@@ -39,7 +35,7 @@ function loadItem(e, item) {
     item._description = item._description.trim() != '' ? item._description.trim() : null;
 
     const template = Handlebars.compile($('#template').html());
-    $('#order').html(template(item));
+    $('#content').html(template(item));
 
     if (item.prices != null && item.prices.length == 1) setPrice(item.prices[0]);
     if (item._options != null && item._options.length == 1) setOption(item._options[0]);
@@ -67,7 +63,7 @@ function loadItem(e, item) {
         setPrice(price);
     });
 
-    Util.log(item);
+    // Util.log(item);
 }
 
 function getPriceLabel(price) {
@@ -105,7 +101,8 @@ function registerTaps(e, item) {
         const swal = Swal.mixin({
             customClass: {
                 confirmButton: 'btn btn-primary btn-lg btn-block',
-                cancelButton: 'btn btn-secondary btn-lg btn-block'
+                cancelButton: 'btn btn-secondary btn-lg btn-block',
+                denyButton: 'btn btn-secondary btn-lg btn-block'
             },
             buttonsStyling: false,
             allowEnterKey: false
@@ -163,18 +160,30 @@ function registerTaps(e, item) {
             if (result.isConfirmed) {
                 $('#overlay').fadeIn();
 
-                Util.log(data);
+                // Util.log(data);
 
-                MenuManager.newOrder(e, data)
+                OrderManager.send(e, data)
                     .done(data => {
                         swal.fire({
                             title: 'Enviado',
                             text: 'Levaremos até você quando estiver pronto',
-                            icon: 'success'
+                            icon: 'success',
+                            showDenyButton: Util.isEasterEggActive(),
+                            denyButtonText: 'Ver os Pedidos'
 
                         }).then(result => {
-                            // $('#back').trigger("click");
-                            // history.back();
+                            BillManager.addItem({
+                                id: data[0]["Cod."],
+                                date: data[0]["Hora"],
+                                description: data[0]["Pedido"],
+                                ammount: data[0]["R$"]
+                            });
+
+                            Util.log(result)
+
+                            if (result.isDenied) {
+                                location.href = Util.buildUrl('bill');
+                            }
                         });
                     })
                     .fail(jqXHR => {

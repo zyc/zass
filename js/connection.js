@@ -1,9 +1,9 @@
-$(() => {
+$(_ => {
     Util.loadData(e => {
         const dest = Util.getParam('d');
         const establishment = EstablishmentManager.get(e);
 
-        setTimeout(() => {
+        setTimeout(_ => {
             const conn = establishment.connections[dest];
             var url = null;
 
@@ -17,7 +17,7 @@ $(() => {
 
             location.href = url;
 
-            setTimeout(() => {
+            setTimeout(_ => {
                 window.close();
             }, 2000);
         }, 1500);

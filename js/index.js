@@ -1,6 +1,6 @@
-$(() => {
+$(_ => {
     Util.loadData(e => {
-        loadMenu(e);
+        loadContent(e);
         loadButtons(e);
         loadShareButton();
 
@@ -15,16 +15,14 @@ $(() => {
         } else {
             registerEasterEgg();
         }
-
-        $("html, body").animate({ scrollTop: $("#exit").scrollTop() }, 1000);
     });
 });
 
-function loadMenu(e, done) {
+function loadContent(e) {
     const menu = MenuManager.get(e);
 
     const template = Handlebars.compile($('#template').html());
-    $('#menu').html(template(menu));
+    $('#content').html(template(menu));
 
     Util.applyStyle();
 }
@@ -52,11 +50,11 @@ function loadShareButton() {
             url = url.replace(/o\=\w+/, 'o=share');
         }
 
-        $('#share').on('click', () => {
+        $('#share').on('click', _ => {
             navigator.share({
                 title: window.title,
                 url: url
-            }).then(() => {
+            }).then(_ => {
                 Util.log('Thanks for sharing!');
             }).catch(err => {
                 window.location.reload();
@@ -68,11 +66,11 @@ function loadShareButton() {
 }
 
 function registerTaps() {
-    $('#exit').on('click', event => {
+    $('#exit').on('click', _ => {
         deactivateEasterEgg();
     });
 
-    $('#contact').on('click', event => {
+    $('#contact').on('click', _ => {
         window.open(Util.buildUrl('contact'), '_blank');
     });
 }
@@ -89,9 +87,9 @@ function registerItemTaps() {
 // *********************
 
 function registerEasterEgg() {
-    Util.registerEasterEgg($('.logo'), () => {
+    Util.registerEasterEgg($('.logo'), _ => {
         loadEasterEgg()
-        $("html").animate({ scrollTop: $(document).height() - $(window).height() }, () => {
+        $("html").animate({ scrollTop: $(document).height() - $(window).height() }, _ => {
             alert('Funcionalidades experimentais ativadas 😎')
         });
     });

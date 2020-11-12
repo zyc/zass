@@ -53,7 +53,7 @@ class Util {
         if (!this.isAutoUpdateOn) {
             this.isAutoUpdateOn = true;
 
-            setInterval(() => {
+            setInterval(_ => {
                 console.log('sync');
                 MenuManager.updateFromRemote(e);
                 EstablishmentManager.updateFromRemote(e);
@@ -94,7 +94,7 @@ class Util {
                 google: {
                     families: fonts
                 },
-                active: () => {
+                active: _ => {
                     if (fontBody != null) $('body').css('font-family', fontBody);
                     if (fontBody != null) $('.header .title span').css('font-family', fontTitle);
                 }
@@ -123,7 +123,7 @@ class Util {
             if (!isTimeoutActive) {
                 isTimeoutActive = true;
 
-                setTimeout(() => {
+                setTimeout(_ => {
                     count = 0;
                     isTimeoutActive = false;
                 }, 1000);

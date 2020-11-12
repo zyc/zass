@@ -28,7 +28,7 @@ class EstablishmentManager {
                 Util.setInfoCache(e, data);
                 if (done != null) done(data);
             })
-            .fail(() => {
+            .fail(_ => {
                 if (done != null) done(null);
             });
     }
