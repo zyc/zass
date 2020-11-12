@@ -90,7 +90,9 @@ function registerEasterEgg() {
     Util.registerEasterEgg($('.logo'), _ => {
         loadEasterEgg()
         $("html").animate({ scrollTop: $(document).height() - $(window).height() }, _ => {
-            alert('Funcionalidades experimentais ativadas 😎')
+            setTimeout(_ => {
+                alert('Funcionalidades experimentais ativadas 😎')
+            }, 150);
         });
     });
 }

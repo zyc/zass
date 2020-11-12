@@ -169,17 +169,17 @@ function registerTaps(e, item) {
                             text: 'Levaremos até você quando estiver pronto',
                             icon: 'success',
                             showDenyButton: Util.isEasterEggActive(),
-                            denyButtonText: 'Ver os Pedidos'
+                            denyButtonText: 'Ver meus Pedidos'
 
                         }).then(result => {
-                            BillManager.addItem({
+                            BillManager.addItem(e, {
                                 id: data[0]["Cod."],
                                 date: data[0]["Hora"],
                                 description: data[0]["Pedido"],
                                 ammount: data[0]["R$"]
                             });
 
-                            Util.log(result)
+                            // Util.log(result)
 
                             if (result.isDenied) {
                                 location.href = Util.buildUrl('bill');

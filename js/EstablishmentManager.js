@@ -8,7 +8,7 @@ class EstablishmentManager {
         //     json = JSON.parse(jwt);
         // }
 
-        return Util.getInfoCache(e);
+        return Util.getCache(this.context, e);
     }
 
     static load(e, done) {
@@ -25,7 +25,7 @@ class EstablishmentManager {
         this.getFromRemote(e)
             .done(data => {
                 // sessionStorage.setItem(this.key + e, JSON.stringify(data));
-                Util.setInfoCache(e, data);
+                Util.setCache(this.context, e, data);
                 if (done != null) done(data);
             })
             .fail(_ => {
@@ -48,4 +48,4 @@ class EstablishmentManager {
     }
 }
 
-EstablishmentManager.key = "establishment_";
+EstablishmentManager.context = "establishment";

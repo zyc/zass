@@ -8,7 +8,7 @@ class MenuManager {
         //     json = JSON.parse(jwt);
         // }
 
-        return Util.getMenuCache(e);
+        return Util.getCache(this.context, e);
     }
 
     static getPrice(ref, e) {
@@ -50,7 +50,7 @@ class MenuManager {
         this.getFromRemote(e)
             .done(data => {
                 // sessionStorage.setItem(this.key + e, JSON.stringify(data));
-                Util.setMenuCache(e, data);
+                Util.setCache(this.context, e, data);
                 if (done != null) done(data);
             })
             .fail(_ => {
@@ -107,4 +107,4 @@ class MenuManager {
     }
 }
 
-MenuManager.key = "menu_";
+MenuManager.context = "menu";

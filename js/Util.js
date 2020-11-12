@@ -81,6 +81,13 @@ class Util {
         $('.header .title span').css('color', establishment.layout.text_color.title);
         $('.items .table .line div').css('border-bottom-color', establishment.layout.text_color.default);
 
+        this.applyFontStyle('body');
+    }
+
+    static applyFontStyle(selector) {
+        const e = this.getEventAlias();
+        const establishment = EstablishmentManager.get(e);
+
         const fontBody = establishment.layout.font.default;
         const fontTitle = establishment.layout.font.title;
 
@@ -95,7 +102,7 @@ class Util {
                     families: fonts
                 },
                 active: _ => {
-                    if (fontBody != null) $('body').css('font-family', fontBody);
+                    if (fontBody != null) $(selector).css('font-family', fontBody);
                     if (fontBody != null) $('.header .title span').css('font-family', fontTitle);
                 }
             });
@@ -136,30 +143,48 @@ class Util {
         alert('Tudo normal novamente 👍');
     }
 
-    static setMenuCache(e, json) {
-        this.setCache('menu', e, json);
+    // static setMenuCache(e, json) {
+    //     this.setCache('menu', e, json);
+    // }
+
+    // static getMenuCache(e) {
+    //     return this.getCache('menu', e);
+    // }
+
+    // static setInfoCache(e, json) {
+    //     this.setCache('info', e, json);
+    // }
+
+    // static getInfoCache(e) {
+    //     return this.getCache('info', e);
+    // }
+
+    static setCache(context, e, object) {
+        this.getCacheContext(context);
+
+
+        this.log(this.cache);
+        this.log(context);
+        this.log(this.cache[context]);
+
+        this.cache[context][e] = (object == null || object['count'] === 0 ? null : JSON.stringify(object, null, '  '));
+        Util.log(`${context} ${e} atualizado no cache`);
     }
 
-    static getMenuCache(e) {
-        return this.getCache('menu', e);
-    }
-
-    static setInfoCache(e, json) {
-        this.setCache('info', e, json);
-    }
-
-    static getInfoCache(e) {
-        return this.getCache('info', e);
-    }
-
-    static setCache(key, e, object) {
-        this.cache[key][e] = (object == null ? null : JSON.stringify(object, null, '  '));
-        Util.log(`${key} ${e} atualizado no cache`);
-    }
-
-    static getCache(key, e) {
-        var string = this.cache[key][e];
+    static getCache(context, e) {
+        var string = this.getCacheContext(context)[e];
         return string == null ? null : JSON.parse(string);
+    }
+
+    static getCacheContext(context) {
+        var result = this.cache[context];
+
+        if (result == null) {
+            result = {}
+            this.cache[context] = result;
+        }
+
+        return result;
     }
 
     static getFormFilledField() {
@@ -186,10 +211,7 @@ Util.origin = null;
 Util.itemRef = null;
 Util.easterEggKey = 'easter_egg_active';
 Util.isAutoUpdateOn = false;
-Util.cache = {
-    info: {},
-    menu: {}
-};
+Util.cache = {};
 
 $.ajaxSetup({
     error: function (request) {

@@ -1,15 +1,17 @@
 $(_ => {
     Util.loadData(e => {
-        // BillManager.clear();
+        // BillManager.clear(e);
 
         loadContent(e);
         registerTaps();
+
+        Util.applyFontStyle('button');
     });
 });
 
 function loadContent(e) {
     // const menu = MenuManager.get(e);
-    const bill = BillManager.get();
+    const bill = BillManager.get(e);
     Util.log(bill);
 
     const template = Handlebars.compile($('#template').html());
