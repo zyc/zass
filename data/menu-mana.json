@@ -70,11 +70,6 @@
         "hint": "Graviola"
       },
       {
-        "ref": "8222",
-        "title": "Humaitá",
-        "hint": "Morango"
-      },
-      {
         "ref": "9964",
         "title": "Barra Grande",
         "hint": "Cupuaçu"
@@ -174,14 +169,6 @@
       {
         "title": "Frutas vermelhas",
         "ref": "0122"
-      },
-      {
-        "title": "Uva",
-        "ref": "7307"
-      },
-      {
-        "title": "Morango",
-        "ref": "9043"
       }
     ],
     "items": [
@@ -258,10 +245,6 @@
         "ref": "5404"
       },
       {
-        "title": "Morango",
-        "ref": "0471"
-      },
-      {
         "title": "Cupuaçu",
         "ref": "2292"
       },
@@ -276,10 +259,6 @@
       {
         "title": "Cacau",
         "ref": "6399"
-      },
-      {
-        "title": "Amora com Uva",
-        "ref": "2926"
       },
       {
         "title": "Abacaxi com Hortelã",
